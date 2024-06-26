@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\New folder\\muzickiKatalog.csproj": {}
+    "C:\\Users\\User\\Documents\\2. semestar\\objektno\\MuzickiKatalog\\muzickiKatalog.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\New folder\\muzickiKatalog.csproj": {
+    "C:\\Users\\User\\Documents\\2. semestar\\objektno\\MuzickiKatalog\\muzickiKatalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\New folder\\muzickiKatalog.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\2. semestar\\objektno\\MuzickiKatalog\\muzickiKatalog.csproj",
         "projectName": "muzickiKatalog",
-        "projectPath": "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\New folder\\muzickiKatalog.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\2. semestar\\objektno\\MuzickiKatalog\\muzickiKatalog.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\New folder\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\2. semestar\\objektno\\MuzickiKatalog\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
