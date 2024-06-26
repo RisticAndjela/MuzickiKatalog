@@ -1,0 +1,18 @@
+﻿<Application x:Class="muzickiKatalog.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:muzickiKatalog"
+             StartupUri="GUI/MVVM/View/General/LogIn.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="GUI\Theme\Colors.xaml" />
+                <ResourceDictionary Source="GUI\Theme\Buttons.xaml" />
+                <ResourceDictionary Source="GUI\Theme\Borders.xaml" />
+                <ResourceDictionary Source="GUI\Theme\TextBox.xaml" />
+                <ResourceDictionary Source="GUI\Theme\Labels.xaml" />
+                <ResourceDictionary Source="GUI\Theme\Grids.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

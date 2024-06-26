@@ -1,0 +1,52 @@
+﻿<Window x:Class="muzickiKatalog.GUI.MVVM.View.General.LogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:muzickiKatalog.GUI.MVVM.View.General"
+        mc:Ignorable="d"
+        Height="400" Width="400"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Grid >
+        <ContentControl Template="{StaticResource ResourceKey=pozadina}"/>
+        <Label Style="{StaticResource ResourceKey=naslov}" Margin="0,30,0,0" Content="ENTER APP" />
+        <StackPanel x:Name="ChoicePanel" Width="250" Orientation="Vertical" Margin="75,130,75,50" >
+            <Button Style="{StaticResource ResourceKey=regularButton}" Width="200" Height="60" Content="Log in" Click="LogInCommand"/>
+            <Button Style="{StaticResource ResourceKey=regularButton}" Width="200" Height="60" Content="Sign in" Click="SignInCommand" />
+            <Button Style="{StaticResource ResourceKey=regularButton}" Width="200" Height="60" Content="Continue as guest" Click="GuestCommand"/>
+
+        </StackPanel>
+        <StackPanel x:Name="LogInPanel" Visibility="Hidden" Width="250" Grid.Row="2" Orientation="Vertical" Margin="0,70,0,30">
+            <Grid Height="300">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="wrongUsername" Visibility="Hidden" Content="Wrong username" Grid.Row="1" Grid.Column="1" Style="{StaticResource ResourceKey=regularLabel}" FontSize="8" Width="106" HorizontalContentAlignment="Right" Margin="0,20,0,0"/>
+                <Label Content="Username:" Style="{StaticResource ResourceKey=regularLabel}" Grid.Column="0" Grid.Row="1" />
+                <Border Style="{StaticResource ResourceKey=TextBoxBorder}"  Grid.Row="2" Grid.ColumnSpan="2" >
+                    <TextBox x:Name="username" Style="{StaticResource ResourceKey=regularBox}"/>
+                </Border>
+                <Label Content="Password:" Style="{StaticResource ResourceKey=regularLabel}" Grid.Row="3" Margin="0,10,0,0"/>
+                <Label x:Name="wrongPassword" Visibility="Hidden" Content="Wrong password" Grid.Row="3" Grid.Column="1" Style="{StaticResource ResourceKey=regularLabel}" FontSize="8" Width="106" HorizontalContentAlignment="Right" Margin="0,20,0,0"/>
+                <Border Style="{StaticResource ResourceKey=TextBoxBorder}" Grid.Row="4" Grid.ColumnSpan="2" >
+                    <TextBox x:Name="password" Style="{StaticResource ResourceKey=regularBox}" />
+                </Border>
+                <Button Style="{StaticResource ResourceKey=regularButton}" Width="200" Height="60" Grid.Row="6" Grid.ColumnSpan="2" Content="Log in" Click="DoneCommand"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

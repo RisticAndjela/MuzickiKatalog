@@ -1,0 +1,15 @@
+{
+  "nicole@editor.com": {
+    "username": "nicole@editor.com",
+    "genres": [
+      "jazz"
+    ],
+    "needToApproveComments": [],
+    "needToApproveRatings": [],
+    "needToLeaveReviews": [],
+    "name": "Nicole",
+    "lastName": "Julius",
+    "gender": 0,
+    "birthday": "1879-03-14"
+  }
+}

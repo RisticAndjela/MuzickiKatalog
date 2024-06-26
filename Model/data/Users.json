@@ -1,0 +1,62 @@
+{
+  "admin@admin.com": {
+    "username": "admin@admin.com",
+    "password": "pass",
+    "type": 1
+  },
+  "nicole@editor.com": {
+    "username": "nicole@editor.com",
+    "password": "pass",
+    "type": 2
+  },
+  "albert@member.com": {
+    "username": "albert@member.com",
+    "password": "pass",
+    "type": 0
+  },
+  "marie@member.com": {
+    "username": "marie@member.com",
+    "password": "pass",
+    "type": 0
+  },
+  "isaac@member.com": {
+    "username": "isaac@member.com",
+    "password": "pass",
+    "type": 0
+  },
+  "ada@member.com": {
+    "username": "ada@member.com",
+    "password": "pass",
+    "type": 0
+  },
+  "charles@member.com": {
+    "username": "charles@member.com",
+    "password": "pass",
+    "type": 0
+  },
+  "rosalind@member.com": {
+    "username": "rosalind@member.com",
+    "password": "pass",
+    "type": 0
+  },
+  "stephen@member.com": {
+    "username": "stephen@member.com",
+    "password": "pass",
+    "type": 0
+  },
+  "jane@member.com": {
+    "username": "jane@member.com",
+    "password": "pass",
+    "type": 0
+  },
+  "niels@member.com": {
+    "username": "niels@member.com",
+    "password": "pass",
+    "type": 0
+  },
+  "mae@member.com": {
+    "username": "mae@member.com",
+    "password": "pass",
+    "type": 0
+  }
+}

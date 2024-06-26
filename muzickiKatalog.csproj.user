@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="GUI\MVVM\View\Admin\HomeAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\Admin\MakeEditor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\Editor\HomeEditor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\Editor\MakeArtist.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\Editor\MakeGroup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\General\MakeMember.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\Guest\HomeGuest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\Member\HomeMember.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\General\LogIn.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="GUI\MVVM\View\Admin\HomeAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\Admin\MakeEditor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\Editor\HomeEditor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\Editor\MakeArtist.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\Editor\MakeGroup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\General\MakeMember.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\Guest\HomeGuest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\Member\HomeMember.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\General\LogIn.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\Theme\Borders.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\Theme\Buttons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\Theme\Colors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\Theme\Grids.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\Theme\Labels.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\Theme\TextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

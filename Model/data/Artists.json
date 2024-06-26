@@ -1,0 +1,157 @@
+{
+  "John_Doe_7/15/1985": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "jazz"
+    ],
+    "groups": [],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "John",
+    "lastName": "Doe",
+    "gender": 0,
+    "birthday": "1985-07-15"
+  },
+  "Jane_Smith_3/22/1990": {
+    "editor": "nicole@editor.com",
+    "type": 1,
+    "genres": [
+      "rock"
+    ],
+    "groups": [],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Jane",
+    "lastName": "Smith",
+    "gender": 1,
+    "birthday": "1990-03-22"
+  },
+  "Michael_Johnson_9/5/1982": {
+    "editor": "nicole@editor.com",
+    "type": 2,
+    "genres": [
+      "classical"
+    ],
+    "groups": [],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Michael",
+    "lastName": "Johnson",
+    "gender": 0,
+    "birthday": "1982-09-05"
+  },
+  "Emily_Davis_12/10/1987": {
+    "editor": "nicole@editor.com",
+    "type": 3,
+    "genres": [
+      "classical",
+      "hiphop"
+    ],
+    "groups": [],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Emily",
+    "lastName": "Davis",
+    "gender": 1,
+    "birthday": "1987-12-10"
+  },
+  "David_Brown_5/3/1978": {
+    "editor": "nicole@editor.com",
+    "type": 4,
+    "genres": [
+      "country"
+    ],
+    "groups": [],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "David",
+    "lastName": "Brown",
+    "gender": 0,
+    "birthday": "1978-05-03"
+  },
+  "Sarah_Garcia_11/18/1989": {
+    "editor": "nicole@editor.com",
+    "type": 5,
+    "genres": [
+      "pop",
+      "blues"
+    ],
+    "groups": [],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Sarah",
+    "lastName": "Garcia",
+    "gender": 1,
+    "birthday": "1989-11-18"
+  },
+  "Alex_Martinez_2/28/1983": {
+    "editor": "nicole@editor.com",
+    "type": 6,
+    "genres": [
+      "electronic"
+    ],
+    "groups": [],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Alex",
+    "lastName": "Martinez",
+    "gender": 0,
+    "birthday": "1983-02-28"
+  },
+  "Jessica_Robinson_8/7/1984": {
+    "editor": "nicole@editor.com",
+    "type": 7,
+    "genres": [
+      "hiphop",
+      "rap"
+    ],
+    "groups": [],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Jessica",
+    "lastName": "Robinson",
+    "gender": 1,
+    "birthday": "1984-08-07"
+  },
+  "Mark_Wilson_10/12/1981": {
+    "editor": "nicole@editor.com",
+    "type": 1,
+    "genres": [
+      "folk",
+      "rnb"
+    ],
+    "groups": [],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Mark",
+    "lastName": "Wilson",
+    "gender": 0,
+    "birthday": "1981-10-12"
+  },
+  "Rachel_Lee_6/25/1986": {
+    "editor": "nicole@editor.com",
+    "type": 3,
+    "genres": [
+      "classical",
+      "jazz"
+    ],
+    "groups": [],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Rachel",
+    "lastName": "Lee",
+    "gender": 1,
+    "birthday": "1986-06-25"
+  }
+}
