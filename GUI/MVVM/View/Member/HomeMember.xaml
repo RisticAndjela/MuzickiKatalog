@@ -36,7 +36,7 @@
         </DockPanel>
         <!--panel for suggested following and popular content-->
         <DockPanel x:Name="contentPanelCategories" Visibility="Hidden" Margin="210,160,20,30">
-            <ContentControl Content="{Binding CurrentView}" />
+            <ContentControl Content="{Binding ListedPanel}" />
         </DockPanel>
         <!--panel for search and filter-->
         <DockPanel x:Name="contentPanelSearch" Visibility="Hidden" Margin="210,160,20,30">

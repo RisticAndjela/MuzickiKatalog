@@ -8,6 +8,7 @@ namespace muzickiKatalog.Layers.Model.contributors
         public string username;
         public List<Comment> leftComments { get; set; } = new List<Comment>();
         public List<StarRating> leftRatings { get; set; } = new List<StarRating>();
+        public List<string> following {  get; set; }= new List<string>();
         public Member() { }
         public Member(string _username, string password,string _name, string _lastName, Gender _gender, DateOnly _birthday) : base(_username, password,_name, _lastName, _gender, _birthday,personType.member)
         {
@@ -26,6 +27,12 @@ namespace muzickiKatalog.Layers.Model.contributors
         public void LeaveRating(StarRating starRating)
         {
             leftRatings.Add(starRating);
+            save();
+        }
+
+        public void follow(string id)
+        {
+            following.Add(id);
             save();
         }
     }
