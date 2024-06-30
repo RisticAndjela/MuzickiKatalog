@@ -12,4 +12,18 @@ public static class GlobalVariables
     public static readonly string textsFile = Path.Combine("..", "..", "..", "Layers", "data", "Texts.json");
     public static readonly string usersFile = Path.Combine("..", "..", "..", "Layers", "data", "Users.json");
     public static readonly string albumsFile = Path.Combine("..", "..", "..", "Layers", "data", "Albums.json");
+
+    //images
+    public static readonly string elvis_presley = "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\elvis_presley.jfif";
+    public static readonly string michael_jackson = "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\michael_jackson.jfif";
+    public static readonly string bob_dylan = "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\bob_dylan.jfif";
+    public static readonly string aretha_franklin = "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\aretha_franklin.jfif";
+    public static readonly string pink_floyd = "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif";
+    public static readonly string rolling_stones = "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\rolling_stones.jfif";
+    public static readonly string beatles = "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\beatles.jfif";
+    public static readonly string img1 = "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif";
+    public static readonly string img2 = "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img2.jfif";
+    public static readonly string img3 = "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif";
+    public static readonly string img4 = "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img4.jfif";
+
 }

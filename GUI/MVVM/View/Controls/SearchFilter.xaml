@@ -1,0 +1,89 @@
+﻿<UserControl x:Class="muzickiKatalog.GUI.MVVM.View.Controls.SearchFilter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:muzickiKatalog.GUI.MVVM.View.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="{StaticResource BaseColor}">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition />
+                <RowDefinition/>
+                <RowDefinition  Height="30"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Column="1"  Style="{StaticResource ResourceKey=TextBoxBorder}">
+                <TextBox x:Name="regularSearch" Width="700"  Style="{StaticResource ResourceKey=regularBox}"></TextBox>
+            </Border>
+            <Grid x:Name="searchFilters" Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="15" />
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="FILTER 1:" Style="{StaticResource ResourceKey=regularLabel}"/>
+                <Border Grid.Column="1"  Style="{StaticResource ResourceKey=TextBoxBorder}">
+                    <TextBox x:Name="filter1" Width="250"  Style="{StaticResource ResourceKey=regularBox}"></TextBox>
+                </Border>
+                <Label Content="FILTER 2:" Grid.Row="1" Style="{StaticResource ResourceKey=regularLabel}"/>
+                <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource ResourceKey=TextBoxBorder}">
+                    <TextBox x:Name="filter2" Width="250"  Style="{StaticResource ResourceKey=regularBox}"></TextBox>
+                </Border>
+                <Label Content="FILTER 3:" Grid.Row="2" Style="{StaticResource ResourceKey=regularLabel}"/>
+                <Border Grid.Column="1" Grid.Row="2"  Style="{StaticResource ResourceKey=TextBoxBorder}">
+                    <TextBox x:Name="filter3" Width="250"  Style="{StaticResource ResourceKey=regularBox}"></TextBox>
+                </Border>
+                <Label Content="FILTER 4:" Grid.Row="3" Style="{StaticResource ResourceKey=regularLabel}"/>
+                <Border Grid.Column="1" Grid.Row="3" Style="{StaticResource ResourceKey=TextBoxBorder}">
+                    <TextBox x:Name="filter4" Width="250"  Style="{StaticResource ResourceKey=regularBox}"></TextBox>
+                </Border>
+                <Label Content="FILTER 5:" Grid.Column="3" Style="{StaticResource ResourceKey=regularLabel}"/>
+                <ComboBox Grid.Column="4" Margin="30,5"/>
+                <Label Content="FILTER 6:" Grid.Row="1" Grid.Column="3" Style="{StaticResource ResourceKey=regularLabel}"/>
+                <ComboBox Grid.Column="4" Grid.Row="1" Margin="30,5"/>
+                <Label Content="FILTER 7:" Grid.Row="2" Grid.Column="3" Style="{StaticResource ResourceKey=regularLabel}"/>
+                <ComboBox Grid.Column="4" Grid.Row="2" Margin="30,5"/>
+                <Button Content="DONE" Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="2"  Style="{StaticResource ResourceKey=regularButton}" Width="290"/>
+
+            </Grid>
+            <Grid x:Name="searchResults" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="30"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="back"  Content="b" Height="50" Style="{StaticResource ResourceKey=circleButton}" />
+                <Button x:Name="forward" Grid.Column="5"  Content="f" Height="50" Style="{StaticResource ResourceKey=circleButton}" />
+                <Button Content="C1" Grid.Column="1" FontWeight="Bold" Foreground="{StaticResource ResourceKey=BaseColor}" Margin="25,15" Background="{StaticResource ResourceKey=SecondBoldColor}"/>
+                <Label x:Name="labelResult1" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Center" Content="C1" Style="{StaticResource ResourceKey=regularLabel}"/>
+                <Button Content="C2" Grid.Column="2"  FontWeight="Bold" Foreground="{StaticResource ResourceKey=BaseColor}" Margin="25,15" Background="{StaticResource ResourceKey=LightColor}"/>
+                <Label x:Name="labelResult2" Grid.Column="2" Grid.Row="1" HorizontalContentAlignment="Center" Content="C2" Style="{StaticResource ResourceKey=regularLabel}"/>
+                <Button Content="C3" Grid.Column="3"  FontWeight="Bold" Foreground="{StaticResource ResourceKey=BaseColor}" Margin="25,15" Background="{StaticResource ResourceKey=BoldColor}"/>
+                <Label x:Name="labelResult3" Grid.Column="3" Grid.Row="1" HorizontalContentAlignment="Center" Content="C3" Style="{StaticResource ResourceKey=regularLabel}"/>
+
+            </Grid>
+
+        </Grid>
+    </Grid>
+</UserControl>

@@ -17,13 +17,15 @@ namespace muzickiKatalog.Layers.Model.performatorium
         public List<string> genres { get; set; } = new List<string>();
         public List<string> groups { get; set; } = new List<string>();
         public List<string> materials { get; set; } = new List<string>();
+        public List<string> media { get; set; } = new List<string>();
         public List<Comment> biographyComments { get; set; }= new List<Comment>();
         public List<StarRating> biographyStarRatings { get; set; }= new List<StarRating>();
         public Artist() { }
-        public Artist(string _editor,string _name, string _lastName, Gender _gender, DateOnly _birthday, string _biography, artistType _type,List<string> _genres) : base("", "",_name, _lastName, _gender, _birthday, personType.artist)
+        public Artist(string _editor,string _name, string _lastName, Gender _gender, DateOnly _birthday, string _biography, artistType _type,List<string> _genres, List<string> _media) : base("", "",_name, _lastName, _gender, _birthday, personType.artist)
         {
             editor = _editor;
             type=_type;
+            media = _media;
             genres = _genres;
             type = _type;
             new Text(_biography, MakeIDs.makeArtistID(this));

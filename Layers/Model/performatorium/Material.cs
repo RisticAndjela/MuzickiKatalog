@@ -19,17 +19,19 @@ namespace muzickiKatalog.Layers.Model.performatorium
         public DateOnly performedDate { get; set; }
         public string genre {  get; set; }
         public List<string> contributors {  get; set; }= new List<string>(); //ids of artists
+        public List<string> media {  get; set; }= new List<string>(); 
         public List<Comment> comments { get; set; } = new List<Comment>();
         public List<StarRating> starRatings { get; set; } = new List<StarRating>();
         public int visits {  get; set; } = 0;
         public string album { get; set; } = null;
         public Material() { }
 
-        public Material(string _editor,string _title,string _genre, DateOnly _publishDate, DateOnly _performedDate, List<string> _contributors, string _description)
+        public Material(string _editor,string _title,string _genre, DateOnly _publishDate, DateOnly _performedDate, List<string> _contributors, List<string> _media, string _description)
         {
             editor = _editor;
             title = _title;
             genre = _genre;
+            media = _media;
             publishDate = _publishDate;
             performedDate = _performedDate;
             contributors = _contributors;

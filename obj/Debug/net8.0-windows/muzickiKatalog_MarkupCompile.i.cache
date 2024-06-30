@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\App.xaml
-15241024150
+19-1890127531
 
-74-745524025
+801104085736
 199787016398
-GUI\MVVM\View\Admin\HomeAdmin.xaml;GUI\MVVM\View\Admin\MakeEditor.xaml;GUI\MVVM\View\Editor\HomeEditor.xaml;GUI\MVVM\View\Editor\MakeArtist.xaml;GUI\MVVM\View\Editor\MakeGroup.xaml;GUI\MVVM\View\General\LogIn.xaml;GUI\MVVM\View\General\MakeMember.xaml;GUI\MVVM\View\Guest\HomeGuest.xaml;GUI\MVVM\View\Member\HomeMember.xaml;GUI\Theme\Borders.xaml;GUI\Theme\Buttons.xaml;GUI\Theme\Colors.xaml;GUI\Theme\Grids.xaml;GUI\Theme\Labels.xaml;GUI\Theme\TextBox.xaml;
+GUI\MVVM\View\Admin\HomeAdmin.xaml;GUI\MVVM\View\Admin\MakeEditor.xaml;GUI\MVVM\View\Controls\ADs.xaml;GUI\MVVM\View\Controls\Listed.xaml;GUI\MVVM\View\Controls\OneList.xaml;GUI\MVVM\View\Controls\SearchFilter.xaml;GUI\MVVM\View\Editor\HomeEditor.xaml;GUI\MVVM\View\Editor\MakeArtist.xaml;GUI\MVVM\View\Editor\MakeGroup.xaml;GUI\MVVM\View\General\LogIn.xaml;GUI\MVVM\View\General\MakeMember.xaml;GUI\MVVM\View\Guest\HomeGuest.xaml;GUI\MVVM\View\Member\HomeMember.xaml;GUI\Theme\Borders.xaml;GUI\Theme\Buttons.xaml;GUI\Theme\Colors.xaml;GUI\Theme\Grids.xaml;GUI\Theme\Labels.xaml;GUI\Theme\TextBox.xaml;
 
 False
 

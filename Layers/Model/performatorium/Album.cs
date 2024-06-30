@@ -9,12 +9,15 @@ namespace muzickiKatalog.Layers.Model.performatorium
         public string description { get; set; }
         public string genre { get; set; }
         public List<string> allMaterials { get; set; }=new List<string>();
+        public List<string> media { get; set; }=new List<string>();
         public List<Comment> allComments { get; set; } = new List<Comment>();
         public List<StarRating> allStarRatings { get; set; } = new List<StarRating>();
 
-        public Album(string name, string genre, List<string> allMaterials, string description)
+        public Album() { }
+        public Album(string name, string genre, List<string> allMaterials, List<string> _media, string description)
         {
             this.name = name;
+            media= _media;
             this.description = description;
             this.genre = genre;
             this.allMaterials = allMaterials;

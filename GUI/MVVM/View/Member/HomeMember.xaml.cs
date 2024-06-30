@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using mn=muzickiKatalog.Layers.Model.contributors;
+using muzickiKatalog.GUI.MVVM.ViewModel;
 
 namespace muzickiKatalog.GUI.MVVM.View.Member
 {
@@ -10,6 +11,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Member
         {
             thisMember = member;
             InitializeComponent();
+            DataContext = new ControlsViewModel();
         }
         private void InfoHandler(object sender, RoutedEventArgs e)
         {

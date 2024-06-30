@@ -13,6 +13,12 @@
     <Compile Update="GUI\MVVM\View\Admin\MakeEditor.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="GUI\MVVM\View\Controls\ADs.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\Controls\OneList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="GUI\MVVM\View\Editor\HomeEditor.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,6 +46,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\Admin\MakeEditor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\Controls\ADs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\Controls\OneList.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\Editor\HomeEditor.xaml">

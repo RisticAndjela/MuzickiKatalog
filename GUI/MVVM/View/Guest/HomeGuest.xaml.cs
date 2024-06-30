@@ -1,4 +1,5 @@
-﻿using System;
+﻿using muzickiKatalog.GUI.MVVM.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,8 @@ namespace muzickiKatalog.GUI.MVVM.View.Guest
         public HomeGuest()
         {
             InitializeComponent();
+            DataContext = new ControlsViewModel();
+
         }
         private void LogInHandler(object sender, RoutedEventArgs e)
         {

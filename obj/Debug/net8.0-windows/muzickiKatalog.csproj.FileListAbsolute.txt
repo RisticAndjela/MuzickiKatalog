@@ -172,3 +172,11 @@ C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projeka
 C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\obj\Debug\net8.0-windows\muzickiKatalog.pdb
 C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\obj\Debug\net8.0-windows\muzickiKatalog.genruntimeconfig.cache
 C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\obj\Debug\net8.0-windows\ref\muzickiKatalog.dll
+C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\obj\Debug\net8.0-windows\GUI\MVVM\View\Controls\Listed.baml
+C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\obj\Debug\net8.0-windows\GUI\MVVM\View\Controls\Listed.g.cs
+C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\obj\Debug\net8.0-windows\GUI\MVVM\View\Controls\SearchFilter.g.cs
+C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\obj\Debug\net8.0-windows\GUI\MVVM\View\Controls\SearchFilter.baml
+C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\obj\Debug\net8.0-windows\GUI\MVVM\View\Controls\ADs.g.cs
+C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\obj\Debug\net8.0-windows\GUI\MVVM\View\Controls\ADs.baml
+C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\obj\Debug\net8.0-windows\GUI\MVVM\View\Controls\OneList.g.cs
+C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\obj\Debug\net8.0-windows\GUI\MVVM\View\Controls\OneList.baml

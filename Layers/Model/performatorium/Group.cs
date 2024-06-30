@@ -15,13 +15,15 @@ namespace muzickiKatalog.Layers.Model.performatorium
         public bool active {  get; set; }
         public List<string> artists { get; set; } = new List<string>();
         public List<string> allMaterials { get; set; }= new List<string>();
+        public List<string> media { get; set; }= new List<string>();
         public List<Comment> allComments {  get; set; }=new List<Comment>();
         public List<StarRating> allStarRatings { get; set; } = new List<StarRating>();
 
         public Group() { }
-        public Group(string _name,DateOnly _started, bool _active,List<string> _artists, string description)
+        public Group(string _name,DateOnly _started, bool _active,List<string> _artists, List<string> _media, string description)
         {
             artists = _artists;
+            media = _media;
             name=_name;
             started=_started;
             active=_active;

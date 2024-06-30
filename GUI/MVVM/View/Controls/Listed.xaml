@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="muzickiKatalog.GUI.MVVM.View.Controls.Listed"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             d:DesignHeight="410" d:DesignWidth="670"
+             Background="{StaticResource BaseColor}">
+        <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!--materials-->
+            <ContentControl Grid.Row="0" Grid.Column="1" x:Name="materials" Content="{Binding ListShowMaterials}" />
+           
+            <!--artists-->
+            <ContentControl Grid.Row="1" Grid.Column="1" x:Name="artists" Content="{Binding ListShowArtists}" />
+
+            <!--albums-->
+            <ContentControl Grid.Row="2" Grid.Column="1" x:Name="albums" Content="{Binding ListShowAlbums}" />
+            
+            <!--group-->
+            <ContentControl Grid.Row="3" Grid.Column="1" x:Name="groups" Content="{Binding ListShowGroups}" />
+        </Grid>
+    </Grid>
+</UserControl>
