@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:muzickiKatalog.GUI.MVVM.View.Member"
+        xmlns:local2="clr-namespace:muzickiKatalog.GUI.Core.Media"
         mc:Ignorable="d"
         Title="HomeMember" Height="600" Width="1000"
         ResizeMode="NoResize"
@@ -23,11 +24,31 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Button Content="REKLAMA" FontWeight="Bold" Foreground="{StaticResource ResourceKey=BaseColor}" Margin="8,15" Background="{StaticResource ResourceKey=LightColor}"/>
-                <Button Content="REKLAMA" FontWeight="Bold" Foreground="{StaticResource ResourceKey=BaseColor}" Grid.Row="1" Margin="8,15" Background="{StaticResource ResourceKey=SecondBoldColor}"/>
-                <Button Content="REKLAMA" FontWeight="Bold" Foreground="{StaticResource ResourceKey=BaseColor}" Grid.Row="2" Margin="8,15" Background="{StaticResource ResourceKey=WarmColor}"/>
-                <Button Content="REKLAMA" FontWeight="Bold" Foreground="{StaticResource ResourceKey=BaseColor}" Grid.Row="3" Margin="8,15" Background="{StaticResource ResourceKey=LightColor}"/>
-                <Button Content="REKLAMA" FontWeight="Bold" Foreground="{StaticResource ResourceKey=BaseColor}" Grid.Row="4" Margin="8,15" Background="{StaticResource ResourceKey=BoldColor}"/>
+                <Button Margin="8,15">
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static local2:ImagePaths.ad1}}"  />
+                    </StackPanel>
+                </Button>
+                <Button Grid.Row="1"  Margin="8,15">
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static local2:ImagePaths.ad2}}" />
+                    </StackPanel>
+                </Button>
+                <Button Grid.Row="2"  Margin="8,15">
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static local2:ImagePaths.ad3}}"  />
+                    </StackPanel>
+                </Button>
+                <Button Grid.Row="3"  Margin="8,15">
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static local2:ImagePaths.ad4}}" />
+                    </StackPanel>
+                </Button>
+                <Button Grid.Row="4"  Margin="8,15">
+                    <StackPanel>
+                        <Image Source="{Binding Source={x:Static local2:ImagePaths.ad5}}" />
+                    </StackPanel>
+                </Button>
             </Grid>
         </DockPanel>
         <DockPanel x:Name="menu" Margin="200,80,10,450">

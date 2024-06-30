@@ -10,7 +10,7 @@ namespace muzickiKatalog.Layers.Service.performatorium
 {
     public class MaterialService
     {
-        public static Dictionary<string, Material> getPopular()
+        public static Dictionary<string, Material> get10Popular()
         {
             Dictionary<string, Material> popular = new Dictionary<string, Material>();
             Dictionary<string, Material> all = MaterialRepository.getAll();

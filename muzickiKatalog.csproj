@@ -15,6 +15,7 @@
   <ItemGroup>
     <Folder Include="GUI\MVVM\ViewModel\" />
     <Folder Include="GUI\MVVM\View\Material\" />
+    <Folder Include="Layers\media\" />
   </ItemGroup>
 
 </Project>
