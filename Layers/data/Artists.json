@@ -1,0 +1,614 @@
+{
+  "John_Doe_7/15/1985": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "jazz"
+    ],
+    "groups": [],
+    "materials": [
+      "Understanding Jazz Improvisation:Doe-Brown-Lee-",
+      "The Impact of Digital Technology on Music Production:Doe-Lee-",
+      "Exploring World Music Traditions:Doe-",
+      "Film Scoring Techniques:Doe-",
+      "Beethoven's Symphony No. 9: 'Ode to Joy':Doe-",
+      "Puccini's 'La Bohème' Opera:Doe-",
+      "The Rolling Stones: 'Exile on Main St.' Album:Doe-Robinson-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "John",
+    "lastName": "Doe",
+    "gender": 0,
+    "birthday": "1985-07-15"
+  },
+  "Jane_Smith_3/22/1990": {
+    "editor": "nicole@editor.com",
+    "type": 1,
+    "genres": [
+      "rock"
+    ],
+    "groups": [],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Jane",
+    "lastName": "Smith",
+    "gender": 1,
+    "birthday": "1990-03-22"
+  },
+  "Michael_Johnson_9/5/1982": {
+    "editor": "nicole@editor.com",
+    "type": 2,
+    "genres": [
+      "classical"
+    ],
+    "groups": [],
+    "materials": [
+      "Johann Strauss II: 'The Blue Danube' Waltz:Johnson-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Michael",
+    "lastName": "Johnson",
+    "gender": 0,
+    "birthday": "1982-09-05"
+  },
+  "Emily_Davis_12/10/1987": {
+    "editor": "nicole@editor.com",
+    "type": 3,
+    "genres": [
+      "classical",
+      "hiphop"
+    ],
+    "groups": [],
+    "materials": [
+      "The Psychology of Music:Davis-Martinez-",
+      "Miles Davis: 'Kind of Blue' Album:Davis-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Emily",
+    "lastName": "Davis",
+    "gender": 1,
+    "birthday": "1987-12-10"
+  },
+  "David_Brown_5/3/1978": {
+    "editor": "nicole@editor.com",
+    "type": 4,
+    "genres": [
+      "country"
+    ],
+    "groups": [],
+    "materials": [
+      "The History of Classical Music:Brown-",
+      "Understanding Jazz Improvisation:Doe-Brown-Lee-",
+      "The Business of Music:Brown-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "David",
+    "lastName": "Brown",
+    "gender": 0,
+    "birthday": "1978-05-03"
+  },
+  "Sarah_Garcia_11/18/1989": {
+    "editor": "nicole@editor.com",
+    "type": 5,
+    "genres": [
+      "pop",
+      "blues"
+    ],
+    "groups": [],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Sarah",
+    "lastName": "Garcia",
+    "gender": 1,
+    "birthday": "1989-11-18"
+  },
+  "Alex_Martinez_2/28/1983": {
+    "editor": "nicole@editor.com",
+    "type": 6,
+    "genres": [
+      "electronic"
+    ],
+    "groups": [],
+    "materials": [
+      "Introduction to Music Theory:Martinez-",
+      "The Evolution of Rock Music:Martinez-",
+      "The Psychology of Music:Davis-Martinez-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Alex",
+    "lastName": "Martinez",
+    "gender": 0,
+    "birthday": "1983-02-28"
+  },
+  "Jessica_Robinson_8/7/1984": {
+    "editor": "nicole@editor.com",
+    "type": 7,
+    "genres": [
+      "hiphop",
+      "rap"
+    ],
+    "groups": [],
+    "materials": [
+      "The Role of the Conductor:Robinson-",
+      "The Rolling Stones: 'Exile on Main St.' Album:Doe-Robinson-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Jessica",
+    "lastName": "Robinson",
+    "gender": 1,
+    "birthday": "1984-08-07"
+  },
+  "Mark_Wilson_10/12/1981": {
+    "editor": "nicole@editor.com",
+    "type": 1,
+    "genres": [
+      "folk",
+      "rnb"
+    ],
+    "groups": [],
+    "materials": [
+      "The Beatles: 'Sgt. Pepper's Lonely Hearts Club Band' Album:Wilson-",
+      "Woodstock Music Festival 1969: Cultural Impact and Legacy:Wilson-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Mark",
+    "lastName": "Wilson",
+    "gender": 0,
+    "birthday": "1981-10-12"
+  },
+  "Rachel_Lee_6/25/1986": {
+    "editor": "nicole@editor.com",
+    "type": 3,
+    "genres": [
+      "classical",
+      "jazz"
+    ],
+    "groups": [],
+    "materials": [
+      "Understanding Jazz Improvisation:Doe-Brown-Lee-",
+      "The Impact of Digital Technology on Music Production:Doe-Lee-",
+      "Mozart's 'The Magic Flute' Opera:Lee-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Rachel",
+    "lastName": "Lee",
+    "gender": 1,
+    "birthday": "1986-06-25"
+  },
+  "Roger_Waters_9/6/1943": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "progressive rock",
+      "psychedelic rock"
+    ],
+    "groups": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "materials": [
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Roger",
+    "lastName": "Waters",
+    "gender": 0,
+    "birthday": "1943-09-06"
+  },
+  "David_Gilmour_3/6/1946": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "progressive rock",
+      "psychedelic rock"
+    ],
+    "groups": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "materials": [
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "David",
+    "lastName": "Gilmour",
+    "gender": 0,
+    "birthday": "1946-03-06"
+  },
+  "Nick_Mason_1/27/1944": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "progressive rock",
+      "psychedelic rock"
+    ],
+    "groups": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "materials": [
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Nick",
+    "lastName": "Mason",
+    "gender": 0,
+    "birthday": "1944-01-27"
+  },
+  "Richard_Wright_7/28/1943": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "progressive rock",
+      "psychedelic rock"
+    ],
+    "groups": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "materials": [
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Richard",
+    "lastName": "Wright",
+    "gender": 0,
+    "birthday": "1943-07-28"
+  },
+  "Syd_Barrett_1/6/1946": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "psychedelic rock"
+    ],
+    "groups": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "materials": [
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Syd",
+    "lastName": "Barrett",
+    "gender": 0,
+    "birthday": "1946-01-06"
+  },
+  "John_Lennon_10/9/1940": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "groups": [
+      "The Beatles:Lennon-McCartney-Harrison-Starr-"
+    ],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "John",
+    "lastName": "Lennon",
+    "gender": 0,
+    "birthday": "1940-10-09"
+  },
+  "Paul_McCartney_6/18/1942": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "groups": [
+      "The Beatles:Lennon-McCartney-Harrison-Starr-"
+    ],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Paul",
+    "lastName": "McCartney",
+    "gender": 0,
+    "birthday": "1942-06-18"
+  },
+  "George_Harrison_2/25/1943": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "groups": [
+      "The Beatles:Lennon-McCartney-Harrison-Starr-"
+    ],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "George",
+    "lastName": "Harrison",
+    "gender": 0,
+    "birthday": "1943-02-25"
+  },
+  "Ringo_Starr_7/7/1940": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "groups": [
+      "The Beatles:Lennon-McCartney-Harrison-Starr-"
+    ],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Ringo",
+    "lastName": "Starr",
+    "gender": 0,
+    "birthday": "1940-07-07"
+  },
+  "Mick_Jagger_7/26/1943": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "rock",
+      "blues"
+    ],
+    "groups": [
+      "The Rolling Stones:Jagger-Richards-Watts-Wood-"
+    ],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Mick",
+    "lastName": "Jagger",
+    "gender": 0,
+    "birthday": "1943-07-26"
+  },
+  "Keith_Richards_12/18/1943": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "rock",
+      "blues"
+    ],
+    "groups": [
+      "The Rolling Stones:Jagger-Richards-Watts-Wood-"
+    ],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Keith",
+    "lastName": "Richards",
+    "gender": 0,
+    "birthday": "1943-12-18"
+  },
+  "Charlie_Watts_6/2/1941": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "rock",
+      "blues"
+    ],
+    "groups": [
+      "The Rolling Stones:Jagger-Richards-Watts-Wood-"
+    ],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Charlie",
+    "lastName": "Watts",
+    "gender": 0,
+    "birthday": "1941-06-02"
+  },
+  "Ronnie_Wood_6/1/1947": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "rock",
+      "blues"
+    ],
+    "groups": [
+      "The Rolling Stones:Jagger-Richards-Watts-Wood-"
+    ],
+    "materials": [],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Ronnie",
+    "lastName": "Wood",
+    "gender": 0,
+    "birthday": "1947-06-01"
+  },
+  "Elvis_Presley_1/8/1935": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "rock",
+      "gospel",
+      "blues"
+    ],
+    "groups": [],
+    "materials": [
+      "Elvis Presley's 'Can't Help Falling in Love':Presley-",
+      "Elvis Presley's 'Jailhouse Rock':Presley-",
+      "Elvis Presley's 'Suspicious Minds':Presley-",
+      "Elvis Presley's 'Heartbreak Hotel':Presley-",
+      "Elvis Presley's 'Love Me Tender':Presley-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Elvis",
+    "lastName": "Presley",
+    "gender": 0,
+    "birthday": "1935-01-08"
+  },
+  "Michael_Jackson_8/29/1958": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "pop",
+      "R&B"
+    ],
+    "groups": [],
+    "materials": [
+      "Michael Jackson's 'Billie Jean':Jackson-",
+      "Michael Jackson's 'Thriller':Jackson-",
+      "Michael Jackson's 'Beat It':Jackson-",
+      "Michael Jackson's 'Smooth Criminal':Jackson-",
+      "Michael Jackson's 'Man in the Mirror':Jackson-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Michael",
+    "lastName": "Jackson",
+    "gender": 0,
+    "birthday": "1958-08-29"
+  },
+  "Bob_Dylan_5/24/1941": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "folk",
+      "rock"
+    ],
+    "groups": [],
+    "materials": [
+      "Bob Dylan's 'Like a Rolling Stone':Dylan-",
+      "Bob Dylan's 'Blowin' in the Wind':Dylan-",
+      "Bob Dylan's 'The Times They Are A-Changin':Dylan-",
+      "Bob Dylan's 'Knockin' on Heaven's Door':Dylan-",
+      "Bob Dylan's 'Mr. Tambourine Man':Dylan-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Bob",
+    "lastName": "Dylan",
+    "gender": 0,
+    "birthday": "1941-05-24"
+  },
+  "Aretha_Franklin_3/25/1942": {
+    "editor": "nicole@editor.com",
+    "type": 0,
+    "genres": [
+      "soul",
+      "R&B"
+    ],
+    "groups": [],
+    "materials": [
+      "Aretha Franklin's 'Respect':Franklin-",
+      "Aretha Franklin's 'Natural Woman':Franklin-",
+      "Aretha Franklin's 'Chain of Fools':Franklin-",
+      "Aretha Franklin's 'Think':Franklin-"
+    ],
+    "biographyComments": [],
+    "biographyStarRatings": [],
+    "name": "Aretha",
+    "lastName": "Franklin",
+    "gender": 1,
+    "birthday": "1942-03-25"
+  }
+}

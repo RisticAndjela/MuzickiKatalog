@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using mn=muzickiKatalog.Model.Domain.contributors;
+using mn=muzickiKatalog.Layers.Model.contributors;
 
 namespace muzickiKatalog.GUI.MVVM.View.Member
 {
@@ -38,7 +38,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Member
             InfoPanel.Visibility = Visibility.Hidden;
 
         }
-        private void SearcHandler(object sender, RoutedEventArgs e)
+        private void SearchHandler(object sender, RoutedEventArgs e)
         {
             contentPanelSearch.Visibility = Visibility.Visible;
             contentPanelCategories.Visibility = Visibility.Hidden;

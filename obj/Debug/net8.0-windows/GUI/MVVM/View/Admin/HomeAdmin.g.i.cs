@@ -61,7 +61,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Admin {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/muzickiKatalog;V1.0.0.0;component/gui/mvvm/view/admin/homeadmin.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/muzickiKatalog;component/gui/mvvm/view/admin/homeadmin.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\..\GUI\MVVM\View\Admin\HomeAdmin.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

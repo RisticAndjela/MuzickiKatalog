@@ -9,9 +9,9 @@ using muzickiKatalog.GUI.MVVM.View.Guest;
 using muzickiKatalog.GUI.MVVM.View.Admin;
 using muzickiKatalog.GUI.MVVM.View.Member;
 using muzickiKatalog.GUI.MVVM.View.Editor;
-using muzickiKatalog.Model.support.IDparser;
-using muzickiKatalog.Model.support;
-using nm=muzickiKatalog.Model.Domain.contributors;
+using muzickiKatalog.Layers.support.IDparser;
+using muzickiKatalog.Layers.support;
+using nm=muzickiKatalog.Layers.Model.contributors;
 using System.ComponentModel;
 
 namespace muzickiKatalog.GUI.MVVM.View.General

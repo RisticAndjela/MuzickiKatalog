@@ -52,7 +52,7 @@ namespace GUI.Theme {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/muzickiKatalog;V1.0.0.0;component/gui/theme/grids.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/muzickiKatalog;component/gui/theme/grids.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\GUI\Theme\Grids.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

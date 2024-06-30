@@ -1,4 +1,4 @@
-﻿using muzickiKatalog.Model.support;
+﻿using muzickiKatalog.Layers.support;
 using System.Configuration;
 using System.Data;
 using System.Windows;

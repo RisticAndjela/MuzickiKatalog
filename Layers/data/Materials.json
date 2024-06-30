@@ -1,0 +1,665 @@
+{
+  "Introduction to Music Theory:Martinez-": {
+    "editor": "nicole@editor.com",
+    "title": "Introduction to Music Theory",
+    "publishDate": "2024-06-30",
+    "performedDate": "2002-12-12",
+    "genre": "music theory",
+    "contributors": [
+      "Alex_Martinez_2/28/1983"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "The History of Classical Music:Brown-": {
+    "editor": "nicole@editor.com",
+    "title": "The History of Classical Music",
+    "publishDate": "2024-06-30",
+    "performedDate": "1998-09-20",
+    "genre": "classical",
+    "contributors": [
+      "David_Brown_5/3/1978"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Understanding Jazz Improvisation:Doe-Brown-Lee-": {
+    "editor": "nicole@editor.com",
+    "title": "Understanding Jazz Improvisation",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "jazz",
+    "contributors": [
+      "John_Doe_7/15/1985",
+      "David_Brown_5/3/1978",
+      "Rachel_Lee_6/25/1986"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "The Evolution of Rock Music:Martinez-": {
+    "editor": "nicole@editor.com",
+    "title": "The Evolution of Rock Music",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "rock",
+    "contributors": [
+      "Alex_Martinez_2/28/1983"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "The Role of the Conductor:Robinson-": {
+    "editor": "nicole@editor.com",
+    "title": "The Role of the Conductor",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "orchestra",
+    "contributors": [
+      "Jessica_Robinson_8/7/1984"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "The Impact of Digital Technology on Music Production:Doe-Lee-": {
+    "editor": "nicole@editor.com",
+    "title": "The Impact of Digital Technology on Music Production",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "music theory",
+    "contributors": [
+      "John_Doe_7/15/1985",
+      "Rachel_Lee_6/25/1986"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Exploring World Music Traditions:Doe-": {
+    "editor": "nicole@editor.com",
+    "title": "Exploring World Music Traditions",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "world",
+    "contributors": [
+      "John_Doe_7/15/1985"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "The Psychology of Music:Davis-Martinez-": {
+    "editor": "nicole@editor.com",
+    "title": "The Psychology of Music",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "music theory",
+    "contributors": [
+      "Emily_Davis_12/10/1987",
+      "Alex_Martinez_2/28/1983"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Film Scoring Techniques:Doe-": {
+    "editor": "nicole@editor.com",
+    "title": "Film Scoring Techniques",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "music theory",
+    "contributors": [
+      "John_Doe_7/15/1985"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "The Business of Music:Brown-": {
+    "editor": "nicole@editor.com",
+    "title": "The Business of Music",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "music theory",
+    "contributors": [
+      "David_Brown_5/3/1978"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Mozart's 'The Magic Flute' Opera:Lee-": {
+    "editor": "nicole@editor.com",
+    "title": "Mozart's 'The Magic Flute' Opera",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "opera",
+    "contributors": [
+      "Rachel_Lee_6/25/1986"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Beethoven's Symphony No. 9: 'Ode to Joy':Doe-": {
+    "editor": "nicole@editor.com",
+    "title": "Beethoven's Symphony No. 9: 'Ode to Joy'",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "classical",
+    "contributors": [
+      "John_Doe_7/15/1985"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "The Beatles: 'Sgt. Pepper's Lonely Hearts Club Band' Album:Wilson-": {
+    "editor": "nicole@editor.com",
+    "title": "The Beatles: 'Sgt. Pepper's Lonely Hearts Club Band' Album",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "rock",
+    "contributors": [
+      "Mark_Wilson_10/12/1981"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Miles Davis: 'Kind of Blue' Album:Davis-": {
+    "editor": "nicole@editor.com",
+    "title": "Miles Davis: 'Kind of Blue' Album",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "jazz",
+    "contributors": [
+      "Emily_Davis_12/10/1987"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Puccini's 'La Bohème' Opera:Doe-": {
+    "editor": "nicole@editor.com",
+    "title": "Puccini's 'La Bohème' Opera",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "opera",
+    "contributors": [
+      "John_Doe_7/15/1985"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Woodstock Music Festival 1969: Cultural Impact and Legacy:Wilson-": {
+    "editor": "nicole@editor.com",
+    "title": "Woodstock Music Festival 1969: Cultural Impact and Legacy",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "rock",
+    "contributors": [
+      "Mark_Wilson_10/12/1981"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "The Rolling Stones: 'Exile on Main St.' Album:Doe-Robinson-": {
+    "editor": "nicole@editor.com",
+    "title": "The Rolling Stones: 'Exile on Main St.' Album",
+    "publishDate": "2024-06-30",
+    "performedDate": "2005-03-10",
+    "genre": "rock",
+    "contributors": [
+      "John_Doe_7/15/1985",
+      "Jessica_Robinson_8/7/1984"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Johann Strauss II: 'The Blue Danube' Waltz:Johnson-": {
+    "editor": "nicole@editor.com",
+    "title": "Johann Strauss II: 'The Blue Danube' Waltz",
+    "publishDate": "2024-06-30",
+    "performedDate": "2006-11-12",
+    "genre": "classical",
+    "contributors": [
+      "Michael_Johnson_9/5/1982"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Speak to Me:Pink Floyd": {
+    "editor": "nicole@editor.com",
+    "title": "Speak to Me",
+    "publishDate": "2024-06-30",
+    "performedDate": "2002-12-12",
+    "genre": "blues",
+    "contributors": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+  },
+  "Breathe:Pink Floyd": {
+    "editor": "nicole@editor.com",
+    "title": "Breathe",
+    "publishDate": "2024-06-30",
+    "performedDate": "2002-12-12",
+    "genre": "blues",
+    "contributors": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+  },
+  "On the Run:Pink Floyd": {
+    "editor": "nicole@editor.com",
+    "title": "On the Run",
+    "publishDate": "2024-06-30",
+    "performedDate": "2002-12-12",
+    "genre": "blues",
+    "contributors": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+  },
+  "Time:Pink Floyd": {
+    "editor": "nicole@editor.com",
+    "title": "Time",
+    "publishDate": "2024-06-30",
+    "performedDate": "2002-12-12",
+    "genre": "blues",
+    "contributors": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+  },
+  "The Great Gig in the Sky:Pink Floyd": {
+    "editor": "nicole@editor.com",
+    "title": "The Great Gig in the Sky",
+    "publishDate": "2024-06-30",
+    "performedDate": "2002-12-12",
+    "genre": "blues",
+    "contributors": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+  },
+  "Money:Pink Floyd": {
+    "editor": "nicole@editor.com",
+    "title": "Money",
+    "publishDate": "2024-06-30",
+    "performedDate": "2002-12-12",
+    "genre": "blues",
+    "contributors": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+  },
+  "Us and Them:Pink Floyd": {
+    "editor": "nicole@editor.com",
+    "title": "Us and Them",
+    "publishDate": "2024-06-30",
+    "performedDate": "2002-12-12",
+    "genre": "blues",
+    "contributors": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+  },
+  "Any Colour You Like:Pink Floyd": {
+    "editor": "nicole@editor.com",
+    "title": "Any Colour You Like",
+    "publishDate": "2024-06-30",
+    "performedDate": "2002-12-12",
+    "genre": "blues",
+    "contributors": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+  },
+  "Brain Damage:Pink Floyd": {
+    "editor": "nicole@editor.com",
+    "title": "Brain Damage",
+    "publishDate": "2024-06-30",
+    "performedDate": "2002-12-12",
+    "genre": "blues",
+    "contributors": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+  },
+  "Eclipse:Pink Floyd": {
+    "editor": "nicole@editor.com",
+    "title": "Eclipse",
+    "publishDate": "2024-06-30",
+    "performedDate": "2002-12-12",
+    "genre": "blues",
+    "contributors": [
+      "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+  },
+  "Elvis Presley's 'Can't Help Falling in Love':Presley-": {
+    "editor": "nicole@editor.com",
+    "title": "Elvis Presley's 'Can't Help Falling in Love'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1961-10-01",
+    "genre": "rock",
+    "contributors": [
+      "Elvis_Presley_1/8/1935"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Elvis Presley's 'Jailhouse Rock':Presley-": {
+    "editor": "nicole@editor.com",
+    "title": "Elvis Presley's 'Jailhouse Rock'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1957-09-24",
+    "genre": "rock",
+    "contributors": [
+      "Elvis_Presley_1/8/1935"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Elvis Presley's 'Suspicious Minds':Presley-": {
+    "editor": "nicole@editor.com",
+    "title": "Elvis Presley's 'Suspicious Minds'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1969-08-26",
+    "genre": "rock",
+    "contributors": [
+      "Elvis_Presley_1/8/1935"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Elvis Presley's 'Heartbreak Hotel':Presley-": {
+    "editor": "nicole@editor.com",
+    "title": "Elvis Presley's 'Heartbreak Hotel'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1956-01-27",
+    "genre": "rock",
+    "contributors": [
+      "Elvis_Presley_1/8/1935"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Elvis Presley's 'Love Me Tender':Presley-": {
+    "editor": "nicole@editor.com",
+    "title": "Elvis Presley's 'Love Me Tender'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1956-09-28",
+    "genre": "rock",
+    "contributors": [
+      "Elvis_Presley_1/8/1935"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Michael Jackson's 'Billie Jean':Jackson-": {
+    "editor": "nicole@editor.com",
+    "title": "Michael Jackson's 'Billie Jean'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1982-01-02",
+    "genre": "pop",
+    "contributors": [
+      "Michael_Jackson_8/29/1958"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Michael Jackson's 'Thriller':Jackson-": {
+    "editor": "nicole@editor.com",
+    "title": "Michael Jackson's 'Thriller'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1983-11-30",
+    "genre": "pop",
+    "contributors": [
+      "Michael_Jackson_8/29/1958"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Michael Jackson's 'Beat It':Jackson-": {
+    "editor": "nicole@editor.com",
+    "title": "Michael Jackson's 'Beat It'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1983-02-14",
+    "genre": "pop",
+    "contributors": [
+      "Michael_Jackson_8/29/1958"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Michael Jackson's 'Smooth Criminal':Jackson-": {
+    "editor": "nicole@editor.com",
+    "title": "Michael Jackson's 'Smooth Criminal'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1987-10-24",
+    "genre": "pop",
+    "contributors": [
+      "Michael_Jackson_8/29/1958"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Michael Jackson's 'Man in the Mirror':Jackson-": {
+    "editor": "nicole@editor.com",
+    "title": "Michael Jackson's 'Man in the Mirror'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1988-01-16",
+    "genre": "pop",
+    "contributors": [
+      "Michael_Jackson_8/29/1958"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Bob Dylan's 'Like a Rolling Stone':Dylan-": {
+    "editor": "nicole@editor.com",
+    "title": "Bob Dylan's 'Like a Rolling Stone'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1965-07-20",
+    "genre": "rock",
+    "contributors": [
+      "Bob_Dylan_5/24/1941"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Bob Dylan's 'Blowin' in the Wind':Dylan-": {
+    "editor": "nicole@editor.com",
+    "title": "Bob Dylan's 'Blowin' in the Wind'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1963-04-16",
+    "genre": "folk",
+    "contributors": [
+      "Bob_Dylan_5/24/1941"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Bob Dylan's 'The Times They Are A-Changin':Dylan-": {
+    "editor": "nicole@editor.com",
+    "title": "Bob Dylan's 'The Times They Are A-Changin'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1964-01-13",
+    "genre": "folk",
+    "contributors": [
+      "Bob_Dylan_5/24/1941"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Bob Dylan's 'Knockin' on Heaven's Door':Dylan-": {
+    "editor": "nicole@editor.com",
+    "title": "Bob Dylan's 'Knockin' on Heaven's Door'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1973-07-12",
+    "genre": "rock",
+    "contributors": [
+      "Bob_Dylan_5/24/1941"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Bob Dylan's 'Mr. Tambourine Man':Dylan-": {
+    "editor": "nicole@editor.com",
+    "title": "Bob Dylan's 'Mr. Tambourine Man'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1965-04-12",
+    "genre": "folk",
+    "contributors": [
+      "Bob_Dylan_5/24/1941"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Aretha Franklin's 'Respect':Franklin-": {
+    "editor": "nicole@editor.com",
+    "title": "Aretha Franklin's 'Respect'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1967-04-29",
+    "genre": "soul",
+    "contributors": [
+      "Aretha_Franklin_3/25/1942"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Aretha Franklin's 'Natural Woman':Franklin-": {
+    "editor": "nicole@editor.com",
+    "title": "Aretha Franklin's 'Natural Woman'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1967-09-22",
+    "genre": "soul",
+    "contributors": [
+      "Aretha_Franklin_3/25/1942"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Aretha Franklin's 'Chain of Fools':Franklin-": {
+    "editor": "nicole@editor.com",
+    "title": "Aretha Franklin's 'Chain of Fools'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1967-11-21",
+    "genre": "soul",
+    "contributors": [
+      "Aretha_Franklin_3/25/1942"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  },
+  "Aretha Franklin's 'Think':Franklin-": {
+    "editor": "nicole@editor.com",
+    "title": "Aretha Franklin's 'Think'",
+    "publishDate": "2024-06-30",
+    "performedDate": "1968-05-02",
+    "genre": "soul",
+    "contributors": [
+      "Aretha_Franklin_3/25/1942"
+    ],
+    "comments": [],
+    "starRatings": [],
+    "visits": 0,
+    "album": null
+  }
+}

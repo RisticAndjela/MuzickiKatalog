@@ -11,6 +11,7 @@
         Background="Transparent"
         AllowsTransparency="True">
     <Grid>
+        <!--frame-->
         <ContentControl Template="{StaticResource ResourceKey=pozadina}"/>
         <Label Content="WELCOME BACK" FontSize="40" Margin="90,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
         <DockPanel x:Name="reklame" Margin="10,30,800,30">
@@ -41,10 +42,11 @@
                 <Button Content="SUGGESTED" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="SuggestedHandler"/>
                 <Button Content="FOLOWING" Grid.Column="1" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="FollowingHandler"/>
                 <Button Content="POPULAR"  Grid.Column="2" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="PopularHandler"/>
-                <Button Content="SEARCH" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="SearcHandler"/>
+                <Button Content="SEARCH" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="SearchHandler"/>
                 <Button Content="MY INFO" Grid.Column="4" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="InfoHandler"/>
             </Grid>
         </DockPanel>
+        <!--panel for suggested following and popular content-->
         <DockPanel x:Name="contentPanelCategories" Visibility="Hidden" Margin="210,160,20,30">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -98,7 +100,7 @@
                 <Label x:Name="labelC3" Grid.Column="3" Grid.Row="5" HorizontalContentAlignment="Center" Content="C3" Style="{StaticResource ResourceKey=regularLabel}"/>
             </Grid>
         </DockPanel>
-
+        <!--panel for search and filter-->
         <DockPanel x:Name="contentPanelSearch" Visibility="Hidden" Margin="210,160,20,30">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -179,7 +181,7 @@
 
             </Grid>
         </DockPanel>
-
+        <!--panel about informations of a member-->
         <DockPanel x:Name="InfoPanel" Visibility="Hidden" Margin="210,160,20,30">
             <Grid>
                 <Grid.ColumnDefinitions>

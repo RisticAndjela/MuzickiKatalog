@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\New folder\obj\Debug\net8.0-windows\
+C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\obj\Debug\net8.0-windows\
 muzickiKatalog
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\New folder\App.xaml
+C:\Users\User\Documents\4. semestar\specifikacija i modeliranje\projekat\projekat git\MuzickiKatalog\App.xaml
 15241024150
 
-342065308070
+71-1262648834
 199787016398
 GUI\MVVM\View\Admin\HomeAdmin.xaml;GUI\MVVM\View\Admin\MakeEditor.xaml;GUI\MVVM\View\Editor\HomeEditor.xaml;GUI\MVVM\View\Editor\MakeArtist.xaml;GUI\MVVM\View\Editor\MakeGroup.xaml;GUI\MVVM\View\General\LogIn.xaml;GUI\MVVM\View\General\MakeMember.xaml;GUI\MVVM\View\Guest\HomeGuest.xaml;GUI\MVVM\View\Member\HomeMember.xaml;GUI\Theme\Borders.xaml;GUI\Theme\Buttons.xaml;GUI\Theme\Colors.xaml;GUI\Theme\Grids.xaml;GUI\Theme\Labels.xaml;GUI\Theme\TextBox.xaml;
 

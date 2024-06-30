@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\2. semestar\\objektno\\MuzickiKatalog\\muzickiKatalog.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\muzickiKatalog.csproj",
       "projectName": "muzickiKatalog",
-      "projectPath": "C:\\Users\\User\\Documents\\2. semestar\\objektno\\MuzickiKatalog\\muzickiKatalog.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\muzickiKatalog.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\2. semestar\\objektno\\MuzickiKatalog\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
