@@ -23,6 +23,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Guest
         public HomeGuest()
         {
             InitializeComponent();
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             DataContext = new ControlsViewModel();
 
         }
@@ -40,5 +41,6 @@ namespace muzickiKatalog.GUI.MVVM.View.Guest
             contentPanelSearch.Visibility = Visibility.Hidden;
             contentPanelPopular.Visibility = Visibility.Visible;
         }
+        
     }
 }

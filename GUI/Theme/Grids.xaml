@@ -18,5 +18,21 @@
             <Button x:Name="buttonExit" Grid.Column="3" Content="x" Style="{StaticResource circleButton}" Click="ButtonExit_Click"/>
         </Grid>
     </ControlTemplate>
+    <ControlTemplate x:Key="pozadinaClose" TargetType="{x:Type ContentControl}">
+        <Grid Background="{StaticResource BaseColor}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="25"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="buttonMinimize" Grid.Column="2" Content="_" Style="{StaticResource circleButton}" Click="ButtonMinimize_Click"/>
+            <Button x:Name="buttonExit" Grid.Column="3" Content="x" Style="{StaticResource circleButton}" Click="ButtonClose_Click"/>
+        </Grid>
+    </ControlTemplate>
 
 </ResourceDictionary>

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using muzickiKatalog.GUI.MVVM.View.Documentation;
+using muzickiKatalog.Layers.Model.performatorium;
+using muzickiKatalog.Layers.support.IDparser;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,12 +26,46 @@ namespace muzickiKatalog.GUI.MVVM.View.Controls
         public Dictionary<string, Tuple<string, string>> all = new Dictionary<string, Tuple<string, string>>();
         public int numberOfPage { get; set; } = 0;
         public int numberOfItemsOnPage { get; set; } = 0;
+        public Type type { get; set; }
 
-        public OneList(Dictionary<string, Tuple<string, string>> _all)
+        public OneList(Dictionary<string, Tuple<string, string>> _all, Type _type)
         {
             InitializeComponent();
             all = _all;
+            type = _type;
             fillTableWithData(all);
+        }
+        private void open(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                string key = button.Tag as string;
+                if (all.ContainsKey(key))
+                {
+                    if (type == typeof(Artist))
+                    {
+                        ArtistView view = new ArtistView(GetFromIDs<Artist>.get(key, GlobalVariables.artistsFile).Item2);
+                        view.Show();
+                    }
+                    else if (type == typeof(Group))
+                    {
+                        GroupView view = new GroupView(GetFromIDs<Group>.get(key, GlobalVariables.groupsFile).Item2);
+                        view.Show();
+                    }
+                    else if (type == typeof(Album))
+                    {
+                        AlbumView view = new AlbumView(GetFromIDs<Album>.get(key, GlobalVariables.albumsFile).Item2);
+                        view.Show();
+                    }
+                    else if (type == typeof(Material))
+                    {
+                        MaterialView view = new MaterialView(GetFromIDs<Material>.get(key, GlobalVariables.materialsFile).Item2);
+                        view.Show();
+                    }
+                    
+                }
+            }
         }
         private void ButtonNextPage(object sender, RoutedEventArgs e)
         {
@@ -59,12 +96,15 @@ namespace muzickiKatalog.GUI.MVVM.View.Controls
                     bitmap.EndInit();
                     image.Source = bitmap;
                 }
+                Button button = (Button)FindName($"picture{localCounter}");
+                button.IsHitTestVisible = true; 
+                button.Tag = key;
                 localCounter++;
             }
             numberOfItemsOnPage = localCounter;
             UpdateNavigationButtons();
         }
-
+        
         public void ClearAllLabels()
         {
 
@@ -73,7 +113,9 @@ namespace muzickiKatalog.GUI.MVVM.View.Controls
                 ((Label)FindName($"label{i}")).Content = "";
                 Image image = (Image)FindName($"image{i}");
                 if (image != null) image.Source = null;
-            
+                Button button = (Button)FindName($"picture{i}");
+                button.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#4C443C"));
+                button.BorderThickness = new Thickness(0);
             }
         }
 

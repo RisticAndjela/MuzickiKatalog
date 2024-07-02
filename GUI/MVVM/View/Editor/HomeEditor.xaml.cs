@@ -23,6 +23,8 @@ namespace muzickiKatalog.GUI.MVVM.View.Editor
         public HomeEditor()
         {
             InitializeComponent();
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+
         }
         private void ApproveReviewsHandler(object sender, RoutedEventArgs e) {
             ApproveReviewsPanel.Visibility = Visibility.Visible;

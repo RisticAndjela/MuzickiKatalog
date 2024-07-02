@@ -51,21 +51,29 @@
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="BorderBrush" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Margin" Value="30,10"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <ContentPresenter/>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="{StaticResource SecondBoldColor}"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
 
     <Style TargetType="ToggleButton" x:Key="StarToggleButtonStyle">
-        <Setter Property="ContentTemplate">
-            <Setter.Value>
-                <DataTemplate>
-                    <TextBlock Text="{Binding}" FontSize="20"/>
-                </DataTemplate>
-            </Setter.Value>
-        </Setter>
+        
         <Setter Property="FontSize" Value="20"/>
         <Setter Property="Margin" Value="2"/>
         <Setter Property="Padding" Value="0"/>
-        <Setter Property="Foreground" Value="{StaticResource BaseColor}"/>
+        <Setter Property="Foreground" Value="DarkGoldenrod"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ToggleButton">
@@ -75,7 +83,7 @@
                             <Setter Property="Foreground" Value="Gold"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Foreground" Value="DarkGoldenrod"/>
+                            <Setter Property="Foreground" Value="LightGoldenrodYellow"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="muzickiKatalog.GUI.MVVM.View.Controls.ReviewSection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:muzickiKatalog.GUI.MVVM.View.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="790">
+    <Grid Background="{StaticResource BaseColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Reviews section" Style="{StaticResource regularLabel}" FontSize="19" Margin="0,10,0,10"/>
+        <Grid Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="38"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="Leave review:" Style="{StaticResource regularLabel}"/>
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <ToggleButton x:Name="Star1" Content="★" Style="{StaticResource StarToggleButtonStyle}" Click="Star_Click"/>
+                <ToggleButton x:Name="Star2" Content="★" Style="{StaticResource StarToggleButtonStyle}" Click="Star_Click"/>
+                <ToggleButton x:Name="Star3" Content="★" Style="{StaticResource StarToggleButtonStyle}" Click="Star_Click"/>
+                <ToggleButton x:Name="Star4" Content="★" Style="{StaticResource StarToggleButtonStyle}" Click="Star_Click"/>
+                <ToggleButton x:Name="Star5" Content="★" Style="{StaticResource StarToggleButtonStyle}" Click="Star_Click"/>
+            </StackPanel>
+            <Border Grid.Row="2" Height="150" Width="550" Style="{StaticResource ResourceKey=TextBoxBorder}">
+                <TextBox x:Name="review" Style="{StaticResource ResourceKey=regularBox}" Height="150" Width="550"/>
+            </Border>
+            <Button Grid.Row="2" Content="SUBMIT" Style="{StaticResource LabelLikeButton}" Margin="710,147,0,0"/>
+        </Grid>
+        <DockPanel Margin="12,20" Grid.Row="2">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <WrapPanel x:Name="reviewsPanel" Orientation="Vertical"/>
+            </ScrollViewer>
+        </DockPanel>
+    </Grid>
+</UserControl>

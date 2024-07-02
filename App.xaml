@@ -14,5 +14,6 @@
                 <ResourceDictionary Source="GUI\Theme\Grids.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
+        
     </Application.Resources>
 </Application>

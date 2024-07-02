@@ -25,25 +25,25 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
             {
                 allMaterials.Add(pair.Key, new Tuple<string, string>(pair.Value.title, pair.Value.media[0]));
             }
-            ListShowMaterials = new OneList(allMaterials);
+            ListShowMaterials = new OneList(allMaterials,typeof(Material));
             Dictionary<string, Tuple<string, string>> allAlbums = new Dictionary<string, Tuple<string, string>>();
             foreach(KeyValuePair<string,Album> pair in albums_)
             {
                 allAlbums.Add(pair.Key,new Tuple<string, string>(pair.Value.name, pair.Value.media[0]));  
             }
-            ListShowAlbums = new OneList(allAlbums);
+            ListShowAlbums = new OneList(allAlbums, typeof(Album));
             Dictionary<string, Tuple<string, string>> allArtists = new Dictionary<string, Tuple<string, string>>();
             foreach(KeyValuePair<string,Artist> pair in artists_)
             {
                 allArtists.Add(pair.Key,new Tuple<string,string>($"{pair.Value.name} {pair.Value.lastName}", pair.Value.media[0]));
             }
-            ListShowArtists = new OneList(allArtists);
+            ListShowArtists = new OneList(allArtists, typeof(Artist));
             Dictionary<string, Tuple<string, string>> allGroups = new Dictionary<string, Tuple<string, string>>();
             foreach(KeyValuePair<string, Group> pair in groups_)
             {
                 allGroups.Add(pair.Key, new Tuple<string, string>(pair.Value.name, pair.Value.media[0]));
             }
-            ListShowGroups = new OneList(allGroups);
+            ListShowGroups = new OneList(allGroups, typeof(Group));
 
         }
 

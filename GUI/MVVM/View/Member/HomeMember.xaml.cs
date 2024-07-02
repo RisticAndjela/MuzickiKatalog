@@ -11,6 +11,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Member
         {
             thisMember = member;
             InitializeComponent();
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             DataContext = new ControlsViewModel();
         }
         private void InfoHandler(object sender, RoutedEventArgs e)

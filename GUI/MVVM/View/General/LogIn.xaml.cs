@@ -25,8 +25,10 @@ namespace muzickiKatalog.GUI.MVVM.View.General
         public LogIn()
         {
             InitializeComponent();
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+
         }
-         private void GuestCommand(object sender, RoutedEventArgs e)
+        private void GuestCommand(object sender, RoutedEventArgs e)
         {
             HomeGuest home= new HomeGuest();
             home.Show();

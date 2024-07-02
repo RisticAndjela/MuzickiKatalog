@@ -22,6 +22,8 @@ namespace muzickiKatalog.GUI.MVVM.View.Editor
         public MakeGroup()
         {
             InitializeComponent();
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+
         }
     }
 }

@@ -17,14 +17,14 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
         private UserControl listedView;
         private UserControl searchView;
 
-            public ControlsViewModel()
+        public ControlsViewModel()
             {
                 AdsPanel = new ADs();
                 ListedPanel = new Listed(MaterialRepository.getAll(),AlbumRepository.getAll(),GroupRepository.getAll(),ArtistRepository.getAll());
                 SearchPanel = new SearchFilter();
-
             }
-            public UserControl AdsPanel
+       
+        public UserControl AdsPanel
             {
                 get { return ADsView; }
                 set

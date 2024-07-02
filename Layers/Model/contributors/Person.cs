@@ -13,7 +13,7 @@ namespace muzickiKatalog.Layers.Model.contributors
         public string lastName { get; set; }
         public Gender gender { get; set; }
         public DateOnly birthday { get; set; }
-
+         
         public Person() { }
         public Person(string username, string password,string _name, string _lastName, Gender _gender, DateOnly _birthday,personType type)
         {

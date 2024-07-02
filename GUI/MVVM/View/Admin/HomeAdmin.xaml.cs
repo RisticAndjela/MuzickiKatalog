@@ -22,6 +22,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Admin
         public HomeAdmin()
         {
             InitializeComponent();
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
         }
     }
 }
