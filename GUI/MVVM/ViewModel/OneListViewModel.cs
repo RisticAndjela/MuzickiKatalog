@@ -30,7 +30,7 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
             Dictionary<string, Tuple<string, string>> allArtists = new Dictionary<string, Tuple<string, string>>();
             foreach(KeyValuePair<string,Artist> pair in artists_)
             {
-                allArtists.Add(pair.Key,new Tuple<string,string>($"{pair.Value.name} {pair.Value.lastName}", pair.Value.Media[0]));
+                allArtists.Add(pair.Key,new Tuple<string,string>($"{pair.Value.Name} {pair.Value.LastName}", pair.Value.Media[0]));
             }
             ListShowArtists = new OneList(allArtists, typeof(Artist));
             Dictionary<string, Tuple<string, string>> allGroups = new Dictionary<string, Tuple<string, string>>();

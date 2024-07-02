@@ -1,5 +1,6 @@
 ﻿using muzickiKatalog.GUI.MVVM.View.Documentation;
 using muzickiKatalog.Layers.Model.performatorium;
+using muzickiKatalog.Layers.Service.performatorium;
 using muzickiKatalog.Layers.support.IDparser;
 using System;
 using System.Collections.Generic;
@@ -24,8 +25,7 @@ namespace muzickiKatalog.GUI.MVVM.View.UserControls
     public partial class OneList : UserControl
     {
         public Dictionary<string, Tuple<string, string>> all = new Dictionary<string, Tuple<string, string>>();
-        public int numberOfPage { get; set; } = 0;
-        public int numberOfItemsOnPage { get; set; } = 0;
+        public int indexOfCurrentFirst { get; set; } = 0;
         public Type type { get; set; }
 
         public OneList(Dictionary<string, Tuple<string, string>> _all, Type _type)
@@ -45,22 +45,30 @@ namespace muzickiKatalog.GUI.MVVM.View.UserControls
                 {
                     if (type == typeof(Artist))
                     {
-                        ArtistView view = new ArtistView(GetFromIDs<Artist>.get(key, GlobalVariables.artistsFile).Item2);
+                        Artist artist = GetFromIDs<Artist>.get(key, GlobalVariables.artistsFile).Item2;
+                        ArtistService.Visited(artist);
+                        ArtistView view = new ArtistView(artist);
                         view.Show();
                     }
                     else if (type == typeof(Group))
                     {
-                        GroupView view = new GroupView(GetFromIDs<Group>.get(key, GlobalVariables.groupsFile).Item2);
+                        Group group =GetFromIDs<Group>.get(key, GlobalVariables.groupsFile).Item2;
+                        GroupService.visited(group);
+                        GroupView view = new GroupView(group);
                         view.Show();
                     }
                     else if (type == typeof(Album))
                     {
-                        AlbumView view = new AlbumView(GetFromIDs<Album>.get(key, GlobalVariables.albumsFile).Item2);
+                        Album album =GetFromIDs<Album>.get(key, GlobalVariables.albumsFile).Item2;
+                        AlbumService.Visited(album);
+                        AlbumView view = new AlbumView(album);
                         view.Show();
                     }
                     else if (type == typeof(Material))
                     {
-                        MaterialView view = new MaterialView(GetFromIDs<Material>.get(key, GlobalVariables.materialsFile).Item2);
+                        Material material =GetFromIDs<Material>.get(key, GlobalVariables.materialsFile).Item2;
+                        MaterialService.Visited(material);
+                        MaterialView view = new MaterialView(material);
                         view.Show();
                     }
                     
@@ -69,23 +77,27 @@ namespace muzickiKatalog.GUI.MVVM.View.UserControls
         }
         private void ButtonNextPage(object sender, RoutedEventArgs e)
         {
-            numberOfPage++;
+            indexOfCurrentFirst++;
             fillTableWithData(all);
         }
         private void ButtonPreviousPage(object sender, RoutedEventArgs e)
         {
-            numberOfPage--;
+            indexOfCurrentFirst--;
             fillTableWithData(all);
         }
 
         public void fillTableWithData(Dictionary<string, Tuple<string, string>> items)
         {
             ClearAllLabels();
+
             int localCounter = 1;
-            foreach (string key in items.Keys.Skip(numberOfPage).Take(4))
+            foreach (string key in items.Keys.Skip(indexOfCurrentFirst))
             {
                 Label label = (Label)FindName($"label{localCounter}");
-                label.Content = items[key].Item1;
+                if (label != null)
+                {
+                    label.Content = items[key].Item1;
+                }
 
                 Image image = (Image)FindName($"image{localCounter}");
                 if (image != null && !string.IsNullOrEmpty(items[key].Item2))
@@ -93,38 +105,50 @@ namespace muzickiKatalog.GUI.MVVM.View.UserControls
                     BitmapImage bitmap = new BitmapImage();
                     bitmap.BeginInit();
                     bitmap.UriSource = new Uri(items[key].Item2, UriKind.RelativeOrAbsolute);
+                    bitmap.DecodePixelWidth = 120;
+                    bitmap.DecodePixelHeight = 90;
                     bitmap.EndInit();
                     image.Source = bitmap;
                 }
+
                 Button button = (Button)FindName($"picture{localCounter}");
-                button.IsHitTestVisible = true; 
-                button.Tag = key;
+                if (button != null)
+                {
+                    button.IsHitTestVisible = true;
+                    button.Tag = key;
+                }
+
                 localCounter++;
             }
-            numberOfItemsOnPage = localCounter;
+
+            
             UpdateNavigationButtons();
         }
-        
+
+
         public void ClearAllLabels()
         {
 
             for (int i = 1; i <= 4; i++)
             {
-                ((Label)FindName($"label{i}")).Content = "";
-                Image image = (Image)FindName($"image{i}");
-                if (image != null) image.Source = null;
-                Button button = (Button)FindName($"picture{i}");
-                button.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#4C443C"));
-                button.BorderThickness = new Thickness(0);
+                ClearOneLabel(i);
             }
         }
-
+        public void ClearOneLabel(int i)
+        {
+            ((Label)FindName($"label{i}")).Content = "";
+            Image image = (Image)FindName($"image{i}");
+            if (image != null) image.Source = null;
+            Button button = (Button)FindName($"picture{i}");
+            button.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#4C443C"));
+            button.BorderThickness = new Thickness(0);
+        }
 
         //making buttons disappear or appear based on number of page we are on
         private void UpdateNavigationButtons()
         {
-            back.Content = numberOfPage > 0 ? "B" : null;
-            int nextPageStartIndex = (numberOfPage + 1) * 4;
+            back.Content = indexOfCurrentFirst > 0 ? "B" : null;
+            int nextPageStartIndex = indexOfCurrentFirst + 4;
             if (nextPageStartIndex < all.Count)
             {
                 forward.Content = "N";

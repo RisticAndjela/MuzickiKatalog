@@ -21,10 +21,10 @@ namespace muzickiKatalog.GUI.MVVM.View.Member
             InfoPanel.Visibility = Visibility.Visible;
             Reviews.Visibility = Visibility.Hidden;
 
-            name.Content = thisMember.name;
-            lastname.Content=thisMember.lastName;
-            birthday.Content = thisMember.birthday;
-            gender.Content = thisMember.gender.ToString();
+            name.Content = thisMember.Name;
+            lastname.Content=thisMember.LastName;
+            birthday.Content = thisMember.Birthday;
+            gender.Content = thisMember.GenderProp.ToString();
 
         }
         private void FollowingHandler(object sender, RoutedEventArgs e)

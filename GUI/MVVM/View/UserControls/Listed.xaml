@@ -4,7 +4,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             d:DesignHeight="410" d:DesignWidth="670"
+             d:DesignHeight="1000" d:DesignWidth="670"
              Background="{StaticResource BaseColor}">
         <Grid>
         <Grid>
@@ -14,22 +14,30 @@
                 <ColumnDefinition Width="30"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
                 <RowDefinition/>
+                <RowDefinition  Height="100"/>
                 <RowDefinition/>
+                <RowDefinition  Height="100"/>
                 <RowDefinition/>
+                <RowDefinition  Height="100"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <!--materials-->
-            <ContentControl Grid.Row="0" Grid.Column="1" x:Name="materials" Content="{Binding ListShowMaterials}" />
+            <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Content="TOP 10 POPULAR MATERIALS"  Style="{StaticResource naslov}"/>
+            <ContentControl Grid.Row="1" Grid.Column="1" x:Name="materials" Content="{Binding ListShowMaterials}" />
            
             <!--artists-->
-            <ContentControl Grid.Row="1" Grid.Column="1" x:Name="artists" Content="{Binding ListShowArtists}" />
+            <Label Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Content="TOP 10 POPULAR ARTISTS"  Style="{StaticResource naslov}"/>
+            <ContentControl Grid.Row="3" Grid.Column="1" x:Name="artists" Content="{Binding ListShowArtists}" />
 
             <!--albums-->
-            <ContentControl Grid.Row="2" Grid.Column="1" x:Name="albums" Content="{Binding ListShowAlbums}" />
+            <Label Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Content="TOP 10 POPULAR ALBUMS"  Style="{StaticResource naslov}"/>
+            <ContentControl Grid.Row="5" Grid.Column="1" x:Name="albums" Content="{Binding ListShowAlbums}" />
             
             <!--group-->
-            <ContentControl Grid.Row="3" Grid.Column="1" x:Name="groups" Content="{Binding ListShowGroups}" />
+            <Label Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" Content="TOP 10 POPULAR GROUPS"  Style="{StaticResource naslov}"/>
+            <ContentControl Grid.Row="7" Grid.Column="1" x:Name="groups" Content="{Binding ListShowGroups}" />
         </Grid>
     </Grid>
 </UserControl>

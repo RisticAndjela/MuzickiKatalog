@@ -10,6 +10,5 @@ namespace muzickiKatalog.Layers.Service.performatorium.Interfaces
         public static void AddComment(Group group, Comment comment) { }
         public static void AddRating(Group group, StarRating stars) { }
         public static Dictionary<string, Group> Get10Popular() { return null; }
-        public static int CalculateRating(Group group) { return 0; }
     }
 }

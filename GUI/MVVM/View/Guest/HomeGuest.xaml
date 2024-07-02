@@ -11,30 +11,32 @@
         WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True">
-    <Grid>
-        <ContentControl Template="{StaticResource ResourceKey=pozadina}"/>
-        <Label Content="YOU ARE GUEST" FontSize="40" Margin="90,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
-        <DockPanel x:Name="reklame" Margin="10,30,800,30">
-            <ContentControl Content="{Binding AdsPanel}"/>
-        </DockPanel>
-        <DockPanel x:Name="menu" Margin="200,80,10,450">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Button Content="LOG IN " FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="LogInHandler"/>
-                <Button Content="POPULAR"  Grid.Column="1" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="PopularHandler"/>
-                <Button Content="SEARCH" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="SearcHandler"/>
-            </Grid>
-        </DockPanel>
-        <DockPanel x:Name="contentPanelPopular" Visibility="Hidden" Margin="210,160,20,30">
-            <ContentControl Content="{Binding ListedPanel}" />
-        </DockPanel>
+    <ScrollViewer  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <Grid>
+            <ContentControl Template="{StaticResource ResourceKey=pozadina}"/>
+            <Label Content="YOU ARE GUEST" FontSize="40" Margin="90,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
+            <DockPanel x:Name="reklame" >
+                <ContentControl Content="{Binding AdsPanel}" Margin="10,30,800,430"/>
+            </DockPanel>
+            <DockPanel x:Name="menu" Margin="200,80,10,450">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="LOG IN " FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="LogInHandler"/>
+                    <Button Content="POPULAR"  Grid.Column="1" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="PopularHandler"/>
+                    <Button Content="SEARCH" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="SearcHandler"/>
+                </Grid>
+            </DockPanel>
+            <DockPanel x:Name="contentPanelPopular" Visibility="Hidden" Margin="210,160,20,30">
+                <ContentControl Content="{Binding PopularListedPanel}" />
+            </DockPanel>
 
-        <DockPanel x:Name="contentPanelSearch" Visibility="Hidden" Margin="210,160,20,30">
-            <ContentControl Content="{Binding SearchPanel}" />
-        </DockPanel>
-    </Grid>
+            <DockPanel x:Name="contentPanelSearch" Visibility="Hidden" >
+                <ContentControl Content="{Binding SearchPanel}" Margin="210,160,40,530"/>
+            </DockPanel>
+        </Grid>
+    </ScrollViewer>
 </Window>

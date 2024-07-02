@@ -13,6 +13,5 @@ namespace muzickiKatalog.Layers.Service.performatorium.Interfaces
         public static void LeaveRating(Artist artist, StarRating rating) { }
         public static void Visited(Artist artist) { }
         public static Dictionary<string, Artist> Get10Popular() => new Dictionary<string, Artist>();
-        public static int CalculateRating(Artist artist) => 0;
     }
 }

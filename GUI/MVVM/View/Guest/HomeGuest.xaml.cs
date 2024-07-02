@@ -1,4 +1,6 @@
-﻿using muzickiKatalog.GUI.MVVM.ViewModel;
+﻿using muzickiKatalog.GUI.MVVM.View.General;
+using muzickiKatalog.GUI.MVVM.ViewModel;
+using muzickiKatalog.Layers.Repository.contributors;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,16 +22,20 @@ namespace muzickiKatalog.GUI.MVVM.View.Guest
     /// </summary>
     public partial class HomeGuest : Window
     {
+        public ControlsViewModel ViewModel { get; set; }
         public HomeGuest()
         {
             InitializeComponent();
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
-            DataContext = new ControlsViewModel();
-
+            ViewModel = new ControlsViewModel();
+            DataContext = ViewModel;
         }
         private void LogInHandler(object sender, RoutedEventArgs e)
         {
-
+            int numberOfMembers=MemberRepository.getAll().Count();
+            MakeMember makeMemberWindow = new MakeMember();
+            makeMemberWindow.Closed += (sender, args) => { if (numberOfMembers< MemberRepository.getAll().Count()) { this.Close(); } };
+            makeMemberWindow.Show();
         }
         private void SearcHandler(object sender, RoutedEventArgs e)
         {

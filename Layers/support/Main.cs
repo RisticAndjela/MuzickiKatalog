@@ -8,6 +8,10 @@ namespace muzickiKatalog.Layers.support
     public class Main
     {
         public Main() {
+            //everything();
+        }
+        public void everything()
+        {
             emptyall();
             generateAdmin();
             generateArtists();

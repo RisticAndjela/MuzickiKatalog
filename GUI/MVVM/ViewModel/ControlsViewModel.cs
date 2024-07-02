@@ -1,5 +1,6 @@
 ﻿using muzickiKatalog.GUI.MVVM.View.UserControls;
 using muzickiKatalog.Layers.Repository.performatorium;
+using muzickiKatalog.Layers.Service.performatorium;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,17 +15,21 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
     public class ControlsViewModel: INotifyPropertyChanged
     { 
         private UserControl ADsView;
-        private UserControl listedView;
+        private UserControl popularListedView;
+        private UserControl followingListedView;
+        private UserControl allListedView;
         private UserControl searchView;
 
         public ControlsViewModel()
             {
                 AdsPanel = new ADs();
-                ListedPanel = new Listed(MaterialRepository.getAll(),AlbumRepository.getAll(),GroupRepository.getAll(),ArtistRepository.getAll());
+                PopularListedPanel = new Listed(MaterialService.Get10Popular(),AlbumService.Get10Popular(), GroupService.Get10Popular(), ArtistService.Get10Popular());
+                FollowingListedPanel = new Listed(MaterialRepository.getAll(),AlbumRepository.getAll(),GroupRepository.getAll(),ArtistRepository.getAll());
+                AllListedPanel = new Listed(MaterialRepository.getAll(),AlbumRepository.getAll(),GroupRepository.getAll(),ArtistRepository.getAll());
                 SearchPanel = new SearchFilter();
             }
        
-        public UserControl AdsPanel
+            public UserControl AdsPanel
             {
                 get { return ADsView; }
                 set
@@ -33,17 +38,35 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
                     OnPropertyChanged();
                 }
             }
-             public UserControl ListedPanel
+             public UserControl PopularListedPanel
              {
-                get { return listedView; }
+                get { return popularListedView; }
                 set
                 {
-                    listedView = value;
+                    popularListedView = value;
+                    OnPropertyChanged();
+                }
+            }
+            public UserControl FollowingListedPanel
+            {
+                get { return followingListedView; }
+                set
+                {
+                followingListedView = value;
+                    OnPropertyChanged();
+                }
+            }
+            public UserControl AllListedPanel
+            {
+                get { return allListedView; }
+                set
+                {
+                    allListedView = value;
                     OnPropertyChanged();
                 }
             }
             public UserControl SearchPanel
-        {
+            {
                     get { return searchView; }
                     set
                     {

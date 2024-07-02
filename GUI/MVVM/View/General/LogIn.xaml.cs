@@ -36,7 +36,8 @@ namespace muzickiKatalog.GUI.MVVM.View.General
         }
          private void SignInCommand(object sender, RoutedEventArgs e)
         {
-            
+            MakeMember makeMember = new MakeMember();
+            makeMember.Show();
         } 
          private void LogInCommand(object sender, RoutedEventArgs e)
         {

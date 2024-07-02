@@ -13,7 +13,16 @@
     <Compile Update="GUI\MVVM\View\Admin\MakeEditor.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="GUI\MVVM\View\General\MessageWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="GUI\MVVM\View\UserControls\ADs.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\UserControls\MakePerson.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\UserControls\MakeUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="GUI\MVVM\View\UserControls\OneList.xaml.cs">
@@ -66,7 +75,16 @@
     <Page Update="GUI\MVVM\View\Admin\MakeEditor.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="GUI\MVVM\View\General\MessageWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="GUI\MVVM\View\UserControls\ADs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\UserControls\MakePerson.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\UserControls\MakeUser.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\UserControls\OneList.xaml">

@@ -9,9 +9,9 @@ namespace muzickiKatalog.Layers.Model.contributors.Interfaces
 {
     public interface IPerson
     {
-        public string name { get; set; }
-        public string lastName { get; set; }
-        public Gender gender { get; set; }
-        public DateOnly birthday { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public Gender GenderProp { get; set; }
+        public DateOnly Birthday { get; set; }
     }
 }

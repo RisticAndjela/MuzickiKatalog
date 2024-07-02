@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:muzickiKatalog.GUI.MVVM.View.General"
         mc:Ignorable="d"
-        Title="MakeMember" Height="450" Width="800">
+        Title="MakeMember" Height="450" Width="600"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True">
     <Grid>
-        
+        <ContentControl Template="{StaticResource ResourceKey=pozadinaClose}"/>
+        <Label Content="MEMBERSHIP" Style="{StaticResource naslov}"/>
+        <StackPanel x:Name="main" Margin="0,80,0,50" >
+            <ContentControl x:Name="panelPerson"/>
+            <ContentControl x:Name="panelUser" />
+        </StackPanel>
+        <Button Content="DONE" Width="100" Style="{StaticResource circleButton}" Click="doneButton" VerticalAlignment="Bottom" Margin="20"/>
     </Grid>
 </Window>

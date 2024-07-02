@@ -1,6 +1,9 @@
 ﻿using muzickiKatalog.Layers.Model.performatorium;
 using muzickiKatalog.Layers.Repository.performatorium;
 using muzickiKatalog.Layers.Service.performatorium.Interfaces;
+using muzickiKatalog.Layers.support;
+using System.Windows.Media.Media3D;
+
 namespace muzickiKatalog.Layers.Service.performatorium
 {
     public class AlbumService : IAlbumService
@@ -20,5 +23,13 @@ namespace muzickiKatalog.Layers.Service.performatorium
             album.Visits++;
             AlbumRepository.save(album);
         }
+
+        public static Dictionary<string, Album> Get10Popular()
+        {
+            return getRatings<Album>.Get10Popular();
+
+        }
+
+
     }
 }

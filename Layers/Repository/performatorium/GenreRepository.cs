@@ -18,5 +18,12 @@ namespace muzickiKatalog.Layers.Repository.performatorium
         {
             SaveOneInstance<Genre>.SaveOneInstanceInList(genre, GlobalVariables.genresFile);
         }
+        public static List<string> getAllNames()
+        {
+            Dictionary<string, Genre> all = getAll();
+            List<string > names = new List<string>();
+            foreach (Genre genre in all.Values) { names.Add(genre.Name); }
+            return names;
+        }
     }
 }

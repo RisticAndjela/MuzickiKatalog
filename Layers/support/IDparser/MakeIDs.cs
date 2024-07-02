@@ -11,7 +11,7 @@ namespace muzickiKatalog.Layers.support.IDparser
     {
         public static string makeArtistID(Artist artist)
         {
-            return $"{artist.name}_{artist.lastName}_{artist.birthday.ToString()}";
+            return $"{artist.Name}_{artist.LastName}_{artist.Birthday.ToString()}";
         }
         public static string makeGroupID(Group group)
         {
@@ -20,7 +20,7 @@ namespace muzickiKatalog.Layers.support.IDparser
             foreach (String s in group.Artists)
             {
                 (_,Artist artist) = GetFromIDs<Artist>.get(s, GlobalVariables.artistsFile);
-                id.Append(artist.lastName);
+                id.Append(artist.LastName);
                 id.Append("-");
             }
             return id.ToString();
@@ -45,7 +45,7 @@ namespace muzickiKatalog.Layers.support.IDparser
                 (bool isArtist, Artist artist) = GetFromIDs<Artist>.get(s, GlobalVariables.artistsFile);
                 if (isArtist)
                 {
-                    id.Append(artist.lastName);
+                    id.Append(artist.LastName);
                     id.Append("-");
                 }
                 else

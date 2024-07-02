@@ -9,6 +9,5 @@ namespace muzickiKatalog.Layers.Service.performatorium.Interfaces
         public static void Visited(Material material) { }
         public static void PutInAlbum(Material material, string album) { }
         public static Dictionary<string, Material> Get10Popular() {  return new Dictionary<string, Material>(); }
-        public static int CalculateRating(Material material) { return 0; }
     }
 }

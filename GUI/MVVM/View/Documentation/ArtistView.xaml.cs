@@ -16,7 +16,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         {
             InitializeComponent();
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
-            naslovLabela.Content = $"{artist.name} {artist.lastName}";
+            naslovLabela.Content = $"{artist.Name} {artist.LastName}";
             reviewSection = new ReviewSection(artist.AllStarRatings, artist.AllComments);
             ControlsViewModel viewModel = new ControlsViewModel();
             DataContext = viewModel;

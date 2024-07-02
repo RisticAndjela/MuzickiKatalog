@@ -12,18 +12,14 @@ namespace GUI.Theme
 
         private void ButtonMinimize_Click(object sender, RoutedEventArgs e)
         {
-            if (Application.Current.MainWindow != null)
-            {
-                Application.Current.MainWindow.WindowState = WindowState.Minimized;
-            }
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+            
         }
          private void ButtonClose_Click(object sender, RoutedEventArgs e)
-        {
-            if (Application.Current.MainWindow != null)
-            {
-                Application.Current.MainWindow.Close();
-            }
-        }
+         {   
+           Application.Current.MainWindow.Close();
+            
+         }
 
         private void ButtonExit_Click(object sender, RoutedEventArgs e)
         {

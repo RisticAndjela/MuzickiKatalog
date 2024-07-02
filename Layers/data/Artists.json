@@ -1,6 +1,10 @@
 {
   "John_Doe_7/15/1985": {
     "Editor": "nicole@editor.com",
+    "Name": "John",
+    "LastName": "Doe",
+    "GenderProp": 0,
+    "Birthday": "1985-07-15",
     "Type": 0,
     "Genres": [
       "jazz"
@@ -17,18 +21,19 @@
       "Film Scoring Techniques:Doe-",
       "Beethoven's Symphony No. 9: 'Ode to Joy':Doe-",
       "Puccini's 'La Bohème' Opera:Doe-",
-      "The Rolling Stones: 'Exile on Main St.' Album:Doe-Robinson-"
+      "The Rolling Stones: 'Exile on Main St.' Album:Doe-Robinson-",
+      "Understanding Jazz Improvisation:Doe-Brown-Lee-"
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "John",
-    "lastName": "Doe",
-    "gender": 0,
-    "birthday": "1985-07-15"
+    "Visits": 0
   },
   "Jane_Smith_3/22/1990": {
     "Editor": "nicole@editor.com",
+    "Name": "Jane",
+    "LastName": "Smith",
+    "GenderProp": 0,
+    "Birthday": "1990-03-22",
     "Type": 1,
     "Genres": [
       "rock"
@@ -41,14 +46,14 @@
     "AllMaterials": [],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Jane",
-    "lastName": "Smith",
-    "gender": 1,
-    "birthday": "1990-03-22"
+    "Visits": 1
   },
   "Michael_Johnson_9/5/1982": {
     "Editor": "nicole@editor.com",
+    "Name": "Michael",
+    "LastName": "Johnson",
+    "GenderProp": 0,
+    "Birthday": "1982-09-05",
     "Type": 2,
     "Genres": [
       "classical"
@@ -63,14 +68,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Michael",
-    "lastName": "Johnson",
-    "gender": 0,
-    "birthday": "1982-09-05"
+    "Visits": 0
   },
   "Emily_Davis_12/10/1987": {
     "Editor": "nicole@editor.com",
+    "Name": "Emily",
+    "LastName": "Davis",
+    "GenderProp": 0,
+    "Birthday": "1987-12-10",
     "Type": 3,
     "Genres": [
       "classical",
@@ -87,14 +92,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Emily",
-    "lastName": "Davis",
-    "gender": 1,
-    "birthday": "1987-12-10"
+    "Visits": 0
   },
   "David_Brown_5/3/1978": {
     "Editor": "nicole@editor.com",
+    "Name": "David",
+    "LastName": "Brown",
+    "GenderProp": 0,
+    "Birthday": "1978-05-03",
     "Type": 4,
     "Genres": [
       "country"
@@ -107,18 +112,19 @@
     "AllMaterials": [
       "The History of Classical Music:Brown-",
       "Understanding Jazz Improvisation:Doe-Brown-Lee-",
-      "The Business of Music:Brown-"
+      "The Business of Music:Brown-",
+      "Understanding Jazz Improvisation:Doe-Brown-Lee-"
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "David",
-    "lastName": "Brown",
-    "gender": 0,
-    "birthday": "1978-05-03"
+    "Visits": 0
   },
   "Sarah_Garcia_11/18/1989": {
     "Editor": "nicole@editor.com",
+    "Name": "Sarah",
+    "LastName": "Garcia",
+    "GenderProp": 0,
+    "Birthday": "1989-11-18",
     "Type": 5,
     "Genres": [
       "pop",
@@ -132,14 +138,14 @@
     "AllMaterials": [],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Sarah",
-    "lastName": "Garcia",
-    "gender": 1,
-    "birthday": "1989-11-18"
+    "Visits": 0
   },
   "Alex_Martinez_2/28/1983": {
     "Editor": "nicole@editor.com",
+    "Name": "Alex",
+    "LastName": "Martinez",
+    "GenderProp": 0,
+    "Birthday": "1983-02-28",
     "Type": 6,
     "Genres": [
       "electronic"
@@ -156,14 +162,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Alex",
-    "lastName": "Martinez",
-    "gender": 0,
-    "birthday": "1983-02-28"
+    "Visits": 0
   },
   "Jessica_Robinson_8/7/1984": {
     "Editor": "nicole@editor.com",
+    "Name": "Jessica",
+    "LastName": "Robinson",
+    "GenderProp": 0,
+    "Birthday": "1984-08-07",
     "Type": 7,
     "Genres": [
       "hiphop",
@@ -180,14 +186,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Jessica",
-    "lastName": "Robinson",
-    "gender": 1,
-    "birthday": "1984-08-07"
+    "Visits": 0
   },
   "Mark_Wilson_10/12/1981": {
     "Editor": "nicole@editor.com",
+    "Name": "Mark",
+    "LastName": "Wilson",
+    "GenderProp": 0,
+    "Birthday": "1981-10-12",
     "Type": 1,
     "Genres": [
       "folk",
@@ -204,14 +210,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Mark",
-    "lastName": "Wilson",
-    "gender": 0,
-    "birthday": "1981-10-12"
+    "Visits": 0
   },
   "Rachel_Lee_6/25/1986": {
     "Editor": "nicole@editor.com",
+    "Name": "Rachel",
+    "LastName": "Lee",
+    "GenderProp": 0,
+    "Birthday": "1986-06-25",
     "Type": 3,
     "Genres": [
       "classical",
@@ -225,18 +231,19 @@
     "AllMaterials": [
       "Understanding Jazz Improvisation:Doe-Brown-Lee-",
       "The Impact of Digital Technology on Music Production:Doe-Lee-",
-      "Mozart's 'The Magic Flute' Opera:Lee-"
+      "Mozart's 'The Magic Flute' Opera:Lee-",
+      "Understanding Jazz Improvisation:Doe-Brown-Lee-"
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Rachel",
-    "lastName": "Lee",
-    "gender": 1,
-    "birthday": "1986-06-25"
+    "Visits": 0
   },
   "Roger_Waters_9/6/1943": {
     "Editor": "nicole@editor.com",
+    "Name": "Roger",
+    "LastName": "Waters",
+    "GenderProp": 0,
+    "Birthday": "1943-09-06",
     "Type": 0,
     "Genres": [
       "progressive rock",
@@ -272,14 +279,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Roger",
-    "lastName": "Waters",
-    "gender": 0,
-    "birthday": "1943-09-06"
+    "Visits": 0
   },
   "David_Gilmour_3/6/1946": {
     "Editor": "nicole@editor.com",
+    "Name": "David",
+    "LastName": "Gilmour",
+    "GenderProp": 0,
+    "Birthday": "1946-03-06",
     "Type": 0,
     "Genres": [
       "progressive rock",
@@ -315,14 +322,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "David",
-    "lastName": "Gilmour",
-    "gender": 0,
-    "birthday": "1946-03-06"
+    "Visits": 0
   },
   "Nick_Mason_1/27/1944": {
     "Editor": "nicole@editor.com",
+    "Name": "Nick",
+    "LastName": "Mason",
+    "GenderProp": 0,
+    "Birthday": "1944-01-27",
     "Type": 0,
     "Genres": [
       "progressive rock",
@@ -358,14 +365,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Nick",
-    "lastName": "Mason",
-    "gender": 0,
-    "birthday": "1944-01-27"
+    "Visits": 0
   },
   "Richard_Wright_7/28/1943": {
     "Editor": "nicole@editor.com",
+    "Name": "Richard",
+    "LastName": "Wright",
+    "GenderProp": 0,
+    "Birthday": "1943-07-28",
     "Type": 0,
     "Genres": [
       "progressive rock",
@@ -401,14 +408,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Richard",
-    "lastName": "Wright",
-    "gender": 0,
-    "birthday": "1943-07-28"
+    "Visits": 0
   },
   "Syd_Barrett_1/6/1946": {
     "Editor": "nicole@editor.com",
+    "Name": "Syd",
+    "LastName": "Barrett",
+    "GenderProp": 0,
+    "Birthday": "1946-01-06",
     "Type": 0,
     "Genres": [
       "psychedelic rock"
@@ -443,14 +450,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Syd",
-    "lastName": "Barrett",
-    "gender": 0,
-    "birthday": "1946-01-06"
+    "Visits": 0
   },
   "John_Lennon_10/9/1940": {
     "Editor": "nicole@editor.com",
+    "Name": "John",
+    "LastName": "Lennon",
+    "GenderProp": 0,
+    "Birthday": "1940-10-09",
     "Type": 0,
     "Genres": [
       "rock",
@@ -465,14 +472,14 @@
     "AllMaterials": [],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "John",
-    "lastName": "Lennon",
-    "gender": 0,
-    "birthday": "1940-10-09"
+    "Visits": 0
   },
   "Paul_McCartney_6/18/1942": {
     "Editor": "nicole@editor.com",
+    "Name": "Paul",
+    "LastName": "McCartney",
+    "GenderProp": 0,
+    "Birthday": "1942-06-18",
     "Type": 0,
     "Genres": [
       "rock",
@@ -487,14 +494,14 @@
     "AllMaterials": [],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Paul",
-    "lastName": "McCartney",
-    "gender": 0,
-    "birthday": "1942-06-18"
+    "Visits": 0
   },
   "George_Harrison_2/25/1943": {
     "Editor": "nicole@editor.com",
+    "Name": "George",
+    "LastName": "Harrison",
+    "GenderProp": 0,
+    "Birthday": "1943-02-25",
     "Type": 0,
     "Genres": [
       "rock",
@@ -509,14 +516,14 @@
     "AllMaterials": [],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "George",
-    "lastName": "Harrison",
-    "gender": 0,
-    "birthday": "1943-02-25"
+    "Visits": 0
   },
   "Ringo_Starr_7/7/1940": {
     "Editor": "nicole@editor.com",
+    "Name": "Ringo",
+    "LastName": "Starr",
+    "GenderProp": 0,
+    "Birthday": "1940-07-07",
     "Type": 0,
     "Genres": [
       "rock",
@@ -531,20 +538,21 @@
     "AllMaterials": [],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Ringo",
-    "lastName": "Starr",
-    "gender": 0,
-    "birthday": "1940-07-07"
+    "Visits": 0
   },
   "Mick_Jagger_7/26/1943": {
     "Editor": "nicole@editor.com",
+    "Name": "Mick",
+    "LastName": "Jagger",
+    "GenderProp": 0,
+    "Birthday": "1943-07-26",
     "Type": 0,
     "Genres": [
       "rock",
       "blues"
     ],
     "Groups": [
+      "The Rolling Stones:Jagger-Richards-Watts-Wood-",
       "The Rolling Stones:Jagger-Richards-Watts-Wood-"
     ],
     "Media": [
@@ -553,20 +561,21 @@
     "AllMaterials": [],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Mick",
-    "lastName": "Jagger",
-    "gender": 0,
-    "birthday": "1943-07-26"
+    "Visits": 0
   },
   "Keith_Richards_12/18/1943": {
     "Editor": "nicole@editor.com",
+    "Name": "Keith",
+    "LastName": "Richards",
+    "GenderProp": 0,
+    "Birthday": "1943-12-18",
     "Type": 0,
     "Genres": [
       "rock",
       "blues"
     ],
     "Groups": [
+      "The Rolling Stones:Jagger-Richards-Watts-Wood-",
       "The Rolling Stones:Jagger-Richards-Watts-Wood-"
     ],
     "Media": [
@@ -575,20 +584,21 @@
     "AllMaterials": [],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Keith",
-    "lastName": "Richards",
-    "gender": 0,
-    "birthday": "1943-12-18"
+    "Visits": 0
   },
   "Charlie_Watts_6/2/1941": {
     "Editor": "nicole@editor.com",
+    "Name": "Charlie",
+    "LastName": "Watts",
+    "GenderProp": 0,
+    "Birthday": "1941-06-02",
     "Type": 0,
     "Genres": [
       "rock",
       "blues"
     ],
     "Groups": [
+      "The Rolling Stones:Jagger-Richards-Watts-Wood-",
       "The Rolling Stones:Jagger-Richards-Watts-Wood-"
     ],
     "Media": [
@@ -597,20 +607,21 @@
     "AllMaterials": [],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Charlie",
-    "lastName": "Watts",
-    "gender": 0,
-    "birthday": "1941-06-02"
+    "Visits": 0
   },
   "Ronnie_Wood_6/1/1947": {
     "Editor": "nicole@editor.com",
+    "Name": "Ronnie",
+    "LastName": "Wood",
+    "GenderProp": 0,
+    "Birthday": "1947-06-01",
     "Type": 0,
     "Genres": [
       "rock",
       "blues"
     ],
     "Groups": [
+      "The Rolling Stones:Jagger-Richards-Watts-Wood-",
       "The Rolling Stones:Jagger-Richards-Watts-Wood-"
     ],
     "Media": [
@@ -619,14 +630,14 @@
     "AllMaterials": [],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Ronnie",
-    "lastName": "Wood",
-    "gender": 0,
-    "birthday": "1947-06-01"
+    "Visits": 0
   },
   "Elvis_Presley_1/8/1935": {
     "Editor": "nicole@editor.com",
+    "Name": "Elvis",
+    "LastName": "Presley",
+    "GenderProp": 0,
+    "Birthday": "1935-01-08",
     "Type": 0,
     "Genres": [
       "rock",
@@ -646,14 +657,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Elvis",
-    "lastName": "Presley",
-    "gender": 0,
-    "birthday": "1935-01-08"
+    "Visits": 0
   },
   "Michael_Jackson_8/29/1958": {
     "Editor": "nicole@editor.com",
+    "Name": "Michael",
+    "LastName": "Jackson",
+    "GenderProp": 0,
+    "Birthday": "1958-08-29",
     "Type": 0,
     "Genres": [
       "pop",
@@ -672,14 +683,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Michael",
-    "lastName": "Jackson",
-    "gender": 0,
-    "birthday": "1958-08-29"
+    "Visits": 0
   },
   "Bob_Dylan_5/24/1941": {
     "Editor": "nicole@editor.com",
+    "Name": "Bob",
+    "LastName": "Dylan",
+    "GenderProp": 0,
+    "Birthday": "1941-05-24",
     "Type": 0,
     "Genres": [
       "folk",
@@ -698,14 +709,14 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Bob",
-    "lastName": "Dylan",
-    "gender": 0,
-    "birthday": "1941-05-24"
+    "Visits": 0
   },
   "Aretha_Franklin_3/25/1942": {
     "Editor": "nicole@editor.com",
+    "Name": "Aretha",
+    "LastName": "Franklin",
+    "GenderProp": 0,
+    "Birthday": "1942-03-25",
     "Type": 0,
     "Genres": [
       "soul",
@@ -723,10 +734,6 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0,
-    "name": "Aretha",
-    "lastName": "Franklin",
-    "gender": 1,
-    "birthday": "1942-03-25"
+    "Visits": 0
   }
 }
