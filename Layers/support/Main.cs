@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using muzickiKatalog.Layers.support;
-using muzickiKatalog.Layers.dao;
+﻿using muzickiKatalog.Layers.dao;
 using muzickiKatalog.Layers.Model.performatorium;
 using muzickiKatalog.Layers.Model.contributors;
 using muzickiKatalog.Layers.support.IDparser;
@@ -74,7 +68,7 @@ namespace muzickiKatalog.Layers.support
                 Material m=new Material("nicole@editor.com", songTitle, "blues", DateOnly.FromDateTime(DateTime.Now), DateOnly.Parse("12.12.2002"), new List<string> { "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-" }, new List<string>() { GlobalVariables.pink_floyd }, $"\"{songTitle}\" is a track from 'The Dark Side of the Moon' Album.");
                 ids.Add(MakeIDs.makeMaterialID(m));
             }
-            new Album("Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance","blues", ids, new List<string>() { GlobalVariables.pink_floyd }, "'The Dark Side of the Moon' by Pink Floyd is revered for its musical innovation, thought-provoking lyrics, and seamless blend of progressive rock, psychedelia, and experimental soundscapes.");
+            new Album("'The Dark Side of the Moon' Album","blues", ids, new List<string>() { GlobalVariables.pink_floyd }, "'The Dark Side of the Moon' by Pink Floyd is revered for its musical innovation, thought-provoking lyrics, and seamless blend of progressive rock, psychedelia, and experimental soundscapes.");
 
         }
         public void generateMaterials() {
@@ -101,7 +95,7 @@ namespace muzickiKatalog.Layers.support
         {
             new Artist("nicole@editor.com", "Elvis", "Presley", Gender.male, new DateOnly(1935, 1, 8), "Elvis Presley is widely regarded as the King of Rock 'n' Roll, known for his charismatic stage presence and influential blend of rockabilly, gospel, and blues.", artistType.singer, new List<string>() { "rock", "gospel", "blues" }, new List<string>() { GlobalVariables.elvis_presley });
             new Material("nicole@editor.com", "Elvis Presley's 'Can't Help Falling in Love'", "rock", DateOnly.FromDateTime(DateTime.Now), DateOnly.Parse("1961-10-01"), new List<string> { "Elvis_Presley_1/8/1935" }, new List<string>() { GlobalVariables.elvis_presley }, "'Can't Help Falling in Love' is one of Elvis Presley's most iconic songs, known for its beautiful melody and heartfelt lyrics that capture the essence of romance and enduring love.");
-            new Material("nicole@editor.com", "Elvis Presley's 'Jailhouse Rock'", "rock", DateOnly.FromDateTime(DateTime.Now), DateOnly.Parse("1957-09-24"), new List<string> { "Elvis_Presley_1/8/1935" }, new List<string>() { GlobalVariables.elvis_presley }, "'Jailhouse Rock' is a famous rock and roll song by Elvis Presley, known for its energetic beat and iconic dance sequence in the film of the same name.");
+            new Material("nicole@editor.com", "Elvis Presley's 'Jailhouse Rock'", "rock", DateOnly.FromDateTime(DateTime.Now), DateOnly.Parse("1957-09-24"), new List<string> { "Elvis_Presley_1/8/1935" }, new List<string>() { GlobalVariables.elvis_presley }, "'Jailhouse Rock' is a famous rock and roll song by Elvis Presley, known for its energetic beat and iconic dance sequence in the film of the same Name.");
             new Material("nicole@editor.com", "Elvis Presley's 'Suspicious Minds'", "rock", DateOnly.FromDateTime(DateTime.Now), DateOnly.Parse("1969-08-26"), new List<string> { "Elvis_Presley_1/8/1935" }, new List<string>() { GlobalVariables.elvis_presley }, "'Suspicious Minds' is a soulful ballad by Elvis Presley, notable for its emotional depth and powerful vocal performance.");
             new Material("nicole@editor.com", "Elvis Presley's 'Heartbreak Hotel'", "rock", DateOnly.FromDateTime(DateTime.Now), DateOnly.Parse("1956-01-27"), new List<string> { "Elvis_Presley_1/8/1935" }, new List<string>() { GlobalVariables.elvis_presley }, "'Heartbreak Hotel' marked Elvis Presley's debut as a rock and roll icon, capturing the loneliness and despair of lost love.");
             new Material("nicole@editor.com", "Elvis Presley's 'Love Me Tender'", "rock", DateOnly.FromDateTime(DateTime.Now), DateOnly.Parse("1956-09-28"), new List<string> { "Elvis_Presley_1/8/1935" }, new List<string>() { GlobalVariables.elvis_presley }, "'Love Me Tender' is a tender ballad by Elvis Presley, expressing heartfelt devotion and romance.");
@@ -130,7 +124,7 @@ namespace muzickiKatalog.Layers.support
         public void generateArtists()
         {
             new Artist("nicole@editor.com", "John", "Doe", Gender.male, new DateOnly(1985, 7, 15), "John Doe is a versatile jazz singer known for his smooth vocals and improvisational skills.", artistType.singer, new List<string>() { "jazz" }, new List<string>() { GlobalVariables.img1, GlobalVariables.img3 });
-            new Artist("nicole@editor.com", "Jane", "Smith", Gender.female, new DateOnly(1990, 3, 22), "Jane Smith is a prolific songwriter in the rock genre, blending heartfelt lyrics with powerful melodies.", artistType.songWriter, new List<string>() { "rock" }, new List<string>() { GlobalVariables.img1, GlobalVariables.img3 });
+            new Artist("nicole@editor.com", "Jane", "Smith", Gender.female, new DateOnly(1990, 3, 22), "Jane Smith is a prolific songwriter in the rock Genre, blending heartfelt lyrics with powerful melodies.", artistType.songWriter, new List<string>() { "rock" }, new List<string>() { GlobalVariables.img1, GlobalVariables.img3 });
             new Artist("nicole@editor.com", "Michael", "Johnson", Gender.male, new DateOnly(1982, 9, 5), "Michael Johnson is a conductor renowned for his precise interpretations and dynamic performances with orchestras worldwide.", artistType.conductor, new List<string>() { "classical" }, new List<string>() { GlobalVariables.img1, GlobalVariables.img3 });
             new Artist("nicole@editor.com", "Emily", "Davis", Gender.female, new DateOnly(1987, 12, 10), "Emily Davis is an acclaimed instrumentalist, known for her virtuosity on the violin and her innovative approach to classical and contemporary music.", artistType.instrumentalist, new List<string>() { "classical", "hiphop" }, new List<string>() { GlobalVariables.img1, GlobalVariables.img3 });
             new Artist("nicole@editor.com", "David", "Brown", Gender.male, new DateOnly(1978, 5, 3), "David Brown is a versatile composer, celebrated for his film scores that capture the emotional depth of each scene with intricate orchestrations and memorable themes.", artistType.composer, new List<string>() { "country" }, new List<string>() { GlobalVariables.img1, GlobalVariables.img3 });

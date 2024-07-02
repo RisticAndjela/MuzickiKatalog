@@ -1,9 +1,12 @@
 {
-  "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-": {
-    "name": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance",
-    "description": "'The Dark Side of the Moon' by Pink Floyd is revered for its musical innovation, thought-provoking lyrics, and seamless blend of progressive rock, psychedelia, and experimental soundscapes.",
-    "genre": "blues",
-    "allMaterials": [
+  "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-": {
+    "Name": "'The Dark Side of the Moon' Album",
+    "Description": "'The Dark Side of the Moon' by Pink Floyd is revered for its musical innovation, thought-provoking lyrics, and seamless blend of progressive rock, psychedelia, and experimental soundscapes.",
+    "Genre": "blues",
+    "Media": [
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
+    ],
+    "AllMaterials": [
       "Speak to Me:Pink Floyd",
       "Breathe:Pink Floyd",
       "On the Run:Pink Floyd",
@@ -15,10 +18,8 @@
       "Brain Damage:Pink Floyd",
       "Eclipse:Pink Floyd"
     ],
-    "media": [
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
-    ],
-    "allComments": [],
-    "allStarRatings": []
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   }
 }

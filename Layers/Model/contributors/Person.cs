@@ -1,13 +1,9 @@
 ﻿using muzickiKatalog.Layers.support;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using muzickiKatalog.Layers.Model.contributors.Interfaces;
 
 namespace muzickiKatalog.Layers.Model.contributors
 {
-    public class Person
+    public abstract class Person: IPerson
     {
         public string name { get; set; }
         public string lastName { get; set; }

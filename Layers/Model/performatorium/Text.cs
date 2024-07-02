@@ -1,13 +1,9 @@
-﻿using muzickiKatalog.Layers.dao;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using muzickiKatalog.Layers.Repository.performatorium;
+
 
 namespace muzickiKatalog.Layers.Model.performatorium
 {
-    //long texts such as description for videos and biography for artists and groups
+    //long texts such as Description for videos and biography for Artists and Groups
     public class Text
     {
         public string text;
@@ -15,11 +11,8 @@ namespace muzickiKatalog.Layers.Model.performatorium
         public Text(string _text, string id)
         {
             text = _text;
-            save(id);
+            TextRepository.save(this,id);
         }
-        public void save(string id)
-        {
-            SaveOneInstance<Text>.SaveOneInstanceInDictionary(this, id, GlobalVariables.textsFile);
-        }
+        
     }
 }

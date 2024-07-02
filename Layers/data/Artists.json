@@ -1,12 +1,16 @@
 {
   "John_Doe_7/15/1985": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "jazz"
     ],
-    "groups": [],
-    "materials": [
+    "Groups": [],
+    "Media": [
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
+    ],
+    "AllMaterials": [
       "Understanding Jazz Improvisation:Doe-Brown-Lee-",
       "The Impact of Digital Technology on Music Production:Doe-Lee-",
       "Exploring World Music Traditions:Doe-",
@@ -15,224 +19,230 @@
       "Puccini's 'La Bohème' Opera:Doe-",
       "The Rolling Stones: 'Exile on Main St.' Album:Doe-Robinson-"
     ],
-    "media": [
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
-    ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "John",
     "lastName": "Doe",
     "gender": 0,
     "birthday": "1985-07-15"
   },
   "Jane_Smith_3/22/1990": {
-    "editor": "nicole@editor.com",
-    "type": 1,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 1,
+    "Genres": [
       "rock"
     ],
-    "groups": [],
-    "materials": [],
-    "media": [
+    "Groups": [],
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Jane",
     "lastName": "Smith",
     "gender": 1,
     "birthday": "1990-03-22"
   },
   "Michael_Johnson_9/5/1982": {
-    "editor": "nicole@editor.com",
-    "type": 2,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 2,
+    "Genres": [
       "classical"
     ],
-    "groups": [],
-    "materials": [
-      "Johann Strauss II: 'The Blue Danube' Waltz:Johnson-"
-    ],
-    "media": [
+    "Groups": [],
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [
+      "Johann Strauss II: 'The Blue Danube' Waltz:Johnson-"
+    ],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Michael",
     "lastName": "Johnson",
     "gender": 0,
     "birthday": "1982-09-05"
   },
   "Emily_Davis_12/10/1987": {
-    "editor": "nicole@editor.com",
-    "type": 3,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 3,
+    "Genres": [
       "classical",
       "hiphop"
     ],
-    "groups": [],
-    "materials": [
-      "The Psychology of Music:Davis-Martinez-",
-      "Miles Davis: 'Kind of Blue' Album:Davis-"
-    ],
-    "media": [
+    "Groups": [],
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [
+      "The Psychology of Music:Davis-Martinez-",
+      "Miles Davis: 'Kind of Blue' Album:Davis-"
+    ],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Emily",
     "lastName": "Davis",
     "gender": 1,
     "birthday": "1987-12-10"
   },
   "David_Brown_5/3/1978": {
-    "editor": "nicole@editor.com",
-    "type": 4,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 4,
+    "Genres": [
       "country"
     ],
-    "groups": [],
-    "materials": [
+    "Groups": [],
+    "Media": [
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
+    ],
+    "AllMaterials": [
       "The History of Classical Music:Brown-",
       "Understanding Jazz Improvisation:Doe-Brown-Lee-",
       "The Business of Music:Brown-"
     ],
-    "media": [
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
-    ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "David",
     "lastName": "Brown",
     "gender": 0,
     "birthday": "1978-05-03"
   },
   "Sarah_Garcia_11/18/1989": {
-    "editor": "nicole@editor.com",
-    "type": 5,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 5,
+    "Genres": [
       "pop",
       "blues"
     ],
-    "groups": [],
-    "materials": [],
-    "media": [
+    "Groups": [],
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Sarah",
     "lastName": "Garcia",
     "gender": 1,
     "birthday": "1989-11-18"
   },
   "Alex_Martinez_2/28/1983": {
-    "editor": "nicole@editor.com",
-    "type": 6,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 6,
+    "Genres": [
       "electronic"
     ],
-    "groups": [],
-    "materials": [
+    "Groups": [],
+    "Media": [
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
+    ],
+    "AllMaterials": [
       "Introduction to Music Theory:Martinez-",
       "The Evolution of Rock Music:Martinez-",
       "The Psychology of Music:Davis-Martinez-"
     ],
-    "media": [
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
-    ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Alex",
     "lastName": "Martinez",
     "gender": 0,
     "birthday": "1983-02-28"
   },
   "Jessica_Robinson_8/7/1984": {
-    "editor": "nicole@editor.com",
-    "type": 7,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 7,
+    "Genres": [
       "hiphop",
       "rap"
     ],
-    "groups": [],
-    "materials": [
-      "The Role of the Conductor:Robinson-",
-      "The Rolling Stones: 'Exile on Main St.' Album:Doe-Robinson-"
-    ],
-    "media": [
+    "Groups": [],
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [
+      "The Role of the Conductor:Robinson-",
+      "The Rolling Stones: 'Exile on Main St.' Album:Doe-Robinson-"
+    ],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Jessica",
     "lastName": "Robinson",
     "gender": 1,
     "birthday": "1984-08-07"
   },
   "Mark_Wilson_10/12/1981": {
-    "editor": "nicole@editor.com",
-    "type": 1,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 1,
+    "Genres": [
       "folk",
       "rnb"
     ],
-    "groups": [],
-    "materials": [
-      "The Beatles: 'Sgt. Pepper's Lonely Hearts Club Band' Album:Wilson-",
-      "Woodstock Music Festival 1969: Cultural Impact and Legacy:Wilson-"
-    ],
-    "media": [
+    "Groups": [],
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [
+      "The Beatles: 'Sgt. Pepper's Lonely Hearts Club Band' Album:Wilson-",
+      "Woodstock Music Festival 1969: Cultural Impact and Legacy:Wilson-"
+    ],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Mark",
     "lastName": "Wilson",
     "gender": 0,
     "birthday": "1981-10-12"
   },
   "Rachel_Lee_6/25/1986": {
-    "editor": "nicole@editor.com",
-    "type": 3,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 3,
+    "Genres": [
       "classical",
       "jazz"
     ],
-    "groups": [],
-    "materials": [
+    "Groups": [],
+    "Media": [
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
+    ],
+    "AllMaterials": [
       "Understanding Jazz Improvisation:Doe-Brown-Lee-",
       "The Impact of Digital Technology on Music Production:Doe-Lee-",
       "Mozart's 'The Magic Flute' Opera:Lee-"
     ],
-    "media": [
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
-    ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Rachel",
     "lastName": "Lee",
     "gender": 1,
     "birthday": "1986-06-25"
   },
   "Roger_Waters_9/6/1943": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "progressive rock",
       "psychedelic rock"
     ],
-    "groups": [
+    "Groups": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
@@ -245,36 +255,37 @@
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "materials": [
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
-    ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    ],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Roger",
     "lastName": "Waters",
     "gender": 0,
     "birthday": "1943-09-06"
   },
   "David_Gilmour_3/6/1946": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "progressive rock",
       "psychedelic rock"
     ],
-    "groups": [
+    "Groups": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
@@ -287,36 +298,37 @@
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "materials": [
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
-    ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    ],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "David",
     "lastName": "Gilmour",
     "gender": 0,
     "birthday": "1946-03-06"
   },
   "Nick_Mason_1/27/1944": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "progressive rock",
       "psychedelic rock"
     ],
-    "groups": [
+    "Groups": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
@@ -329,36 +341,37 @@
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "materials": [
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
-    ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    ],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Nick",
     "lastName": "Mason",
     "gender": 0,
     "birthday": "1944-01-27"
   },
   "Richard_Wright_7/28/1943": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "progressive rock",
       "psychedelic rock"
     ],
-    "groups": [
+    "Groups": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
@@ -371,35 +384,36 @@
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "materials": [
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
-    ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    ],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Richard",
     "lastName": "Wright",
     "gender": 0,
     "birthday": "1943-07-28"
   },
   "Syd_Barrett_1/6/1946": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "psychedelic rock"
     ],
-    "groups": [
+    "Groups": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
@@ -412,291 +426,304 @@
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "materials": [
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
-      "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
-    ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+      "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    ],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Syd",
     "lastName": "Barrett",
     "gender": 0,
     "birthday": "1946-01-06"
   },
   "John_Lennon_10/9/1940": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "rock",
       "pop"
     ],
-    "groups": [
+    "Groups": [
       "The Beatles:Lennon-McCartney-Harrison-Starr-"
     ],
-    "materials": [],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\beatles.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "John",
     "lastName": "Lennon",
     "gender": 0,
     "birthday": "1940-10-09"
   },
   "Paul_McCartney_6/18/1942": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "rock",
       "pop"
     ],
-    "groups": [
+    "Groups": [
       "The Beatles:Lennon-McCartney-Harrison-Starr-"
     ],
-    "materials": [],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\beatles.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Paul",
     "lastName": "McCartney",
     "gender": 0,
     "birthday": "1942-06-18"
   },
   "George_Harrison_2/25/1943": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "rock",
       "pop"
     ],
-    "groups": [
+    "Groups": [
       "The Beatles:Lennon-McCartney-Harrison-Starr-"
     ],
-    "materials": [],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\beatles.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "George",
     "lastName": "Harrison",
     "gender": 0,
     "birthday": "1943-02-25"
   },
   "Ringo_Starr_7/7/1940": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "rock",
       "pop"
     ],
-    "groups": [
+    "Groups": [
       "The Beatles:Lennon-McCartney-Harrison-Starr-"
     ],
-    "materials": [],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\beatles.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Ringo",
     "lastName": "Starr",
     "gender": 0,
     "birthday": "1940-07-07"
   },
   "Mick_Jagger_7/26/1943": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "rock",
       "blues"
     ],
-    "groups": [
+    "Groups": [
       "The Rolling Stones:Jagger-Richards-Watts-Wood-"
     ],
-    "materials": [],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\rolling_stones.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Mick",
     "lastName": "Jagger",
     "gender": 0,
     "birthday": "1943-07-26"
   },
   "Keith_Richards_12/18/1943": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "rock",
       "blues"
     ],
-    "groups": [
+    "Groups": [
       "The Rolling Stones:Jagger-Richards-Watts-Wood-"
     ],
-    "materials": [],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\rolling_stones.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Keith",
     "lastName": "Richards",
     "gender": 0,
     "birthday": "1943-12-18"
   },
   "Charlie_Watts_6/2/1941": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "rock",
       "blues"
     ],
-    "groups": [
+    "Groups": [
       "The Rolling Stones:Jagger-Richards-Watts-Wood-"
     ],
-    "materials": [],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\rolling_stones.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Charlie",
     "lastName": "Watts",
     "gender": 0,
     "birthday": "1941-06-02"
   },
   "Ronnie_Wood_6/1/1947": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "rock",
       "blues"
     ],
-    "groups": [
+    "Groups": [
       "The Rolling Stones:Jagger-Richards-Watts-Wood-"
     ],
-    "materials": [],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\rolling_stones.jfif"
     ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllMaterials": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Ronnie",
     "lastName": "Wood",
     "gender": 0,
     "birthday": "1947-06-01"
   },
   "Elvis_Presley_1/8/1935": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "rock",
       "gospel",
       "blues"
     ],
-    "groups": [],
-    "materials": [
+    "Groups": [],
+    "Media": [
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\elvis_presley.jfif"
+    ],
+    "AllMaterials": [
       "Elvis Presley's 'Can't Help Falling in Love':Presley-",
       "Elvis Presley's 'Jailhouse Rock':Presley-",
       "Elvis Presley's 'Suspicious Minds':Presley-",
       "Elvis Presley's 'Heartbreak Hotel':Presley-",
       "Elvis Presley's 'Love Me Tender':Presley-"
     ],
-    "media": [
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\elvis_presley.jfif"
-    ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Elvis",
     "lastName": "Presley",
     "gender": 0,
     "birthday": "1935-01-08"
   },
   "Michael_Jackson_8/29/1958": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "pop",
       "R&B"
     ],
-    "groups": [],
-    "materials": [
+    "Groups": [],
+    "Media": [
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\michael_jackson.jfif"
+    ],
+    "AllMaterials": [
       "Michael Jackson's 'Billie Jean':Jackson-",
       "Michael Jackson's 'Thriller':Jackson-",
       "Michael Jackson's 'Beat It':Jackson-",
       "Michael Jackson's 'Smooth Criminal':Jackson-",
       "Michael Jackson's 'Man in the Mirror':Jackson-"
     ],
-    "media": [
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\michael_jackson.jfif"
-    ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Michael",
     "lastName": "Jackson",
     "gender": 0,
     "birthday": "1958-08-29"
   },
   "Bob_Dylan_5/24/1941": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "folk",
       "rock"
     ],
-    "groups": [],
-    "materials": [
+    "Groups": [],
+    "Media": [
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\bob_dylan.jfif"
+    ],
+    "AllMaterials": [
       "Bob Dylan's 'Like a Rolling Stone':Dylan-",
       "Bob Dylan's 'Blowin' in the Wind':Dylan-",
       "Bob Dylan's 'The Times They Are A-Changin':Dylan-",
       "Bob Dylan's 'Knockin' on Heaven's Door':Dylan-",
       "Bob Dylan's 'Mr. Tambourine Man':Dylan-"
     ],
-    "media": [
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\bob_dylan.jfif"
-    ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Bob",
     "lastName": "Dylan",
     "gender": 0,
     "birthday": "1941-05-24"
   },
   "Aretha_Franklin_3/25/1942": {
-    "editor": "nicole@editor.com",
-    "type": 0,
-    "genres": [
+    "Editor": "nicole@editor.com",
+    "Type": 0,
+    "Genres": [
       "soul",
       "R&B"
     ],
-    "groups": [],
-    "materials": [
+    "Groups": [],
+    "Media": [
+      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\aretha_franklin.jfif"
+    ],
+    "AllMaterials": [
       "Aretha Franklin's 'Respect':Franklin-",
       "Aretha Franklin's 'Natural Woman':Franklin-",
       "Aretha Franklin's 'Chain of Fools':Franklin-",
       "Aretha Franklin's 'Think':Franklin-"
     ],
-    "media": [
-      "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\aretha_franklin.jfif"
-    ],
-    "biographyComments": [],
-    "biographyStarRatings": [],
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0,
     "name": "Aretha",
     "lastName": "Franklin",
     "gender": 1,

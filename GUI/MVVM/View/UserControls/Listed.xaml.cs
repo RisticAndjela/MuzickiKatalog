@@ -8,7 +8,7 @@ using System.Windows.Controls;
 using muzickiKatalog.Layers.Model.performatorium;
 using muzickiKatalog.GUI.MVVM.ViewModel;
 
-namespace muzickiKatalog.GUI.MVVM.View.Controls
+namespace muzickiKatalog.GUI.MVVM.View.UserControls
 {
     /// <summary>
     /// Interaction logic for Listed.xaml

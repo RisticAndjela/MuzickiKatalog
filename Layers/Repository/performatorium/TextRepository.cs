@@ -10,5 +10,9 @@ namespace muzickiKatalog.Layers.Repository.performatorium
         {
             return new Dao<Text>(GlobalVariables.textsFile).ReadDictionaryFromFile();
         }
+        public static void save(Text text,string id)
+        {
+            SaveOneInstance<Text>.SaveOneInstanceInDictionary(text, id, GlobalVariables.textsFile);
+        }
     }
 }

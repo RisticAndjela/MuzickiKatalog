@@ -1,25 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using muzickiKatalog.Layers.Model.performatorium;
+﻿using muzickiKatalog.Layers.Model.performatorium;
+using materialNS=muzickiKatalog.Layers.Model.performatorium;
 using muzickiKatalog.Layers.Repository.performatorium;
+using muzickiKatalog.Layers.Service.performatorium.Interfaces;
 
 namespace muzickiKatalog.Layers.Service.performatorium
 {
-    public class MaterialService
+    public class MaterialService: IMaterialService
     {
-        public static Dictionary<string, Material> get10Popular()
+
+        public static void LeaveRating(materialNS.Material material,StarRating rating)
         {
-            Dictionary<string, Material> popular = new Dictionary<string, Material>();
-            Dictionary<string, Material> all = MaterialRepository.getAll();
+            material.AllStarRatings.Add(rating);
+            MaterialRepository.save(material);
+        }
+
+        public static void LeaveComment(materialNS.Material material, Comment comment)
+        {
+            material.AllComments.Add(comment);
+            MaterialRepository.save(material);
+        }
+        public static void Visited(materialNS.Material material)
+        {
+            material.Visits++;
+            MaterialRepository.save(material);
+        }
+        public static void PutInAlbum(materialNS.Material material, string _album)
+        {
+            material.Albums = _album;
+            MaterialRepository.save(material);
+        }
+        public static Dictionary<string, materialNS.Material> Get10Popular()
+        {
+            Dictionary<string, materialNS.Material> popular = new Dictionary<string, materialNS.Material>();
+            Dictionary<string, materialNS.Material> all = MaterialRepository.getAll();
             Dictionary<int, string> allRatings = new Dictionary<int, string>();
-            foreach (KeyValuePair<string, Material> pair in all)
+            foreach (KeyValuePair<string, materialNS.Material> pair in all)
             {
-                if (pair.Value.publishDate > DateOnly.FromDateTime(DateTime.Now).AddDays(-50))
+                if (pair.Value.PublishDate > DateOnly.FromDateTime(DateTime.Now).AddDays(-50))
                 {
-                    allRatings.Add(calculateRating(pair.Value), pair.Key);
+                    allRatings.Add(CalculateRating(pair.Value), pair.Key);
                 }
             }
             List<string> sortedRatings = allRatings.OrderBy(x => x.Key).Select(x => x.Value).ToList<string>();
@@ -33,12 +52,10 @@ namespace muzickiKatalog.Layers.Service.performatorium
         }
 
 
-
-
-        public static int calculateRating(Material material)
+        public static int CalculateRating(materialNS.Material material)
         {
             int rating = 0;
-            switch (material.visits)
+            switch (material.Visits)
             {
                 case < 20:
                     rating += 1;
@@ -54,7 +71,7 @@ namespace muzickiKatalog.Layers.Service.performatorium
                     break;
             }
 
-            int reviews = material.comments.Count * 2 + material.starRatings.Count;
+            int reviews = material.AllComments.Count * 2 + material.AllStarRatings.Count;
             switch (reviews)
             {
                 case < 10:

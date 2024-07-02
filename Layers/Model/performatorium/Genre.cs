@@ -1,25 +1,25 @@
-﻿using muzickiKatalog.Layers.dao;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using muzickiKatalog.Layers.Repository.performatorium;
+using muzickiKatalog.Layers.Model.performatorium.Interfaces;
+
 
 namespace muzickiKatalog.Layers.Model.performatorium
 {
-    public class Genre
+    public class Genre : IDocumentation
     {
-        public string name { get; set; }
+        public string Name { get; set; }
+        public List<string> AllMaterials { get; set; }=new List<string>();
+        public List<string> Media { get; set; }=new List<string>();
+        public List<StarRating> AllStarRatings { get; set; }=new List<StarRating>();
+        public List<Comment> AllComments { get; set; }=new List<Comment>();
+        public int Visits { get; set; } = 0;
+
+
         public Genre() { }
         public Genre(string _name)
         {
-            name = _name;
-            save();
+            Name = _name;
+            GenreRepository.save(this);
         }
 
-        private void save()
-        {
-            SaveOneInstance<Genre>.SaveOneInstanceInList(this, GlobalVariables.genresFile);
-        }
     }
 }

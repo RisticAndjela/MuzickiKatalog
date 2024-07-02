@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace muzickiKatalog.GUI.MVVM.View.Controls
+namespace muzickiKatalog.GUI.MVVM.View.UserControls
 {
     /// <summary>
-    /// Interaction logic for ADs.xaml
+    /// Interaction logic for SearchFilter.xaml
     /// </summary>
-    public partial class ADs : UserControl
+    public partial class SearchFilter : UserControl
     {
-        public ADs()
+        public SearchFilter()
         {
             InitializeComponent();
         }

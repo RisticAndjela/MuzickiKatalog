@@ -1,5 +1,6 @@
 ﻿using muzickiKatalog.Layers.dao;
 using muzickiKatalog.Layers.Model.performatorium;
+using muzickiKatalog.Layers.Service.performatorium;
 using muzickiKatalog.Layers.support;
 using System;
 using System.Collections.Generic;
@@ -41,7 +42,7 @@ namespace muzickiKatalog.Layers.Model.contributors
         {
             needToApproveComments.Remove(comment);
             save();
-            comment.approved();
+            CommentService.Approved(comment);
         }
         public void disapprovedComment(Comment comment) {
             needToApproveComments.Remove(comment);
@@ -51,7 +52,7 @@ namespace muzickiKatalog.Layers.Model.contributors
         {
             needToApproveRatings.Remove(rating);
             save();
-            rating.approved();
+            StarRatingService.Approved(rating);
         }
         public void disapprovedRating(StarRating rating)
         {

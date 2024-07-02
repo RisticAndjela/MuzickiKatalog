@@ -14,5 +14,9 @@ namespace muzickiKatalog.Layers.Repository.performatorium
         {
             return new Dao<Genre>(GlobalVariables.genresFile).ReadDictionaryFromFile();
         }
+        public static void save(Genre genre)
+        {
+            SaveOneInstance<Genre>.SaveOneInstanceInList(genre, GlobalVariables.genresFile);
+        }
     }
 }

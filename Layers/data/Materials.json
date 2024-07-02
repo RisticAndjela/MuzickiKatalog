@@ -1,824 +1,824 @@
 {
   "Introduction to Music Theory:Martinez-": {
-    "editor": "nicole@editor.com",
-    "title": "Introduction to Music Theory",
-    "publishDate": "2024-07-02",
-    "performedDate": "2002-12-12",
-    "genre": "music theory",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Introduction to Music Theory",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2002-12-12",
+    "Genre": "music theory",
+    "Albums": null,
+    "Contributors": [
       "Alex_Martinez_2/28/1983"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "The History of Classical Music:Brown-": {
-    "editor": "nicole@editor.com",
-    "title": "The History of Classical Music",
-    "publishDate": "2024-07-02",
-    "performedDate": "1998-09-20",
-    "genre": "classical",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "The History of Classical Music",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1998-09-20",
+    "Genre": "classical",
+    "Albums": null,
+    "Contributors": [
       "David_Brown_5/3/1978"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img4.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Understanding Jazz Improvisation:Doe-Brown-Lee-": {
-    "editor": "nicole@editor.com",
-    "title": "Understanding Jazz Improvisation",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "jazz",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Understanding Jazz Improvisation",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "jazz",
+    "Albums": null,
+    "Contributors": [
       "John_Doe_7/15/1985",
       "David_Brown_5/3/1978",
       "Rachel_Lee_6/25/1986"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "The Evolution of Rock Music:Martinez-": {
-    "editor": "nicole@editor.com",
-    "title": "The Evolution of Rock Music",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "rock",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "The Evolution of Rock Music",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "rock",
+    "Albums": null,
+    "Contributors": [
       "Alex_Martinez_2/28/1983"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img4.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "The Role of the Conductor:Robinson-": {
-    "editor": "nicole@editor.com",
-    "title": "The Role of the Conductor",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "orchestra",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "The Role of the Conductor",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "orchestra",
+    "Albums": null,
+    "Contributors": [
       "Jessica_Robinson_8/7/1984"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img2.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "The Impact of Digital Technology on Music Production:Doe-Lee-": {
-    "editor": "nicole@editor.com",
-    "title": "The Impact of Digital Technology on Music Production",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "music theory",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "The Impact of Digital Technology on Music Production",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "music theory",
+    "Albums": null,
+    "Contributors": [
       "John_Doe_7/15/1985",
       "Rachel_Lee_6/25/1986"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Exploring World Music Traditions:Doe-": {
-    "editor": "nicole@editor.com",
-    "title": "Exploring World Music Traditions",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "world",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Exploring World Music Traditions",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "world",
+    "Albums": null,
+    "Contributors": [
       "John_Doe_7/15/1985"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "The Psychology of Music:Davis-Martinez-": {
-    "editor": "nicole@editor.com",
-    "title": "The Psychology of Music",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "music theory",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "The Psychology of Music",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "music theory",
+    "Albums": null,
+    "Contributors": [
       "Emily_Davis_12/10/1987",
       "Alex_Martinez_2/28/1983"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Film Scoring Techniques:Doe-": {
-    "editor": "nicole@editor.com",
-    "title": "Film Scoring Techniques",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "music theory",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Film Scoring Techniques",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "music theory",
+    "Albums": null,
+    "Contributors": [
       "John_Doe_7/15/1985"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "The Business of Music:Brown-": {
-    "editor": "nicole@editor.com",
-    "title": "The Business of Music",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "music theory",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "The Business of Music",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "music theory",
+    "Albums": null,
+    "Contributors": [
       "David_Brown_5/3/1978"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img2.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Mozart's 'The Magic Flute' Opera:Lee-": {
-    "editor": "nicole@editor.com",
-    "title": "Mozart's 'The Magic Flute' Opera",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "opera",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Mozart's 'The Magic Flute' Opera",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "opera",
+    "Albums": null,
+    "Contributors": [
       "Rachel_Lee_6/25/1986"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Beethoven's Symphony No. 9: 'Ode to Joy':Doe-": {
-    "editor": "nicole@editor.com",
-    "title": "Beethoven's Symphony No. 9: 'Ode to Joy'",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "classical",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Beethoven's Symphony No. 9: 'Ode to Joy'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "classical",
+    "Albums": null,
+    "Contributors": [
       "John_Doe_7/15/1985"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img4.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "The Beatles: 'Sgt. Pepper's Lonely Hearts Club Band' Album:Wilson-": {
-    "editor": "nicole@editor.com",
-    "title": "The Beatles: 'Sgt. Pepper's Lonely Hearts Club Band' Album",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "rock",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "The Beatles: 'Sgt. Pepper's Lonely Hearts Club Band' Album",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "rock",
+    "Albums": null,
+    "Contributors": [
       "Mark_Wilson_10/12/1981"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Miles Davis: 'Kind of Blue' Album:Davis-": {
-    "editor": "nicole@editor.com",
-    "title": "Miles Davis: 'Kind of Blue' Album",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "jazz",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Miles Davis: 'Kind of Blue' Album",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "jazz",
+    "Albums": null,
+    "Contributors": [
       "Emily_Davis_12/10/1987"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Puccini's 'La Bohème' Opera:Doe-": {
-    "editor": "nicole@editor.com",
-    "title": "Puccini's 'La Bohème' Opera",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "opera",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Puccini's 'La Bohème' Opera",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "opera",
+    "Albums": null,
+    "Contributors": [
       "John_Doe_7/15/1985"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img2.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Woodstock Music Festival 1969: Cultural Impact and Legacy:Wilson-": {
-    "editor": "nicole@editor.com",
-    "title": "Woodstock Music Festival 1969: Cultural Impact and Legacy",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "rock",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Woodstock Music Festival 1969: Cultural Impact and Legacy",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "rock",
+    "Albums": null,
+    "Contributors": [
       "Mark_Wilson_10/12/1981"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "The Rolling Stones: 'Exile on Main St.' Album:Doe-Robinson-": {
-    "editor": "nicole@editor.com",
-    "title": "The Rolling Stones: 'Exile on Main St.' Album",
-    "publishDate": "2024-07-02",
-    "performedDate": "2005-03-10",
-    "genre": "rock",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "The Rolling Stones: 'Exile on Main St.' Album",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2005-03-10",
+    "Genre": "rock",
+    "Albums": null,
+    "Contributors": [
       "John_Doe_7/15/1985",
       "Jessica_Robinson_8/7/1984"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img3.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Johann Strauss II: 'The Blue Danube' Waltz:Johnson-": {
-    "editor": "nicole@editor.com",
-    "title": "Johann Strauss II: 'The Blue Danube' Waltz",
-    "publishDate": "2024-07-02",
-    "performedDate": "2006-11-12",
-    "genre": "classical",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Johann Strauss II: 'The Blue Danube' Waltz",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2006-11-12",
+    "Genre": "classical",
+    "Albums": null,
+    "Contributors": [
       "Michael_Johnson_9/5/1982"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img1.jfif",
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\img2.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Speak to Me:Pink Floyd": {
-    "editor": "nicole@editor.com",
-    "title": "Speak to Me",
-    "publishDate": "2024-07-02",
-    "performedDate": "2002-12-12",
-    "genre": "blues",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Speak to Me",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2002-12-12",
+    "Genre": "blues",
+    "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+    "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Breathe:Pink Floyd": {
-    "editor": "nicole@editor.com",
-    "title": "Breathe",
-    "publishDate": "2024-07-02",
-    "performedDate": "2002-12-12",
-    "genre": "blues",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Breathe",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2002-12-12",
+    "Genre": "blues",
+    "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+    "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "On the Run:Pink Floyd": {
-    "editor": "nicole@editor.com",
-    "title": "On the Run",
-    "publishDate": "2024-07-02",
-    "performedDate": "2002-12-12",
-    "genre": "blues",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "On the Run",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2002-12-12",
+    "Genre": "blues",
+    "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+    "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Time:Pink Floyd": {
-    "editor": "nicole@editor.com",
-    "title": "Time",
-    "publishDate": "2024-07-02",
-    "performedDate": "2002-12-12",
-    "genre": "blues",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Time",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2002-12-12",
+    "Genre": "blues",
+    "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+    "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "The Great Gig in the Sky:Pink Floyd": {
-    "editor": "nicole@editor.com",
-    "title": "The Great Gig in the Sky",
-    "publishDate": "2024-07-02",
-    "performedDate": "2002-12-12",
-    "genre": "blues",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "The Great Gig in the Sky",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2002-12-12",
+    "Genre": "blues",
+    "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+    "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Money:Pink Floyd": {
-    "editor": "nicole@editor.com",
-    "title": "Money",
-    "publishDate": "2024-07-02",
-    "performedDate": "2002-12-12",
-    "genre": "blues",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Money",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2002-12-12",
+    "Genre": "blues",
+    "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+    "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Us and Them:Pink Floyd": {
-    "editor": "nicole@editor.com",
-    "title": "Us and Them",
-    "publishDate": "2024-07-02",
-    "performedDate": "2002-12-12",
-    "genre": "blues",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Us and Them",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2002-12-12",
+    "Genre": "blues",
+    "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+    "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Any Colour You Like:Pink Floyd": {
-    "editor": "nicole@editor.com",
-    "title": "Any Colour You Like",
-    "publishDate": "2024-07-02",
-    "performedDate": "2002-12-12",
-    "genre": "blues",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Any Colour You Like",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2002-12-12",
+    "Genre": "blues",
+    "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+    "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Brain Damage:Pink Floyd": {
-    "editor": "nicole@editor.com",
-    "title": "Brain Damage",
-    "publishDate": "2024-07-02",
-    "performedDate": "2002-12-12",
-    "genre": "blues",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Brain Damage",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2002-12-12",
+    "Genre": "blues",
+    "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+    "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Eclipse:Pink Floyd": {
-    "editor": "nicole@editor.com",
-    "title": "Eclipse",
-    "publishDate": "2024-07-02",
-    "performedDate": "2002-12-12",
-    "genre": "blues",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Eclipse",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "2002-12-12",
+    "Genre": "blues",
+    "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
+    "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\pink_floyd.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": "Pink Floyd's 'The Dark Side of the Moon' Album: Musical Innovation and Conceptual Brilliance:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Elvis Presley's 'Can't Help Falling in Love':Presley-": {
-    "editor": "nicole@editor.com",
-    "title": "Elvis Presley's 'Can't Help Falling in Love'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1961-10-01",
-    "genre": "rock",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Elvis Presley's 'Can't Help Falling in Love'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1961-10-01",
+    "Genre": "rock",
+    "Albums": null,
+    "Contributors": [
       "Elvis_Presley_1/8/1935"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\elvis_presley.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Elvis Presley's 'Jailhouse Rock':Presley-": {
-    "editor": "nicole@editor.com",
-    "title": "Elvis Presley's 'Jailhouse Rock'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1957-09-24",
-    "genre": "rock",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Elvis Presley's 'Jailhouse Rock'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1957-09-24",
+    "Genre": "rock",
+    "Albums": null,
+    "Contributors": [
       "Elvis_Presley_1/8/1935"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\elvis_presley.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Elvis Presley's 'Suspicious Minds':Presley-": {
-    "editor": "nicole@editor.com",
-    "title": "Elvis Presley's 'Suspicious Minds'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1969-08-26",
-    "genre": "rock",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Elvis Presley's 'Suspicious Minds'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1969-08-26",
+    "Genre": "rock",
+    "Albums": null,
+    "Contributors": [
       "Elvis_Presley_1/8/1935"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\elvis_presley.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Elvis Presley's 'Heartbreak Hotel':Presley-": {
-    "editor": "nicole@editor.com",
-    "title": "Elvis Presley's 'Heartbreak Hotel'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1956-01-27",
-    "genre": "rock",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Elvis Presley's 'Heartbreak Hotel'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1956-01-27",
+    "Genre": "rock",
+    "Albums": null,
+    "Contributors": [
       "Elvis_Presley_1/8/1935"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\elvis_presley.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Elvis Presley's 'Love Me Tender':Presley-": {
-    "editor": "nicole@editor.com",
-    "title": "Elvis Presley's 'Love Me Tender'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1956-09-28",
-    "genre": "rock",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Elvis Presley's 'Love Me Tender'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1956-09-28",
+    "Genre": "rock",
+    "Albums": null,
+    "Contributors": [
       "Elvis_Presley_1/8/1935"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\elvis_presley.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Michael Jackson's 'Billie Jean':Jackson-": {
-    "editor": "nicole@editor.com",
-    "title": "Michael Jackson's 'Billie Jean'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1982-01-02",
-    "genre": "pop",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Michael Jackson's 'Billie Jean'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1982-01-02",
+    "Genre": "pop",
+    "Albums": null,
+    "Contributors": [
       "Michael_Jackson_8/29/1958"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\michael_jackson.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Michael Jackson's 'Thriller':Jackson-": {
-    "editor": "nicole@editor.com",
-    "title": "Michael Jackson's 'Thriller'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1983-11-30",
-    "genre": "pop",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Michael Jackson's 'Thriller'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1983-11-30",
+    "Genre": "pop",
+    "Albums": null,
+    "Contributors": [
       "Michael_Jackson_8/29/1958"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\michael_jackson.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Michael Jackson's 'Beat It':Jackson-": {
-    "editor": "nicole@editor.com",
-    "title": "Michael Jackson's 'Beat It'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1983-02-14",
-    "genre": "pop",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Michael Jackson's 'Beat It'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1983-02-14",
+    "Genre": "pop",
+    "Albums": null,
+    "Contributors": [
       "Michael_Jackson_8/29/1958"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\michael_jackson.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Michael Jackson's 'Smooth Criminal':Jackson-": {
-    "editor": "nicole@editor.com",
-    "title": "Michael Jackson's 'Smooth Criminal'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1987-10-24",
-    "genre": "pop",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Michael Jackson's 'Smooth Criminal'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1987-10-24",
+    "Genre": "pop",
+    "Albums": null,
+    "Contributors": [
       "Michael_Jackson_8/29/1958"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\michael_jackson.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Michael Jackson's 'Man in the Mirror':Jackson-": {
-    "editor": "nicole@editor.com",
-    "title": "Michael Jackson's 'Man in the Mirror'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1988-01-16",
-    "genre": "pop",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Michael Jackson's 'Man in the Mirror'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1988-01-16",
+    "Genre": "pop",
+    "Albums": null,
+    "Contributors": [
       "Michael_Jackson_8/29/1958"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\michael_jackson.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Bob Dylan's 'Like a Rolling Stone':Dylan-": {
-    "editor": "nicole@editor.com",
-    "title": "Bob Dylan's 'Like a Rolling Stone'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1965-07-20",
-    "genre": "rock",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Bob Dylan's 'Like a Rolling Stone'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1965-07-20",
+    "Genre": "rock",
+    "Albums": null,
+    "Contributors": [
       "Bob_Dylan_5/24/1941"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\bob_dylan.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Bob Dylan's 'Blowin' in the Wind':Dylan-": {
-    "editor": "nicole@editor.com",
-    "title": "Bob Dylan's 'Blowin' in the Wind'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1963-04-16",
-    "genre": "folk",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Bob Dylan's 'Blowin' in the Wind'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1963-04-16",
+    "Genre": "folk",
+    "Albums": null,
+    "Contributors": [
       "Bob_Dylan_5/24/1941"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\bob_dylan.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Bob Dylan's 'The Times They Are A-Changin':Dylan-": {
-    "editor": "nicole@editor.com",
-    "title": "Bob Dylan's 'The Times They Are A-Changin'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1964-01-13",
-    "genre": "folk",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Bob Dylan's 'The Times They Are A-Changin'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1964-01-13",
+    "Genre": "folk",
+    "Albums": null,
+    "Contributors": [
       "Bob_Dylan_5/24/1941"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\bob_dylan.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Bob Dylan's 'Knockin' on Heaven's Door':Dylan-": {
-    "editor": "nicole@editor.com",
-    "title": "Bob Dylan's 'Knockin' on Heaven's Door'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1973-07-12",
-    "genre": "rock",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Bob Dylan's 'Knockin' on Heaven's Door'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1973-07-12",
+    "Genre": "rock",
+    "Albums": null,
+    "Contributors": [
       "Bob_Dylan_5/24/1941"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\bob_dylan.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Bob Dylan's 'Mr. Tambourine Man':Dylan-": {
-    "editor": "nicole@editor.com",
-    "title": "Bob Dylan's 'Mr. Tambourine Man'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1965-04-12",
-    "genre": "folk",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Bob Dylan's 'Mr. Tambourine Man'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1965-04-12",
+    "Genre": "folk",
+    "Albums": null,
+    "Contributors": [
       "Bob_Dylan_5/24/1941"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\bob_dylan.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Aretha Franklin's 'Respect':Franklin-": {
-    "editor": "nicole@editor.com",
-    "title": "Aretha Franklin's 'Respect'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1967-04-29",
-    "genre": "soul",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Aretha Franklin's 'Respect'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1967-04-29",
+    "Genre": "soul",
+    "Albums": null,
+    "Contributors": [
       "Aretha_Franklin_3/25/1942"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\aretha_franklin.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Aretha Franklin's 'Natural Woman':Franklin-": {
-    "editor": "nicole@editor.com",
-    "title": "Aretha Franklin's 'Natural Woman'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1967-09-22",
-    "genre": "soul",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Aretha Franklin's 'Natural Woman'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1967-09-22",
+    "Genre": "soul",
+    "Albums": null,
+    "Contributors": [
       "Aretha_Franklin_3/25/1942"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\aretha_franklin.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Aretha Franklin's 'Chain of Fools':Franklin-": {
-    "editor": "nicole@editor.com",
-    "title": "Aretha Franklin's 'Chain of Fools'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1967-11-21",
-    "genre": "soul",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Aretha Franklin's 'Chain of Fools'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1967-11-21",
+    "Genre": "soul",
+    "Albums": null,
+    "Contributors": [
       "Aretha_Franklin_3/25/1942"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\aretha_franklin.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   },
   "Aretha Franklin's 'Think':Franklin-": {
-    "editor": "nicole@editor.com",
-    "title": "Aretha Franklin's 'Think'",
-    "publishDate": "2024-07-02",
-    "performedDate": "1968-05-02",
-    "genre": "soul",
-    "contributors": [
+    "Editor": "nicole@editor.com",
+    "Title": "Aretha Franklin's 'Think'",
+    "PublishDate": "2024-07-02",
+    "PerformedDate": "1968-05-02",
+    "Genre": "soul",
+    "Albums": null,
+    "Contributors": [
       "Aretha_Franklin_3/25/1942"
     ],
-    "media": [
+    "Media": [
       "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\aretha_franklin.jfif"
     ],
-    "comments": [],
-    "starRatings": [],
-    "visits": 0,
-    "album": null
+    "AllComments": [],
+    "AllStarRatings": [],
+    "Visits": 0
   }
 }

@@ -41,7 +41,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Editor
             if (sender is ToggleButton button)
             {
                 string starName = button.Name;
-                int starNumber = int.Parse(starName.Substring(4)); // Extracts the numeric part from the name
+                int starNumber = int.Parse(starName.Substring(4)); // Extracts the numeric part from the Name
 
                 // Update stars based on clicked star number
                 for (int i = 1; i <= 5; i++)

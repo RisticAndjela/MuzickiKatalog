@@ -1,4 +1,4 @@
-﻿using muzickiKatalog.GUI.MVVM.View.Controls;
+﻿using muzickiKatalog.GUI.MVVM.View.UserControls;
 using muzickiKatalog.Layers.Repository.performatorium;
 using System;
 using System.Collections.Generic;

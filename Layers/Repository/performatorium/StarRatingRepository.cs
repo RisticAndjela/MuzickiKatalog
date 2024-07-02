@@ -15,22 +15,22 @@ namespace muzickiKatalog.Layers.Repository.performatorium
             Dictionary<string, Artist> artists = ArtistRepository.getAll();
             foreach (Artist artist in artists.Values)
             {
-                final.AddRange(artist.biographyStarRatings);
+                final.AddRange(artist.AllStarRatings);
             }
             Dictionary<string, Group> groups = GroupRepository.getAll();
             foreach (Group group in groups.Values)
             {
-                final.AddRange(group.allStarRatings);
+                final.AddRange(group.AllStarRatings);
             }
             Dictionary<string, Material> mateials = MaterialRepository.getAll();
             foreach (Material material in mateials.Values)
             {
-                final.AddRange(material.starRatings);
+                final.AddRange(material.AllStarRatings);
             }
             Dictionary<string, Album> albums = AlbumRepository.getAll();
             foreach (Album album in albums.Values)
             {
-                final.AddRange(album.allStarRatings);
+                final.AddRange(album.AllStarRatings);
             }
 
             return final;

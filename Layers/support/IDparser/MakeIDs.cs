@@ -16,8 +16,8 @@ namespace muzickiKatalog.Layers.support.IDparser
         public static string makeGroupID(Group group)
         {
             StringBuilder id = new StringBuilder();
-            id.Append($"{group.name}:");
-            foreach (String s in group.artists)
+            id.Append($"{group.Name}:");
+            foreach (String s in group.Artists)
             {
                 (_,Artist artist) = GetFromIDs<Artist>.get(s, GlobalVariables.artistsFile);
                 id.Append(artist.lastName);
@@ -28,8 +28,8 @@ namespace muzickiKatalog.Layers.support.IDparser
         public static string makeAlbumID(Album album)
         {
             StringBuilder id = new StringBuilder();
-            id.Append($"{album.name}:");
-            foreach (String s in album.allMaterials)
+            id.Append($"{album.Name}:");
+            foreach (String s in album.AllMaterials)
             {
                 id.Append(s);
                 id.Append("-");
@@ -39,8 +39,8 @@ namespace muzickiKatalog.Layers.support.IDparser
         public static string makeMaterialID(Material material)
         {
            StringBuilder id = new StringBuilder();
-            id.Append($"{material.title}:");
-            foreach (String s in material.contributors)
+            id.Append($"{material.Title}:");
+            foreach (String s in material.Contributors)
             {
                 (bool isArtist, Artist artist) = GetFromIDs<Artist>.get(s, GlobalVariables.artistsFile);
                 if (isArtist)
@@ -51,7 +51,7 @@ namespace muzickiKatalog.Layers.support.IDparser
                 else
                 {
                     (_, Group group) = GetFromIDs<Group>.get(s, GlobalVariables.groupsFile);
-                    id.Append(group.name);
+                    id.Append(group.Name);
                 }
             }
             return id.ToString();

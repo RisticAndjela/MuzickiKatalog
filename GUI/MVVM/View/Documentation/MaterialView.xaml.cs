@@ -1,19 +1,7 @@
-﻿using muzickiKatalog.GUI.MVVM.View.Controls;
+﻿using muzickiKatalog.GUI.MVVM.View.UserControls;
 using muzickiKatalog.GUI.MVVM.ViewModel;
 using model=muzickiKatalog.Layers.Model.performatorium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace muzickiKatalog.GUI.MVVM.View.Documentation
 {
@@ -28,8 +16,8 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         {
             InitializeComponent();
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
-            naslovLabela.Content= material.title;
-            reviewSection = new ReviewSection(material.starRatings, material.comments);
+            naslovLabela.Content= material.Title;
+            reviewSection = new ReviewSection(material.AllStarRatings, material.AllComments);
             ControlsViewModel viewModel = new ControlsViewModel();
             DataContext = viewModel;
             panelr.Content = reviewSection;

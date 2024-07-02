@@ -13,13 +13,13 @@
     <Compile Update="GUI\MVVM\View\Admin\MakeEditor.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="GUI\MVVM\View\Controls\ADs.xaml.cs">
+    <Compile Update="GUI\MVVM\View\UserControls\ADs.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="GUI\MVVM\View\Controls\OneList.xaml.cs">
+    <Compile Update="GUI\MVVM\View\UserControls\OneList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="GUI\MVVM\View\Controls\ReviewSection.xaml.cs">
+    <Compile Update="GUI\MVVM\View\UserControls\ReviewSection.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="GUI\MVVM\View\Documentation\AlbumView.xaml.cs">
@@ -66,13 +66,13 @@
     <Page Update="GUI\MVVM\View\Admin\MakeEditor.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="GUI\MVVM\View\Controls\ADs.xaml">
+    <Page Update="GUI\MVVM\View\UserControls\ADs.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="GUI\MVVM\View\Controls\OneList.xaml">
+    <Page Update="GUI\MVVM\View\UserControls\OneList.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="GUI\MVVM\View\Controls\ReviewSection.xaml">
+    <Page Update="GUI\MVVM\View\UserControls\ReviewSection.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\Documentation\AlbumView.xaml">
