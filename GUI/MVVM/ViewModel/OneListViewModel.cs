@@ -1,4 +1,5 @@
 ﻿using muzickiKatalog.GUI.MVVM.View.UserControls;
+using muzickiKatalog.Layers.Controller.performatorium;
 using muzickiKatalog.Layers.Model.performatorium;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -15,30 +16,14 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
 
         public OneListViewModel(Dictionary<string, Material> materials_, Dictionary<string, Album> albums_, Dictionary<string, Group> groups_, Dictionary<string, Artist> artists_)
         {
-            Dictionary<string, Tuple<string, string>> allMaterials = new Dictionary<string, Tuple<string, string>>();
-            foreach (KeyValuePair<string,Material> pair in materials_) 
-            {
-                allMaterials.Add(pair.Key, new Tuple<string, string>(pair.Value.Title, pair.Value.Media[0]));
-            }
-            ListShowMaterials = new OneList(allMaterials,typeof(Material));
-            Dictionary<string, Tuple<string, string>> allAlbums = new Dictionary<string, Tuple<string, string>>();
-            foreach(KeyValuePair<string,Album> pair in albums_)
-            {
-                allAlbums.Add(pair.Key,new Tuple<string, string>(pair.Value.Name, pair.Value.Media[0]));  
-            }
-            ListShowAlbums = new OneList(allAlbums, typeof(Album));
-            Dictionary<string, Tuple<string, string>> allArtists = new Dictionary<string, Tuple<string, string>>();
-            foreach(KeyValuePair<string,Artist> pair in artists_)
-            {
-                allArtists.Add(pair.Key,new Tuple<string,string>($"{pair.Value.Name} {pair.Value.LastName}", pair.Value.Media[0]));
-            }
-            ListShowArtists = new OneList(allArtists, typeof(Artist));
-            Dictionary<string, Tuple<string, string>> allGroups = new Dictionary<string, Tuple<string, string>>();
-            foreach(KeyValuePair<string, Group> pair in groups_)
-            {
-                allGroups.Add(pair.Key, new Tuple<string, string>(pair.Value.Name, pair.Value.Media[0]));
-            }
-            ListShowGroups = new OneList(allGroups, typeof(Group));
+            
+            ListShowMaterials = new OneList(MaterialController.getForList(materials_),typeof(Material));
+            
+            ListShowAlbums = new OneList(AlbumController.getForList(albums_), typeof(Album));
+            
+            ListShowArtists = new OneList(ArtistController.getForList(artists_), typeof(Artist));
+           
+            ListShowGroups = new OneList(GroupController.getForList(groups_), typeof(Group));
 
         }
 

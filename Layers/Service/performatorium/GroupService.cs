@@ -45,9 +45,6 @@ namespace muzickiKatalog.Layers.Service.performatorium
             GroupRepository.save(group);
         }
        
-        public static Dictionary<string, Group> Get10Popular()
-        {
-            return getRatings<Group>.Get10Popular();
-        }
+        
     }
 }

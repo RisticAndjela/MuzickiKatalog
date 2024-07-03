@@ -29,13 +29,6 @@ namespace muzickiKatalog.Layers.Service.performatorium
             material.Albums = _album;
             MaterialRepository.save(material);
         }
-        public static Dictionary<string, Material> Get10Popular()
-        {
-            
-            return getRatings<Material>.Get10Popular();
-
-        }
-
 
         
     }

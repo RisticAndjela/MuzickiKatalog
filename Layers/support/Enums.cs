@@ -52,9 +52,5 @@
         editor,
         artist
     }
-    public enum reviewType
-    {
-        artist,
-        material
-    }
+   
 }

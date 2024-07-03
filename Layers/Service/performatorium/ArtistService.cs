@@ -44,11 +44,7 @@ namespace muzickiKatalog.Layers.Service.performatorium
             artist.Visits++;
             ArtistRepository.save(artist);
         }
-        public static Dictionary<string, Artist> Get10Popular()
-        {
-            return getRatings<Artist>.Get10Popular();
-
-        }
+        
        
     }
 }

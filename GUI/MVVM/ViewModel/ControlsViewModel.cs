@@ -1,6 +1,8 @@
 ﻿using muzickiKatalog.GUI.MVVM.View.UserControls;
+using muzickiKatalog.Layers.Controller.performatorium;
 using muzickiKatalog.Layers.Repository.performatorium;
 using muzickiKatalog.Layers.Service.performatorium;
+using muzickiKatalog.Layers.Model.performatorium;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,10 +24,14 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
 
         public ControlsViewModel()
             {
+                Dictionary<string, Material> allMaterials = MaterialRepository.getAll();
+                Dictionary<string, Album> allAlbums = AlbumRepository.getAll();
+                Dictionary<string, Artist> allArtists = ArtistRepository.getAll();
+                Dictionary<string, Group> allGroups = GroupRepository.getAll();
                 AdsPanel = new ADs();
-                PopularListedPanel = new Listed(MaterialService.Get10Popular(),AlbumService.Get10Popular(), GroupService.Get10Popular(), ArtistService.Get10Popular());
-                FollowingListedPanel = new Listed(MaterialRepository.getAll(),AlbumRepository.getAll(),GroupRepository.getAll(),ArtistRepository.getAll());
-                AllListedPanel = new Listed(MaterialRepository.getAll(),AlbumRepository.getAll(),GroupRepository.getAll(),ArtistRepository.getAll());
+                PopularListedPanel = new Listed(MaterialController.Get10Popular(), AlbumController.Get10Popular(), GroupController.Get10Popular(), ArtistController.Get10Popular());
+                FollowingListedPanel = new Listed(allMaterials,allAlbums,allGroups,allArtists);
+                AllListedPanel = new Listed(allMaterials,allAlbums,allGroups,allArtists);
                 SearchPanel = new SearchFilter();
             }
        

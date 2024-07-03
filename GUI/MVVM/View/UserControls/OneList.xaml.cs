@@ -1,21 +1,12 @@
 ﻿using muzickiKatalog.GUI.MVVM.View.Documentation;
 using muzickiKatalog.Layers.Model.performatorium;
+using muzickiKatalog.Layers.Repository.performatorium;
 using muzickiKatalog.Layers.Service.performatorium;
 using muzickiKatalog.Layers.support.IDparser;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace muzickiKatalog.GUI.MVVM.View.UserControls
 {
@@ -61,7 +52,7 @@ namespace muzickiKatalog.GUI.MVVM.View.UserControls
                     {
                         Album album =GetFromIDs<Album>.get(key, GlobalVariables.albumsFile).Item2;
                         AlbumService.Visited(album);
-                        AlbumView view = new AlbumView(album);
+                        AlbumView view = new AlbumView(album,MaterialRepository.getAll(),AlbumRepository.getAll());
                         view.Show();
                     }
                     else if (type == typeof(Material))
@@ -71,6 +62,7 @@ namespace muzickiKatalog.GUI.MVVM.View.UserControls
                         MaterialView view = new MaterialView(material);
                         view.Show();
                     }
+
                     
                 }
             }
