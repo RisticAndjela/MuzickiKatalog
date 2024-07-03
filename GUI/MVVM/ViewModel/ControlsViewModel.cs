@@ -29,7 +29,7 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
                 Dictionary<string, Artist> allArtists = ArtistRepository.getAll();
                 Dictionary<string, Group> allGroups = GroupRepository.getAll();
                 AdsPanel = new ADs();
-                PopularListedPanel = new Listed(MaterialController.Get10Popular(), AlbumController.Get10Popular(), GroupController.Get10Popular(), ArtistController.Get10Popular());
+                PopularListedPanel = new Listed(MaterialController.Get10Popular(allMaterials, allAlbums, allArtists, allGroups), AlbumController.Get10Popular(allMaterials,allAlbums,allArtists,allGroups), GroupController.Get10Popular(allMaterials, allAlbums, allArtists, allGroups), ArtistController.Get10Popular(allMaterials,allAlbums,allArtists,allGroups));
                 FollowingListedPanel = new Listed(allMaterials,allAlbums,allGroups,allArtists);
                 AllListedPanel = new Listed(allMaterials,allAlbums,allGroups,allArtists);
                 SearchPanel = new SearchFilter();

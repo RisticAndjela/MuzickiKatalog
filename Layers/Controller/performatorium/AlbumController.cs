@@ -1,4 +1,5 @@
 ﻿using muzickiKatalog.Layers.Model.performatorium;
+using muzickiKatalog.Layers.Model.performatorium.Interfaces;
 using muzickiKatalog.Layers.Repository.performatorium;
 using muzickiKatalog.Layers.support;
 using muzickiKatalog.Layers.support.IDparser;
@@ -13,16 +14,33 @@ namespace muzickiKatalog.Layers.Controller.performatorium
 {
     public class AlbumController
     {
-        public static Dictionary<string, Album> Get10Popular()
+        public static Dictionary<string, Album> Get10Popular(Dictionary<string, Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
         {
-            return getRatings<Album>.Get10Popular();
+            return getRatings<Album>.Get10Popular(allMaterials,allAlbums,allArtists,allGroups);
         }
-        
-        public static Dictionary<string, Tuple<string, string>> FindAlbumsFromSameArtist(Album thisAlbum, Dictionary<string, Album> allAlbums)
+        public static Dictionary<string, Tuple<string, string>> allAlbumsForArtist(Artist artist, Dictionary<string,Album> allAlbums,Dictionary<string, Artist> allArtists,Dictionary<string, Material> allMaterials)
         {
-            Dictionary<string, Artist> allArtists = ArtistRepository.getAll();
-            Dictionary<string, Material> allMaterials = MaterialRepository.getAll();
-
+            Dictionary<string, Album> final = new Dictionary<string, Album>();
+            
+            foreach (KeyValuePair<string, Album> pair in allAlbums)
+            {
+                foreach (string materialString in pair.Value.AllMaterials)
+                {
+                    Material material = allMaterials[materialString];
+                    foreach (string artistString in material.Contributors)
+                    {
+                        if (allArtists.ContainsKey(artistString))
+                        {
+                        if (artist.Equals(allArtists[artistString])) { final.Add(pair.Key, pair.Value); }
+                        }
+                    }
+                }
+            }
+            return getForList(final);
+        }
+        public static Dictionary<string, Tuple<string, string>> FindAlbumsFromSameArtist(Album thisAlbum, Dictionary<string, Album> allAlbums,Dictionary<string, Artist> allArtists, Dictionary<string, Material> allMaterials)
+        {
+            
             List<Artist> artists = new List<Artist>();
 
             foreach (string materialString in thisAlbum.AllMaterials) { 

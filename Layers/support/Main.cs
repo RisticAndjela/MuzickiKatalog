@@ -14,6 +14,7 @@ namespace muzickiKatalog.Layers.support
         {
             emptyall();
             generateAdmin();
+            generateGenres();
             generateArtists();
             generateEditors();
             generateGroups();
@@ -22,7 +23,26 @@ namespace muzickiKatalog.Layers.support
             generateAlbums();
             generateSongs();
         }
+        public void generateGenres()
+        {
+            new Genre("rock");
+            new Genre("pop");
+            new Genre("jazz");
+            new Genre("classical");
+            new Genre("hiphop");
+            new Genre("electronic");
+            new Genre("country");
+            new Genre("blues");
+            new Genre("rnb");
+            new Genre("folk");
+            new Genre("metal");
+            new Genre("punk");
+            new Genre("rap");
+            new Genre("music theory");
+            new Genre("gospel");
+            new Genre("world");
 
+        }
         public void generateEditors() {
             new Editor("nicole@editor.com", "pass", "Nicole", "Julius", Gender.male, new DateOnly(1879, 3, 14), new List<string>() { "jazz" });
         }
@@ -150,6 +170,7 @@ namespace muzickiKatalog.Layers.support
             new Dao<Material>(GlobalVariables.materialsFile).WriteDictionaryToFile(new Dictionary<string, Material>());
             new Dao<Group>(GlobalVariables.groupsFile).WriteDictionaryToFile(new Dictionary<string, Group>());
             new Dao<Album>(GlobalVariables.albumsFile).WriteDictionaryToFile(new Dictionary<string, Album>());
+            new Dao<Genre>(GlobalVariables.genresFile).WriteDictionaryToFile(new Dictionary<string, Genre>());
         }
     }
 }

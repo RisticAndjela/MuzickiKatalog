@@ -1,102 +1,102 @@
 {
   "albert@member.com": {
     "username": "albert@member.com",
+    "Name": "Albert",
+    "LastName": "Einstein",
+    "GenderProp": 0,
+    "Birthday": "1879-03-14",
     "leftComments": [],
     "leftRatings": [],
-    "following": [],
-    "name": "Albert",
-    "lastName": "Einstein",
-    "gender": 0,
-    "birthday": "1879-03-14"
+    "following": []
   },
   "marie@member.com": {
     "username": "marie@member.com",
+    "Name": "Marie",
+    "LastName": "Curie",
+    "GenderProp": 1,
+    "Birthday": "1867-11-07",
     "leftComments": [],
     "leftRatings": [],
-    "following": [],
-    "name": "Marie",
-    "lastName": "Curie",
-    "gender": 1,
-    "birthday": "1867-11-07"
+    "following": []
   },
   "isaac@member.com": {
     "username": "isaac@member.com",
+    "Name": "Isaac",
+    "LastName": "Newton",
+    "GenderProp": 0,
+    "Birthday": "1643-01-04",
     "leftComments": [],
     "leftRatings": [],
-    "following": [],
-    "name": "Isaac",
-    "lastName": "Newton",
-    "gender": 0,
-    "birthday": "1643-01-04"
+    "following": []
   },
   "ada@member.com": {
     "username": "ada@member.com",
+    "Name": "Ada",
+    "LastName": "Lovelace",
+    "GenderProp": 1,
+    "Birthday": "1815-12-10",
     "leftComments": [],
     "leftRatings": [],
-    "following": [],
-    "name": "Ada",
-    "lastName": "Lovelace",
-    "gender": 1,
-    "birthday": "1815-12-10"
+    "following": []
   },
   "charles@member.com": {
     "username": "charles@member.com",
+    "Name": "Charles",
+    "LastName": "Darwin",
+    "GenderProp": 0,
+    "Birthday": "1809-02-12",
     "leftComments": [],
     "leftRatings": [],
-    "following": [],
-    "name": "Charles",
-    "lastName": "Darwin",
-    "gender": 0,
-    "birthday": "1809-02-12"
+    "following": []
   },
   "rosalind@member.com": {
     "username": "rosalind@member.com",
+    "Name": "Rosalind",
+    "LastName": "Franklin",
+    "GenderProp": 1,
+    "Birthday": "1920-07-25",
     "leftComments": [],
     "leftRatings": [],
-    "following": [],
-    "name": "Rosalind",
-    "lastName": "Franklin",
-    "gender": 1,
-    "birthday": "1920-07-25"
+    "following": []
   },
   "stephen@member.com": {
     "username": "stephen@member.com",
+    "Name": "Stephen",
+    "LastName": "Hawking",
+    "GenderProp": 0,
+    "Birthday": "1942-01-08",
     "leftComments": [],
     "leftRatings": [],
-    "following": [],
-    "name": "Stephen",
-    "lastName": "Hawking",
-    "gender": 0,
-    "birthday": "1942-01-08"
+    "following": []
   },
   "jane@member.com": {
     "username": "jane@member.com",
+    "Name": "Jane",
+    "LastName": "Goodall",
+    "GenderProp": 1,
+    "Birthday": "1934-04-03",
     "leftComments": [],
     "leftRatings": [],
-    "following": [],
-    "name": "Jane",
-    "lastName": "Goodall",
-    "gender": 1,
-    "birthday": "1934-04-03"
+    "following": []
   },
   "niels@member.com": {
     "username": "niels@member.com",
+    "Name": "Niels",
+    "LastName": "Bohr",
+    "GenderProp": 0,
+    "Birthday": "1885-10-07",
     "leftComments": [],
     "leftRatings": [],
-    "following": [],
-    "name": "Niels",
-    "lastName": "Bohr",
-    "gender": 0,
-    "birthday": "1885-10-07"
+    "following": []
   },
   "mae@member.com": {
     "username": "mae@member.com",
+    "Name": "Mae",
+    "LastName": "Jemison",
+    "GenderProp": 1,
+    "Birthday": "1956-10-17",
     "leftComments": [],
     "leftRatings": [],
-    "following": [],
-    "name": "Mae",
-    "lastName": "Jemison",
-    "gender": 1,
-    "birthday": "1956-10-17"
+    "following": []
   }
 }

@@ -16,7 +16,7 @@ namespace muzickiKatalog.Layers.Repository.performatorium
         }
         public static void save(Genre genre)
         {
-            SaveOneInstance<Genre>.SaveOneInstanceInList(genre, GlobalVariables.genresFile);
+            SaveOneInstance<Genre>.SaveOneInstanceInDictionary(genre,genre.Name, GlobalVariables.genresFile);
         }
         public static List<string> getAllNames()
         {

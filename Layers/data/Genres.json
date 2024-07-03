@@ -1,50 +1,130 @@
-[
-  {
-    "name": "rock"
+{
+  "rock": {
+    "Name": "rock",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "pop"
+  "pop": {
+    "Name": "pop",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "jazz"
+  "jazz": {
+    "Name": "jazz",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "classical"
+  "classical": {
+    "Name": "classical",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "hiphop"
+  "hiphop": {
+    "Name": "hiphop",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "electronic"
+  "electronic": {
+    "Name": "electronic",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "country"
+  "country": {
+    "Name": "country",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "blues"
+  "blues": {
+    "Name": "blues",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "rnb"
+  "rnb": {
+    "Name": "rnb",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "folk"
+  "folk": {
+    "Name": "folk",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "metal"
+  "metal": {
+    "Name": "metal",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "punk"
+  "punk": {
+    "Name": "punk",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "rap"
+  "rap": {
+    "Name": "rap",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "music theory"
+  "music theory": {
+    "Name": "music theory",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "gospel"
+  "gospel": {
+    "Name": "gospel",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   },
-  {
-    "name": "world"
+  "world": {
+    "Name": "world",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   }
-]
+}

@@ -8,9 +8,9 @@ namespace muzickiKatalog.Layers.Controller.performatorium
 {
     public class GroupController
     {
-        public static Dictionary<string, groupNS.Group> Get10Popular()
+        public static Dictionary<string, groupNS.Group> Get10Popular(Dictionary<string, Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, groupNS.Group> allGroups)
         {
-            return getRatings<groupNS.Group>.Get10Popular();
+            return getRatings<groupNS.Group>.Get10Popular(allMaterials,allAlbums,allArtists,allGroups);
         }
         public static Dictionary<string, Tuple<string, string>> getForList(Dictionary<string, groupNS.Group> groups_)
         {

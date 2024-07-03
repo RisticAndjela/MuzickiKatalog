@@ -10,25 +10,21 @@ namespace muzickiKatalog.Layers.Repository.performatorium
 {
     public class CommentRepository
     {
-        public static List<Comment> getAll()
+        public static List<Comment> getAll( Dictionary<string, Material> allMaterials,Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
         {
             List<Comment> final = new List<Comment>();
-            Dictionary<string, Artist> artists=ArtistRepository.getAll();
-            foreach (Artist artist in artists.Values)
+            foreach (Artist artist in allArtists.Values)
             {
                 final.AddRange(artist.AllComments);
             }
-            Dictionary<string,Group>  groups=GroupRepository.getAll();
-            foreach (Group group in groups.Values) {
+            foreach (Group group in allGroups.Values) {
                 final.AddRange(group.AllComments);
             }
-            Dictionary<string, Material> mateials=MaterialRepository.getAll();
-            foreach(Material material in mateials.Values)
+            foreach(Material material in allMaterials.Values)
             {
                 final.AddRange(material.AllComments);
             }
-            Dictionary<string, Album> albums=AlbumRepository.getAll();
-            foreach (Album album in albums.Values)
+            foreach (Album album in allAlbums.Values)
             {
                 final.AddRange(album.AllComments);
             }

@@ -1,69 +1,68 @@
-﻿using muzickiKatalog.GUI.MVVM.View.UserControls;
+﻿using muzickiKatalog.GUI.MVVM.View.Documentation;
+using muzickiKatalog.GUI.MVVM.View.UserControls;
 using muzickiKatalog.Layers.Controller.performatorium;
 using muzickiKatalog.Layers.Model.performatorium;
+using muzickiKatalog.Layers.Repository.performatorium;
+using muzickiKatalog.Layers.Service.performatorium;
+using muzickiKatalog.Layers.support.IDparser;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace muzickiKatalog.GUI.MVVM.ViewModel
 {
     public class OneListViewModel : INotifyPropertyChanged
     {
-        private UserControl listViewMaterials;
-        private UserControl listViewAlbums;
-        private UserControl listViewArtists;
-        private UserControl listViewGroups;
-
-        public OneListViewModel(Dictionary<string, Material> materials_, Dictionary<string, Album> albums_, Dictionary<string, Group> groups_, Dictionary<string, Artist> artists_)
+        private OneList view;
+        public Dictionary<string, Material> allMaterials = MaterialRepository.getAll();
+        public Dictionary<string, Album> allAlbums = AlbumRepository.getAll();
+        public Dictionary<string, Artist> allArtists = ArtistRepository.getAll();
+        public Dictionary<string, Group> allGroups = GroupRepository.getAll();
+        public OneListViewModel(OneList view)
         {
-            
-            ListShowMaterials = new OneList(MaterialController.getForList(materials_),typeof(Material));
-            
-            ListShowAlbums = new OneList(AlbumController.getForList(albums_), typeof(Album));
-            
-            ListShowArtists = new OneList(ArtistController.getForList(artists_), typeof(Artist));
-           
-            ListShowGroups = new OneList(GroupController.getForList(groups_), typeof(Group));
-
+            this.view= view;
         }
 
-        public UserControl ListShowMaterials
+        
+        public void open(string key,string type)
         {
-            get { return listViewMaterials; }
-            set
-            {
-                listViewMaterials = value;
-                OnPropertyChanged();
-            }
-        }
-        public UserControl ListShowAlbums
-        {
-            get { return listViewAlbums; }
-            set
-            {
-                listViewAlbums = value;
-                OnPropertyChanged();
-            }
-        }
-        public UserControl ListShowArtists
-        {
-            get { return listViewArtists; }
-            set
-            {
-                listViewArtists = value;
-                OnPropertyChanged();
-            }
-        }
-        public UserControl ListShowGroups
-        {
-            get { return listViewGroups; }
-            set
-            {
-                listViewGroups = value;
-                OnPropertyChanged();
-            }
-        }
 
+                if (view.all.ContainsKey(key))
+                {
+                    if (type == "Artist")
+                    {
+                        Artist artist = GetFromIDs<Artist>.get(key, GlobalVariables.artistsFile).Item2;
+                        ArtistService.Visited(artist);
+                        ArtistView view = new ArtistView(artist, allMaterials, allAlbums, allArtists, allGroups);
+                        view.Show();
+                    }
+                    else if (type == "Group")
+                    {
+                        Group group = GetFromIDs<Group>.get(key, GlobalVariables.groupsFile).Item2;
+                        GroupService.visited(group);
+                        GroupView view = new GroupView(group, allMaterials, allAlbums, allArtists, allGroups);
+                        view.Show();
+                    }
+                    else if (type == "Album")
+                    {
+                        Album album = GetFromIDs<Album>.get(key, GlobalVariables.albumsFile).Item2;
+                        AlbumService.Visited(album);
+                        AlbumView view = new AlbumView(album, allMaterials, allAlbums, allArtists, allGroups);
+                        view.Show();
+                    }
+                    else if (type == "Material")
+                    {
+                        Material material = GetFromIDs<Material>.get(key, GlobalVariables.materialsFile).Item2;
+                        MaterialService.Visited(material);
+                        MaterialView view = new MaterialView(material, allMaterials, allAlbums, allArtists, allGroups);
+                        view.Show();
+                    }
+
+
+                
+            }
+        }
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)

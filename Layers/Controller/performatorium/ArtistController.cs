@@ -1,4 +1,5 @@
 ﻿using muzickiKatalog.Layers.Model.performatorium;
+using materialNS=muzickiKatalog.Layers.Model.performatorium;
 using muzickiKatalog.Layers.support;
 using muzickiKatalog.Layers.support.IDparser;
 using System;
@@ -12,9 +13,9 @@ namespace muzickiKatalog.Layers.Controller.performatorium
 {
     public class ArtistController
     {
-        public static Dictionary<string, Artist> Get10Popular()
+        public static Dictionary<string, Artist> Get10Popular(Dictionary<string, materialNS.Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
         {
-            return getRatings<Artist>.Get10Popular();
+            return getRatings<Artist>.Get10Popular(allMaterials,allAlbums,allArtists,allGroups);
 
         }
         public static Dictionary<string, Tuple<string, string>> getForList(Dictionary<string, Artist> artists_)

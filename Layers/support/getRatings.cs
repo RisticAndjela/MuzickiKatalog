@@ -11,10 +11,10 @@ namespace muzickiKatalog.Layers.support
 {
     public class getRatings<T> where T: class, IAdditional
     {
-        public static Dictionary<string, T> Get10Popular()
+        public static Dictionary<string, T> Get10Popular(Dictionary<string, Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
         {
             Dictionary<string, T> popular = new Dictionary<string, T>();
-            Dictionary<string, T> all = GetAll();
+            Dictionary<string, T> all = GetAll(allMaterials,allAlbums,allArtists,allGroups);
             Dictionary<int, List<string>> allRatings = new Dictionary<int, List<string>>();
 
             foreach (KeyValuePair<string, T> pair in all)
@@ -42,13 +42,12 @@ namespace muzickiKatalog.Layers.support
 
 
         }
-        public static Dictionary<string, T> GetAll()
+        public static Dictionary<string, T> GetAll(Dictionary<string, Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
         {
             Dictionary<string, T> all = new Dictionary<string, T>();
 
             if (typeof(T) == typeof(Material))
             {
-                var allMaterials = MaterialRepository.getAll();
                 foreach (var item in allMaterials)
                 {
                     all.Add(item.Key, item.Value as T);
@@ -56,7 +55,6 @@ namespace muzickiKatalog.Layers.support
             }
             else if (typeof(T) == typeof(Artist))
             {
-                var allArtists = ArtistRepository.getAll();
                 foreach (var item in allArtists)
                 {
                     all.Add(item.Key, item.Value as T);
@@ -64,7 +62,6 @@ namespace muzickiKatalog.Layers.support
             }
             else if (typeof(T) == typeof(Album))
             {
-                var allAlbums = AlbumRepository.getAll();
                 foreach (var item in allAlbums)
                 {
                     all.Add(item.Key, item.Value as T);
@@ -72,7 +69,6 @@ namespace muzickiKatalog.Layers.support
             }
             else if (typeof(T) == typeof(Group))
             {
-                var allGroups = GroupRepository.getAll();
                 foreach (var item in allGroups)
                 {
                     all.Add(item.Key, item.Value as T);

@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:muzickiKatalog.GUI.MVVM.View.Documentation" 
+        xmlns:local="clr-namespace:muzickiKatalog.GUI.MVVM.View.Documentation"
         xmlns:local1="clr-namespace:muzickiKatalog.GUI.MVVM.ViewModel"
         mc:Ignorable="d"
         Title="Album" Height="600" Width="1000"
@@ -37,13 +37,13 @@
                     
                 </Grid>
                 <StackPanel>
-                    <Label Content="GALLERY:" Style="{StaticResource naslov}" Foreground="{StaticResource SecondBoldColor}" />
+                    <Label Content="GALLERY:" x:Name="galleryLabel" Style="{StaticResource naslov}" Foreground="{StaticResource SecondBoldColor}" />
                     <ContentControl x:Name="gallery"/>
                 </StackPanel>
                 <StackPanel x:Name="sameGenreOrArtistAlbums" >
-                <Label Content="SIMILAR ALBUMS:" Style="{StaticResource naslov}" />
+                    <Label Content="SIMILAR ALBUMS:" x:Name="similarLabel" Style="{StaticResource naslov}" />
                     <ContentControl x:Name="similarAlbums"/>
-                    <Label Content="SAME ARTIST:" Style="{StaticResource naslov}" />
+                    <Label Content="SAME ARTIST:" x:Name="sameArtistLabel" Style="{StaticResource naslov}" />
                     <ContentControl x:Name="fromArtists"/>
                 </StackPanel>
                 <DockPanel x:Name="reviews">

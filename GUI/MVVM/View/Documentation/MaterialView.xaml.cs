@@ -1,7 +1,7 @@
 ﻿using muzickiKatalog.GUI.MVVM.View.UserControls;
 using muzickiKatalog.GUI.MVVM.ViewModel;
-using model=muzickiKatalog.Layers.Model.performatorium;
 using System.Windows;
+using muzickiKatalog.Layers.Model.performatorium;
 
 namespace muzickiKatalog.GUI.MVVM.View.Documentation
 {
@@ -11,10 +11,19 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
     public partial class MaterialView : Window
     {
         private ReviewSection reviewSection;
-
-        public MaterialView(model.Material material)
+        private Material thisMaterial;
+        public Dictionary<string, Material> allMaterials;
+        public Dictionary<string, Album> allAlbums;
+        public Dictionary<string, Artist> allArtists;
+        public Dictionary<string, Group> allGroups;
+        public MaterialView(Material material, Dictionary<string, Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
         {
             InitializeComponent();
+            thisMaterial = material;
+            this.allMaterials = allMaterials;
+            this.allAlbums = allAlbums;
+            this.allArtists = allArtists;
+            this.allGroups = allGroups;
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             naslovLabela.Content= material.Title;
             reviewSection = new ReviewSection(material.AllStarRatings, material.AllComments);

@@ -1,13 +1,10 @@
 ﻿using muzickiKatalog.GUI.MVVM.View.UserControls;
 using muzickiKatalog.GUI.MVVM.ViewModel;
 using muzickiKatalog.Layers.Model.performatorium;
-using muzickiKatalog.Layers.Repository.performatorium;
 using muzickiKatalog.Layers.Controller.performatorium;
 using System.Windows;
-using System.Windows.Controls;
 using muzickiKatalog.Layers.support.IDparser;
-using System.Windows.Input;
-using System.Windows.Media.Imaging;
+using muzickiKatalog.GUI.MVVM.ViewModel.supportClasses;
 
 namespace muzickiKatalog.GUI.MVVM.View.Documentation
 {
@@ -18,10 +15,17 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
     {
         private ReviewSection reviewSection;
         private Album album;
-
-        public AlbumView(Album _album,Dictionary<string,Material> allMaterials,Dictionary<string,Album> allAlbums)
+        public Dictionary<string, Material> allMaterials;
+        public Dictionary<string, Album> allAlbums;
+        public Dictionary<string, Artist> allArtists;
+        public Dictionary<string, Group> allGroups;
+        public AlbumView(Album _album,Dictionary<string,Material> allMaterials,Dictionary<string,Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
         {
             InitializeComponent();
+            this.allMaterials = allMaterials;
+            this.allAlbums = allAlbums;
+            this.allArtists = allArtists;
+            this.allGroups = allGroups;
             album = _album;
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             naslovLabela.Content = album.Name;
@@ -29,113 +33,66 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
             ControlsViewModel viewModel = new ControlsViewModel();
             DataContext = viewModel;
             panelr.Content=reviewSection;
-            similarAlbums.Content = new OneList(AlbumController.FindAlbumsFromSameArtist(album, allAlbums),typeof(Album));
-            fromArtists.Content = new OneList(MaterialController.FindMaterialsBasedOnAlbum(album,allMaterials), typeof(Material));
+            fillContents();
+        }
+       
+        public void fillContents()
+        {
+            Dictionary<string, Tuple<string, string>> similarDict =AlbumController.FindAlbumsFromSameArtist(album, allAlbums, allArtists, allMaterials);
+            Dictionary<string, Tuple<string, string>> fromArtistDict =MaterialController.FindMaterialsBasedOnAlbum(album,allMaterials,allArtists);
+            _=similarDict.Count > 0 ? similarAlbums.Content = new OneList(similarDict, "Album") : similarLabel.Visibility = Visibility.Hidden;
+            _= fromArtistDict.Count > 0 ? fromArtists.Content = new OneList(fromArtistDict, "Material") : sameArtistLabel.Visibility = Visibility.Hidden;
             fillMain();
-            gallery.Content = new OneList(getGalleryImages(), typeof(string));
-        }
-        public Dictionary<string, Tuple<string,string>> getGalleryImages()
-        {
-            Dictionary<string, Tuple<string, string>> final= new Dictionary<string, Tuple<string, string>>();
-            foreach (string s in album.Media)
-            {
-                final.Add("s",Tuple.Create( "",s));
-            }
-            return final;
-        }
-        public void fillDescription()
-        {
-            int length = album.Description.Length;
-            int i = 0;
-            while (i < length)
-            {
-                string content = album.Description.Substring(i, Math.Min(90, length - i));
-                int back = 0;
-                while (content.Length > 0 && content.Last() != ' ')
-                {
-                    content = content.Substring(0, content.Length - 1);
-                    back++;
-                }
+            Dictionary<string, Tuple<string, string>> galleryDict = ConvertSupport<Album>.getGalleryImages(album);
+            _= galleryDict.Count > 0 ? gallery.Content = new OneList(galleryDict, "none") : galleryLabel.Visibility = Visibility.Hidden;
 
-                Label description = new Label
-                {
-                    Style = (Style)FindResource("regularLabel"),
-                    Content = content
-                };
-                main.Children.Add(description);
-                i += 90-back;
-            }
         }
 
         public void fillMain()
         {
             main.Children.Clear();
-            fillDescription();
+            ButtonLabelManipulation.fillDescription(album.Description,main,this);
+            ButtonLabelManipulation.fillDescription($"GENRE:  {album.Genre}", main,this);
 
-            Label genre = new Label{
-                    Style = (Style)FindResource("regularLabel"),
-                    Content = $"GENRE:  {album.Genre}" 
-                };
-            main.Children.Add(genre);
             
             List<Artist> artists = new List<Artist>();
-            Dictionary<string, Artist> allArtists = ArtistRepository.getAll();
-            Dictionary<string, Group> allGroups = GroupRepository.getAll();
             foreach (string materialString in album.AllMaterials)
             {
-                Material material = GetFromIDs<Material>.get(materialString,GlobalVariables.materialsFile).Item2;
+                Material material = GetFromIDs<Material>.get(materialString, GlobalVariables.materialsFile).Item2;
+
                 foreach (string contribute in material.Contributors)
                 {
                     if (allArtists.ContainsKey(contribute))
                     {
-                        var artistToAdd = allArtists[contribute];
-                        if (!artists.Any(a => $"{a.Name} {a.LastName}" == $"{artistToAdd.Name} {artistToAdd.LastName}"))
-                        {
-                            artists.Add(artistToAdd);
-                        }
+                        AddArtistIfNotExists(artists, allArtists[contribute]);
                     }
                     else if (allGroups.ContainsKey(contribute))
                     {
-                        var groupArtists = allGroups[contribute].Artists
+                        IEnumerable<Artist> groupArtists = allGroups[contribute].Artists
                             .Select(value => GetFromIDs<Artist>.get(value, GlobalVariables.artistsFile).Item2);
 
-                        foreach (var artistToAdd in groupArtists)
+                        foreach (Artist artistToAdd in groupArtists)
                         {
-                            if (!artists.Any(a => $"{a.Name} {a.LastName}" == $"{artistToAdd.Name} {artistToAdd.LastName}"))
-                            {
-                                artists.Add(artistToAdd);
-                            }
+                            AddArtistIfNotExists(artists, artistToAdd);
                         }
                     }
                 }
-                Button button1 = new Button
-                {
-                    Style = (Style)FindResource("LabelLikeButton"),
-                    Content = $"{material.Title}"
-                };
-                button1.Click += (sender, e) =>
-                {
-                    new MaterialView(material).Show();
-                };
-                column1.Children.Add(button1);
+
+                ButtonLabelManipulation.AddButtonToPanel(column1, material.Title, (sender, e) => new MaterialView(material, allMaterials, allAlbums, allArtists, allGroups).Show(),this);
             }
+
            
-            foreach (Artist artist in artists)
-            {
-                Button button1 = new Button
-                {
-                    Style = (Style)FindResource("LabelLikeButton"),
-                    Content = $"{artist.Type.ToString()}: {artist.Name} {artist.LastName}",
-                };
-                button1.Click += (sender, e) =>
-                {
-                    new ArtistView(artist).Show();
-                };
-                column2.Children.Add(button1);
-            }
-            
-           
-           
+
         }
+        void AddArtistIfNotExists(List<Artist> artists, Artist artistToAdd)
+        {
+            if (!artists.Any(a => $"{a.Name} {a.LastName}" == $"{artistToAdd.Name} {artistToAdd.LastName}"))
+            {
+                artists.Add(artistToAdd);
+                ButtonLabelManipulation.AddButtonToPanel(column2, $"{artistToAdd.Type}: {artistToAdd.Name} {artistToAdd.LastName}", (sender, e) => new ArtistView(artistToAdd,allMaterials,allAlbums,allArtists,allGroups).Show(),this);
+            }
+        }
+
+       
     }
 }

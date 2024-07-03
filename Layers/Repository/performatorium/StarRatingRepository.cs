@@ -9,26 +9,22 @@ namespace muzickiKatalog.Layers.Repository.performatorium
 {
     public class StarRatingRepository
     {
-        public static List<StarRating> getAll()
+        public static List<StarRating> getAll(Dictionary<string, Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
         {
             List<StarRating> final = new List<StarRating>();
-            Dictionary<string, Artist> artists = ArtistRepository.getAll();
-            foreach (Artist artist in artists.Values)
+            foreach (Artist artist in allArtists.Values)
             {
                 final.AddRange(artist.AllStarRatings);
             }
-            Dictionary<string, Group> groups = GroupRepository.getAll();
-            foreach (Group group in groups.Values)
+            foreach (Group group in allGroups.Values)
             {
                 final.AddRange(group.AllStarRatings);
             }
-            Dictionary<string, Material> mateials = MaterialRepository.getAll();
-            foreach (Material material in mateials.Values)
+            foreach (Material material in allMaterials.Values)
             {
                 final.AddRange(material.AllStarRatings);
             }
-            Dictionary<string, Album> albums = AlbumRepository.getAll();
-            foreach (Album album in albums.Values)
+            foreach (Album album in allAlbums.Values)
             {
                 final.AddRange(album.AllStarRatings);
             }

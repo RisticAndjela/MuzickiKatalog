@@ -12,7 +12,7 @@ namespace muzickiKatalog.GUI.MVVM.View.UserControls
         public Listed(Dictionary<string,Material> materials_,Dictionary<string,Album> albums_,Dictionary<string,Group> groups_,Dictionary<string,Artist> artists_)
         {
             InitializeComponent();
-            DataContext = new OneListViewModel(materials_,albums_,groups_,artists_);
+            DataContext = new ListedViewModel(materials_,albums_,groups_,artists_);
         }
     }
 }

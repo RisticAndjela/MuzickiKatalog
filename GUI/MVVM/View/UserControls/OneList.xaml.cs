@@ -1,8 +1,6 @@
 ﻿using muzickiKatalog.GUI.MVVM.View.Documentation;
+using muzickiKatalog.GUI.MVVM.ViewModel;
 using muzickiKatalog.Layers.Model.performatorium;
-using muzickiKatalog.Layers.Repository.performatorium;
-using muzickiKatalog.Layers.Service.performatorium;
-using muzickiKatalog.Layers.support.IDparser;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -17,60 +15,28 @@ namespace muzickiKatalog.GUI.MVVM.View.UserControls
     {
         public Dictionary<string, Tuple<string, string>> all = new Dictionary<string, Tuple<string, string>>();
         public int indexOfCurrentFirst { get; set; } = 0;
-        public Type type { get; set; }
-
-        public OneList(Dictionary<string, Tuple<string, string>> _all, Type _type)
+        public string type { get; set; }
+        OneListViewModel vm;
+        public OneList(Dictionary<string, Tuple<string, string>> _all, string _type)
         {
             InitializeComponent();
             all = _all;
             type = _type;
+            vm=new OneListViewModel(this);
+            DataContext = vm;
             fillTableWithData(all);
         }
-        private void open(object sender, RoutedEventArgs e)
-        {
-            Button button = sender as Button;
-            if (button != null)
-            {
-                string key = button.Tag as string;
-                if (all.ContainsKey(key))
-                {
-                    if (type == typeof(Artist))
-                    {
-                        Artist artist = GetFromIDs<Artist>.get(key, GlobalVariables.artistsFile).Item2;
-                        ArtistService.Visited(artist);
-                        ArtistView view = new ArtistView(artist);
-                        view.Show();
-                    }
-                    else if (type == typeof(Group))
-                    {
-                        Group group =GetFromIDs<Group>.get(key, GlobalVariables.groupsFile).Item2;
-                        GroupService.visited(group);
-                        GroupView view = new GroupView(group);
-                        view.Show();
-                    }
-                    else if (type == typeof(Album))
-                    {
-                        Album album =GetFromIDs<Album>.get(key, GlobalVariables.albumsFile).Item2;
-                        AlbumService.Visited(album);
-                        AlbumView view = new AlbumView(album,MaterialRepository.getAll(),AlbumRepository.getAll());
-                        view.Show();
-                    }
-                    else if (type == typeof(Material))
-                    {
-                        Material material =GetFromIDs<Material>.get(key, GlobalVariables.materialsFile).Item2;
-                        MaterialService.Visited(material);
-                        MaterialView view = new MaterialView(material);
-                        view.Show();
-                    }
-
-                    
-                }
-            }
-        }
+        
         private void ButtonNextPage(object sender, RoutedEventArgs e)
         {
             indexOfCurrentFirst++;
             fillTableWithData(all);
+        }
+        private void open(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button button) { 
+                vm.open(button.Tag.ToString(),type);
+            }
         }
         private void ButtonPreviousPage(object sender, RoutedEventArgs e)
         {

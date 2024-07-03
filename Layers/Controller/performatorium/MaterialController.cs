@@ -10,10 +10,10 @@ namespace muzickiKatalog.Layers.Controller.performatorium
 {
     public class MaterialController
     {
-        public static Dictionary<string, materialNS.Material> Get10Popular()
+        public static Dictionary<string, materialNS.Material> Get10Popular(Dictionary<string, materialNS.Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
         {
 
-            return getRatings<materialNS.Material>.Get10Popular();
+            return getRatings<materialNS.Material>.Get10Popular(allMaterials, allAlbums, allArtists, allGroups);
 
         }
         public static Dictionary<string, Tuple<string, string>> getForList(Dictionary<string,materialNS.Material> materials_)
@@ -39,9 +39,8 @@ namespace muzickiKatalog.Layers.Controller.performatorium
             }
             return getForList(final);
         }
-        public static Dictionary<string, Tuple<string, string>> FindMaterialsBasedOnAlbum(Album album, Dictionary<string, materialNS.Material> allMaterials)
+        public static Dictionary<string, Tuple<string, string>> FindMaterialsBasedOnAlbum(Album album, Dictionary<string, materialNS.Material> allMaterials,Dictionary<string, Artist> allArtists)
         {
-            Dictionary<string, Artist> allArtists = ArtistRepository.getAll();
 
             List<Artist> artists = new List<Artist>();
             Dictionary<string, materialNS.Material> final = new Dictionary<string, materialNS.Material>();
