@@ -3,8 +3,9 @@ using muzickiKatalog.GUI.MVVM.ViewModel;
 using muzickiKatalog.GUI.MVVM.ViewModel.supportClasses;
 using muzickiKatalog.Layers.Controller.performatorium;
 using muzickiKatalog.Layers.Model.performatorium;
-using muzickiKatalog.Layers.Model.performatorium.Interfaces;
+using contributor=muzickiKatalog.Layers.Model.contributors;
 using muzickiKatalog.Layers.Service.performatorium;
+using muzickiKatalog.Layers.support;
 using muzickiKatalog.Layers.support.IDparser;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using muzickiKatalog.Layers.Model.contributors;
 
 namespace muzickiKatalog.GUI.MVVM.View.Documentation
 {
@@ -29,13 +31,17 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
     {
         private ReviewSection reviewSection;
         private Material material;
+        private string user;
+        public OpenViewBasedOnUser nextView;
+        private InsertOneListBasedOnUser oneLineInsert;
         public Dictionary<string, Material> allMaterials;
         public Dictionary<string, Album> allAlbums;
         public Dictionary<string, Artist> allArtists;
         public Dictionary<string, Group> allGroups;
-        public MaterialView(Material material, Dictionary<string, Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
+        public bool isAbleToEdit = false;
+
+        public void View(Material material, Dictionary<string, Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
         {
-            InitializeComponent();
             this.material = material;
             this.allMaterials = allMaterials;
             this.allAlbums = allAlbums;
@@ -44,34 +50,79 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             naslovLabela.Content = material.Title;
             reviewSection = new ReviewSection(material.AllStarRatings, material.AllComments);
+            panelr.Content = reviewSection;
+
+        }
+        public MaterialView(Material _material, Dictionary<string, Material> _allMaterials, Dictionary<string, Album>  _allAlbums, Dictionary<string, Artist> _allArtists, Dictionary<string, Group> _allGroups)
+        {
+            InitializeComponent();
+            user = "guest";
+            nextView=new OpenViewBasedOnUser();
+            oneLineInsert = new InsertOneListBasedOnUser();
+            View(_material,_allMaterials,_allAlbums,_allArtists,_allGroups);
             ControlsViewModel viewModel = new ControlsViewModel();
             DataContext = viewModel;
-            panelr.Content = reviewSection;
             fillContents();
-            fillMain();
+        }
+        public MaterialView(contributor.Editor editor, Material _material, Dictionary<string, Material> _allMaterials, Dictionary<string, Album> _allAlbums, Dictionary<string, Artist> _allArtists, Dictionary<string, Group> _allGroups)
+        {
+            InitializeComponent();
+            if (material.Editor == editor.Username) { isAbleToEdit = true; edit.Visibility = Visibility.Visible; }
+            user = "editor";
+            nextView = new OpenViewBasedOnUser(editor);
+            oneLineInsert= new InsertOneListBasedOnUser(editor);
+            View(_material, _allMaterials, _allAlbums, _allArtists, _allGroups);
+            ControlsViewModel viewModel = new ControlsViewModel(editor);
+            DataContext = viewModel;
+            fillContents();
+        }
+        public MaterialView(contributor.Member member, Material _material, Dictionary<string, Material> _allMaterials, Dictionary<string, Album> _allAlbums, Dictionary<string, Artist> _allArtists, Dictionary<string, Group> _allGroups)
+        {
+            InitializeComponent();
+            ((Button)FindName($"follow")).Visibility = Visibility.Visible;
+            user = "member";
+            nextView=new OpenViewBasedOnUser(member);
+            oneLineInsert=new InsertOneListBasedOnUser(member);
+            View(_material, _allMaterials, _allAlbums, _allArtists, _allGroups);
+            ControlsViewModel viewModel = new ControlsViewModel(member);
+            DataContext = viewModel;
+            fillContents();
+        }
+       
+        private void followButton(object sender, RoutedEventArgs e)
+        {
+        }
+        private void editButton(object sender, RoutedEventArgs e)
+        {
         }
         public void fillContents()
         {
+            fillMain();
             Dictionary<string, Tuple<string, string>> similarDicti = MaterialController.FindMaterialsWithSameGenre(material,allMaterials);//similar materials
             Dictionary<string, Tuple<string, string>> albumDicti = AlbumController.allAlbumsForSameArtists(material, allAlbums, allArtists, allMaterials); //from same artist
             Dictionary<string, Tuple<string, string>> materialsDicti = MaterialController.allMaterialsForSameArtists(material,allArtists ,allMaterials);//from same artist
-            _ = similarDicti.Count > 0 ? similar.Content = new OneList(similarDicti, "Material") : similarLabel.Content = "";
-            albums.Content = albumDicti.Count > 0 ? new OneList(albumDicti, "Album") : null;
-            materials.Content = materialsDicti.Count > 0 ? new OneList(materialsDicti, "Material") : null;
-            materialsLabel.Content = materialsDicti.Count == 0 && albumDicti.Count == 0 ? "" : "MATERIALS FROM THIS ARTIST";
             Dictionary<string, Tuple<string, string>> galleryDict = ConvertSupport<Material>.getGalleryImages(material);
-            _ = galleryDict.Count > 0 ? gallery.Content = new OneList(galleryDict, "none") : galleryLabel.Content = "";
+            materialsLabel.Content = materialsDicti.Count == 0 && albumDicti.Count == 0 ? "" : "MATERIALS FROM THIS ARTIST";
+            oneLineInsert.insert(gallery, galleryDict, "none", galleryLabel);
+            oneLineInsert.insert(similar, similarDicti, "Material", similarLabel);
+            oneLineInsert.insert(albums, albumDicti, "Album", null);
+            oneLineInsert.insert(materials, materialsDicti, "Material", null);
         }
         public void fillMain()
         {
             PublishDate.Content = material.PublishDate.ToString();
             PerformedDate.Content = material.PerformedDate.ToString();
+            if (string.IsNullOrEmpty(material.Albums)){partOfAlbum.Visibility=Visibility.Hidden;}
+            else
+            {
+                ButtonLabelManipulation.AddButtonToPanel(partOfAlbum, material.Albums, (sender, e) => nextView.OpenAlbumView(user,GetFromIDs<Album>.get(material.Albums,GlobalVariables.albumsFile).Item2, allMaterials, allAlbums, allArtists, allGroups), this);
+            }
             ButtonLabelManipulation.fillDescription(MaterialService.getDescription(material), description, this);
             List<Artist> artists = new List<Artist>();
             foreach (string genreID in material.Genres)
             {
                 Genre genre = GetFromIDs<Genre>.get(genreID, GlobalVariables.genresFile).Item2;
-                ButtonLabelManipulation.AddButtonToPanel(genres, genre.Name, (sender, e) => new GenreView(genre), this);
+                ButtonLabelManipulation.AddButtonToPanel(genres, genre.Name, (sender, e) => nextView.OpenGenreView(user,genre,allMaterials,allAlbums,allArtists,allGroups), this);
             }
             foreach (string contribute in material.Contributors)
             {
@@ -97,7 +148,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
             if (!artists.Any(a => $"{a.Name} {a.LastName}" == $"{artistToAdd.Name} {artistToAdd.LastName}"))
             {
                 artists.Add(artistToAdd);
-                ButtonLabelManipulation.AddButtonToPanel(column1, $"{artistToAdd.Type}: {artistToAdd.Name} {artistToAdd.LastName}", (sender, e) => new ArtistView(artistToAdd, allMaterials, allAlbums, allArtists, allGroups).Show(), this);
+                ButtonLabelManipulation.AddButtonToPanel(column1, $"{artistToAdd.Type}: {artistToAdd.Name} {artistToAdd.LastName}", (sender, e) => nextView.OpenArtistView(user,artistToAdd,allMaterials,allAlbums,allArtists,allGroups), this);
             }
         }
 

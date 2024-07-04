@@ -10,21 +10,28 @@
         WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True">
-    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
         <Grid>
             <ContentControl Template="{StaticResource ResourceKey=pozadinaClose}"/>
             <Label x:Name="naslovLabela" FontSize="40" Margin="90,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
             <DockPanel x:Name="reklame" Margin="10,30,800,120" >
                 <ContentControl Content="{Binding AdsPanel}"/>
             </DockPanel>
-            <DockPanel x:Name="main" Margin="180,120,30,30">
-
-
-
-            </DockPanel>
+            <StackPanel x:Name="main" Margin="180,120,30,30">
+                <Button x:Name="edit" Content="EDIT" Visibility="Hidden" Width="100" Style="{StaticResource circleButton}" Click="editButton"/>
+                    <Label x:Name="materialsLabel" Content="MATERIALS:" Style="{StaticResource naslov}"  />
+                <ContentControl x:Name="materialsPanel"/>
+                <Label x:Name="albumsLabel"  Content="ALBUMS:" Style="{StaticResource naslov}" />
+                <ContentControl x:Name="albumsPanel"/>
+                    <Label x:Name="artistsLabel"  Content="ARTISTS:" Style="{StaticResource naslov}" />
+                <ContentControl x:Name="artistsPanel"/>
+                <Label x:Name="groupsLabel"  Content="GROUPS:" Style="{StaticResource naslov}" />
+                <ContentControl x:Name="groupsPanel"/>
+            </StackPanel>
             <DockPanel x:Name="reviews" Margin="180,620,30,30">
                 <ContentControl x:Name="panelr"/>
             </DockPanel>
+            
         </Grid>
     </ScrollViewer>
 </Window>

@@ -3,7 +3,7 @@ using muzickiKatalog.GUI.MVVM.ViewModel;
 using muzickiKatalog.GUI.MVVM.ViewModel.supportClasses;
 using muzickiKatalog.Layers.Controller.performatorium;
 using muzickiKatalog.Layers.Model.performatorium;
-using muzickiKatalog.Layers.Model.performatorium.Interfaces;
+using contributor = muzickiKatalog.Layers.Model.contributors;
 using muzickiKatalog.Layers.Service.performatorium;
 using muzickiKatalog.Layers.support.IDparser;
 using System;
@@ -19,6 +19,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using muzickiKatalog.Layers.Model.contributors;
 
 namespace muzickiKatalog.GUI.MVVM.View.Documentation
 {
@@ -29,13 +30,16 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
     {
         private ReviewSection reviewSection;
         private Group group;
+        private string user;
+        public OpenViewBasedOnUser nextView;
+        private InsertOneListBasedOnUser oneLineInsert;
         public Dictionary<string, Material> allMaterials;
         public Dictionary<string, Album> allAlbums;
         public Dictionary<string, Artist> allArtists;
         public Dictionary<string, Group> allGroups;
-        public GroupView(Group group, Dictionary<string, Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
+        private bool isAbleToEdit = false;
+        public void View(Group group, Dictionary<string, Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
         {
-            InitializeComponent();
             this.group = group;
             this.allMaterials = allMaterials;
             this.allAlbums = allAlbums;
@@ -44,21 +48,61 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             naslovLabela.Content = group.Name;
             reviewSection = new ReviewSection(group.AllStarRatings, group.AllComments);
+            panelr.Content = reviewSection;
+            
+        }
+        public GroupView(Group _group, Dictionary<string, Material> _allMaterials, Dictionary<string, Album> _allAlbums, Dictionary<string, Artist> _allArtists, Dictionary<string, Group> _allGroups)
+        {
+            InitializeComponent();
+            user = "guest";
+            nextView = new OpenViewBasedOnUser();
+            oneLineInsert=new InsertOneListBasedOnUser();
+            View(_group,_allMaterials,_allAlbums, _allArtists, _allGroups);
             ControlsViewModel viewModel = new ControlsViewModel();
             DataContext = viewModel;
-            panelr.Content = reviewSection;
             fillContents();
+        }
+        public GroupView(contributor.Editor editor,Group _group, Dictionary<string, Material> _allMaterials, Dictionary<string, Album> _allAlbums, Dictionary<string, Artist> _allArtists, Dictionary<string, Group> _allGroups)
+        {
+            InitializeComponent();
+            if (_group.AllMaterials.Any(a => _allMaterials[a].Editor==editor.Username)) { isAbleToEdit = true; edit.Visibility = Visibility.Visible; }
+            user = "editor";
+            nextView = new OpenViewBasedOnUser(editor);
+            oneLineInsert = new InsertOneListBasedOnUser(editor);
+            View(_group, _allMaterials, _allAlbums, _allArtists, _allGroups);
+            ControlsViewModel viewModel = new ControlsViewModel(editor);
+            DataContext = viewModel;
+            fillContents();
+        }
+        public GroupView(contributor.Member member, Group _group, Dictionary<string, Material> _allMaterials, Dictionary<string, Album> _allAlbums, Dictionary<string, Artist> _allArtists, Dictionary<string, Group> _allGroups)
+        {
+            InitializeComponent();
+            follow.Visibility = Visibility.Visible;
+            user = "member"; 
+            nextView = new OpenViewBasedOnUser(member);
+            oneLineInsert=new InsertOneListBasedOnUser(member);
+            View(_group, _allMaterials, _allAlbums, _allArtists, _allGroups);
+            ControlsViewModel viewModel = new ControlsViewModel(member);
+            DataContext = viewModel;
+            fillContents();
+        }
+
+        private void editButton(object sender, RoutedEventArgs e)
+        {
+        }
+        private void followButton(object sender, RoutedEventArgs e)
+        {
         }
         public void fillContents()
         {
             string id = MakeIDs.makeGroupID(group);
             Dictionary<string, Tuple<string, string>> similarDict = ConvertSupport<Group>.eraseFromSimilar(id, GroupController.FindSimilarGroupsByArtists(group, allGroups));
             Dictionary<string, Tuple<string, string>> fromArtistDict = GroupController.FindMaterialsFromGroupArtists(group, allMaterials);
-            _ = similarDict.Count > 0 ? similarGroups.Content = new OneList(similarDict, "Group") : similarLabel.Visibility = Visibility.Hidden;
-            _ = fromArtistDict.Count > 0 ? materialsMembers.Content = new OneList(fromArtistDict, "Material") : materialMembersLabel.Visibility = Visibility.Hidden;
+            oneLineInsert.insert(similarGroups, similarDict, "Group", similarLabel);
+            oneLineInsert.insert(materialsMembers, fromArtistDict, "Material", materialMembersLabel);
             fillMain();
             Dictionary<string, Tuple<string, string>> galleryDict = ConvertSupport<Group>.getGalleryImages(group);
-            _ = galleryDict.Count > 0 ? gallery.Content = new OneList(galleryDict, "none") : galleryLabel.Visibility = Visibility.Hidden;
+            oneLineInsert.insert(gallery, galleryDict, "none", galleryLabel);
 
         }
         public void fillMain()
@@ -87,35 +131,22 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
                             if (allArtists.ContainsKey(contribute)) {AddArtistIfNotExists(artists, allArtists[contribute]);}
                             else if (allGroups.ContainsKey(contribute))
                             {
-                                IEnumerable<Artist> groupArtists = allGroups[contribute].Artists
-                                    .Select(value => GetFromIDs<Artist>.get(value, GlobalVariables.artistsFile).Item2);
-
-                                foreach (Artist artistToAdd in groupArtists)
-                                {
-                                    AddArtistIfNotExists(artists, artistToAdd);
-                                }
+                                List<Artist> groupArtists = allGroups[contribute].Artists.Select(value => GetFromIDs<Artist>.get(value, GlobalVariables.artistsFile).Item2).ToList();
+                                foreach (Artist artistToAdd in groupArtists){AddArtistIfNotExists(artists, artistToAdd);}
                             }
                         }
                     }
                     else { 
                         foreach (string contribute in material.Contributors)
                         {
-                            if (allArtists.ContainsKey(contribute))
-                            {
-                                AddArtistIfNotExists(artists, allArtists[contribute]);
-                            }
+                            if (allArtists.ContainsKey(contribute)){AddArtistIfNotExists(artists, allArtists[contribute]);}
                             else if (allGroups.ContainsKey(contribute))
                             {
-                                IEnumerable<Artist> groupArtists = allGroups[contribute].Artists
-                                    .Select(value => GetFromIDs<Artist>.get(value, GlobalVariables.artistsFile).Item2);
-
-                                foreach (Artist artistToAdd in groupArtists)
-                                {
-                                    AddArtistIfNotExists(artists, artistToAdd);
-                                }
+                                List<Artist> groupArtists = allGroups[contribute].Artists.Select(value => GetFromIDs<Artist>.get(value, GlobalVariables.artistsFile).Item2).ToList();
+                                foreach (Artist artistToAdd in groupArtists){AddArtistIfNotExists(artists, artistToAdd);}
                             }
                         }
-                        ButtonLabelManipulation.AddButtonToPanel(column1, material.Title, (sender, e) => new MaterialView(material, allMaterials, allAlbums, allArtists, allGroups).Show(), this);
+                        ButtonLabelManipulation.AddButtonToPanel(column1, material.Title, (sender, e) => nextView.OpenMaterialView(user,material,allMaterials,allAlbums,allArtists,allGroups), this);
 
                     }
                 }
@@ -133,7 +164,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
                 if (!artists.Any(a => $"{a.Name} {a.LastName}" == $"{artistToAdd.Name} {artistToAdd.LastName}"))
                 {
                     artists.Add(artistToAdd);
-                    ButtonLabelManipulation.AddButtonToPanel(column2, $"{artistToAdd.Type}: {artistToAdd.Name} {artistToAdd.LastName}", (sender, e) => new ArtistView(artistToAdd, allMaterials, allAlbums, allArtists, allGroups).Show(), this);
+                    ButtonLabelManipulation.AddButtonToPanel(column2, $"{artistToAdd.Type}: {artistToAdd.Name} {artistToAdd.LastName}", (sender, e) => nextView.OpenArtistView(user,artistToAdd,allMaterials,allAlbums,allArtists,allGroups), this);
                 }
             }
         }

@@ -11,82 +11,88 @@
         WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True">
-    <Grid>
-        <!--frame-->
-        <ContentControl Template="{StaticResource ResourceKey=pozadina}"/>
-        <Label Content="WELCOME BACK" FontSize="40" Margin="90,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
-        <DockPanel x:Name="reklame" Margin="10,30,800,30">
-            <ContentControl Content="{Binding AdsPanel}"/>
-        </DockPanel>
-        <DockPanel x:Name="menu" Margin="200,80,10,450">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Button Content="SUGGESTED" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="SuggestedHandler"/>
-                <Button Content="FOLOWING" Grid.Column="1" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="FollowingHandler"/>
-                <Button Content="POPULAR"  Grid.Column="2" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="PopularHandler"/>
-                <Button Content="SEARCH" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="SearchHandler"/>
-                <Button Content="MY INFO" Grid.Column="4" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="InfoHandler"/>
-            </Grid>
-        </DockPanel>
-        <!--panel for suggested following and popular content-->
-        <DockPanel x:Name="contentPanelCategories" Visibility="Hidden" Margin="210,160,20,30">
-            <ContentControl Content="{Binding ListedPanel}" />
-        </DockPanel>
-        <!--panel for search and filter-->
-        <DockPanel x:Name="contentPanelSearch" Visibility="Hidden" Margin="210,160,20,30">
-            <ContentControl Content="{Binding SearchPanel}" />
-        </DockPanel>
-        <!--panel about informations of a member-->
-        <DockPanel x:Name="InfoPanel" Visibility="Hidden" Margin="210,160,20,30">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="150"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="150"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Label Content="NAME:" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
-                <Label x:Name="name" Foreground="{StaticResource ResourceKey=LightColor}" Grid.Column="1" Content="name" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
-                <Label Grid.Column="2" Content="LAST NAME:" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
-                <Label x:Name="lastname" Foreground="{StaticResource ResourceKey=LightColor}" Grid.Column="3" Content="last name" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
-                <Label Grid.Row="1" Content="BIRTHDAY:" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
-                <Label x:Name="birthday" Foreground="{StaticResource ResourceKey=LightColor}" Grid.Row="1" Grid.Column="1" Content="birthday" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
-                <Label Grid.Row="1" Grid.Column="2" Content="GENDER:" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
-                <Label x:Name="gender" Foreground="{StaticResource ResourceKey=LightColor}" Grid.Row="1" Grid.Column="3" Content="gender" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
-                
-                <Button x:Name="Commnents" Content="SEE COMMENT HISTORY" Grid.ColumnSpan="2" Grid.Row="2" Style="{StaticResource ResourceKey=regularButton}" Width="250" Click="CommentsHandler"/>
-                <Button x:Name="Ratings" Content="SEE RATING HISTORY" Grid.ColumnSpan="2" Grid.Column="2"  Grid.Row="2" Style="{StaticResource ResourceKey=regularButton}" Width="250" Click="RatingsHandler"/>
-
-                <Grid x:Name="Reviews" Visibility="Hidden" Margin="110,0" Grid.Row="3" Grid.ColumnSpan="4" Grid.RowSpan="2">
+    <ScrollViewer  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <Grid>
+            <!--frame-->
+            <ContentControl Template="{StaticResource ResourceKey=pozadina}"/>
+            <Label Content="WELCOME BACK" FontSize="40" Margin="90,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
+            <DockPanel x:Name="reklame" Margin="10,30,800,30">
+                <ContentControl Content="{Binding AdsPanel}"/>
+            </DockPanel>
+            <DockPanel x:Name="menu" Margin="200,80,10,450">
+                <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="100"/>
                         <ColumnDefinition/>
-                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="SUGGESTED" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="SuggestedHandler"/>
+                    <Button Content="FOLOWING" Grid.Column="1" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="FollowingHandler"/>
+                    <Button Content="POPULAR"  Grid.Column="2" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="PopularHandler"/>
+                    <Button Content="SEARCH" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="SearchHandler"/>
+                    <Button Content="MY INFO" Grid.Column="4" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="InfoHandler"/>
+                </Grid>
+            </DockPanel>
+            <!--panel for suggested following and popular content-->
+            <DockPanel  x:Name="following" Visibility="Hidden" Margin="210,160,20,30">
+                <ContentControl />
+            </DockPanel>
+            <DockPanel x:Name="contentPanelPopular" Visibility="Hidden" Margin="210,160,20,30">
+                <ContentControl x:Name="popular" Content="{Binding PopularListedPanel}" />
+            </DockPanel>
+
+            <DockPanel x:Name="contentPanelSearch" Visibility="Hidden" >
+                <ContentControl Content="{Binding SearchPanel}" Margin="210,160,40,530"/>
+            </DockPanel>
+
+            <!--panel about informations of a member-->
+            <DockPanel x:Name="InfoPanel" Visibility="Hidden" Margin="210,160,20,30">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Button x:Name="backReview" Grid.RowSpan="2" Content="b" Height="50" Style="{StaticResource ResourceKey=circleButton}" />
-                    <Button x:Name="forwardReview" Grid.Column="2" Grid.RowSpan="2" Content="f" Height="50" Style="{StaticResource ResourceKey=circleButton}" />
-                    <Button Content="C3" Grid.Column="1"  FontWeight="Bold" Foreground="{StaticResource ResourceKey=BaseColor}" Margin="25,15" Background="{StaticResource ResourceKey=SecondBoldColor}"/>
-                    <Label x:Name="labelReview" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Center" Content="REVIEW" Style="{StaticResource ResourceKey=regularLabel}"/>
+                    <Label Content="NAME:" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label x:Name="name" Foreground="{StaticResource ResourceKey=LightColor}" Grid.Column="1" Content="name" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label Grid.Column="2" Content="LAST NAME:" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label x:Name="lastname" Foreground="{StaticResource ResourceKey=LightColor}" Grid.Column="3" Content="last name" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label Grid.Row="1" Content="BIRTHDAY:" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label x:Name="birthday" Foreground="{StaticResource ResourceKey=LightColor}" Grid.Row="1" Grid.Column="1" Content="birthday" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label Grid.Row="1" Grid.Column="2" Content="GENDER:" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label x:Name="gender" Foreground="{StaticResource ResourceKey=LightColor}" Grid.Row="1" Grid.Column="3" Content="gender" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
 
+                    <Button x:Name="Commnents" Content="SEE COMMENT HISTORY" Grid.ColumnSpan="2" Grid.Row="2" Style="{StaticResource ResourceKey=regularButton}" Width="250" Click="CommentsHandler"/>
+                    <Button x:Name="Ratings" Content="SEE RATING HISTORY" Grid.ColumnSpan="2" Grid.Column="2"  Grid.Row="2" Style="{StaticResource ResourceKey=regularButton}" Width="250" Click="RatingsHandler"/>
+
+                    <Grid x:Name="Reviews" Visibility="Hidden" Margin="110,0" Grid.Row="3" Grid.ColumnSpan="4" Grid.RowSpan="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Button x:Name="backReview" Grid.RowSpan="2" Content="b" Height="50" Style="{StaticResource ResourceKey=circleButton}" />
+                        <Button x:Name="forwardReview" Grid.Column="2" Grid.RowSpan="2" Content="f" Height="50" Style="{StaticResource ResourceKey=circleButton}" />
+                        <Button Content="C3" Grid.Column="1"  FontWeight="Bold" Foreground="{StaticResource ResourceKey=BaseColor}" Margin="25,15" Background="{StaticResource ResourceKey=SecondBoldColor}"/>
+                        <Label x:Name="labelReview" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Center" Content="REVIEW" Style="{StaticResource ResourceKey=regularLabel}"/>
+
+                    </Grid>
                 </Grid>
-            </Grid>
-        </DockPanel>
-    </Grid>
+            </DockPanel>
+        </Grid>
+    </ScrollViewer>
 </Window>

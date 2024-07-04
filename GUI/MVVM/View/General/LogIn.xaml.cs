@@ -45,9 +45,6 @@ namespace muzickiKatalog.GUI.MVVM.View.General
             LogInPanel.Visibility=Visibility.Visible;
             
         }
-        private void InnerTextBox_Loaded(object sender, RoutedEventArgs e) {
-            TextBox innerTextBox = sender as TextBox;
-        }
         private void DoneCommand(object sender, RoutedEventArgs e)
         {
             string usernameText = username.Text;

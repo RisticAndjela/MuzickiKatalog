@@ -18,6 +18,8 @@
                 <ContentControl Content="{Binding AdsPanel}"/>
             </DockPanel>
             <StackPanel x:Name="main" Margin="180,120,30,30">
+                <Button x:Name="follow" Content="FOLLOW" Visibility="Hidden" Width="100" Style="{StaticResource circleButton}" Click="followButton"/>
+                <Button x:Name="edit" Content="EDIT" Visibility="Hidden" Width="100" Style="{StaticResource circleButton}" Click="editButton"/>
                 <DockPanel>
                     <Label Content="PUBLISH DATE:" Foreground="{StaticResource LightColor}" Style="{StaticResource regularLabel}" />
                     <Label x:Name="PublishDate" Foreground="{StaticResource LightColor}" Style="{StaticResource regularLabel}" />
@@ -28,6 +30,9 @@
                 </DockPanel>
                 <StackPanel x:Name="description">
                     <Label Content="DESCRIPTION" Foreground="{StaticResource SecondBoldColor}" Style="{StaticResource regularLabel}"/>
+                </StackPanel>
+                <StackPanel x:Name="partOfAlbum">
+                    <Label Content="PART OF ALBUM:" Foreground="{StaticResource LightColor}" Style="{StaticResource regularLabel}" />
                 </StackPanel>
                 <StackPanel>
                     <Label Content="GENRES" Foreground="{StaticResource SecondBoldColor}" Style="{StaticResource regularLabel}"/>

@@ -7,17 +7,19 @@ namespace muzickiKatalog.GUI.MVVM.View.Member
     public partial class HomeMember : Window
     {
         mn.Member thisMember;
+        ControlsViewModel viewModel;
         public HomeMember(mn.Member member)
         {
-            thisMember = member;
             InitializeComponent();
+            thisMember = member;
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
-            DataContext = new ControlsViewModel();
+            viewModel = new ControlsViewModel(member);
+            DataContext=viewModel;
         }
         private void InfoHandler(object sender, RoutedEventArgs e)
         {
             contentPanelSearch.Visibility = Visibility.Hidden;
-            contentPanelCategories.Visibility = Visibility.Hidden;
+            contentPanelPopular.Visibility = Visibility.Hidden;
             InfoPanel.Visibility = Visibility.Visible;
             Reviews.Visibility = Visibility.Hidden;
 
@@ -29,14 +31,14 @@ namespace muzickiKatalog.GUI.MVVM.View.Member
         }
         private void FollowingHandler(object sender, RoutedEventArgs e)
         {
-            contentPanelCategories.Visibility = Visibility.Visible;
+            contentPanelPopular.Visibility = Visibility.Visible;
             contentPanelSearch.Visibility = Visibility.Hidden;
             InfoPanel.Visibility = Visibility.Hidden;
 
         }
         private void SuggestedHandler(object sender, RoutedEventArgs e)
         {
-            contentPanelCategories.Visibility = Visibility.Visible;
+            contentPanelPopular.Visibility = Visibility.Visible;
             contentPanelSearch.Visibility = Visibility.Hidden;
             InfoPanel.Visibility = Visibility.Hidden;
 
@@ -44,13 +46,13 @@ namespace muzickiKatalog.GUI.MVVM.View.Member
         private void SearchHandler(object sender, RoutedEventArgs e)
         {
             contentPanelSearch.Visibility = Visibility.Visible;
-            contentPanelCategories.Visibility = Visibility.Hidden;
+            contentPanelPopular.Visibility = Visibility.Hidden;
             InfoPanel.Visibility = Visibility.Hidden;
         }
         private void PopularHandler(object sender, RoutedEventArgs e)
         {
             contentPanelSearch.Visibility = Visibility.Hidden;
-            contentPanelCategories.Visibility = Visibility.Visible;
+            contentPanelPopular.Visibility = Visibility.Visible;
             InfoPanel.Visibility = Visibility.Hidden;
         }
         private void RatingsHandler(object sender, RoutedEventArgs e)

@@ -2,6 +2,7 @@
 using muzickiKatalog.GUI.MVVM.View.UserControls;
 using muzickiKatalog.Layers.Controller.performatorium;
 using muzickiKatalog.Layers.Model.performatorium;
+using contributor=muzickiKatalog.Layers.Model.contributors;
 using muzickiKatalog.Layers.Repository.performatorium;
 using muzickiKatalog.Layers.Service.performatorium;
 using muzickiKatalog.Layers.support.IDparser;
@@ -25,8 +26,27 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
 
             ListShowArtists = new OneList(ArtistController.getForList(artists_), "Artist");
 
-            ListShowGroups = new OneList(GroupController.getForList(groups_), "Group");
+            ListShowGroups = new OneList( GroupController.getForList(groups_), "Group");
         }
+          public ListedViewModel(contributor.Member member,Dictionary<string, Material> materials_, Dictionary<string, Album> albums_, Dictionary<string, Group> groups_, Dictionary<string, Artist> artists_) {
+            ListShowMaterials = new OneList(member,MaterialController.getForList(materials_), "Material");
+
+            ListShowAlbums = new OneList(member, AlbumController.getForList(albums_), "Album");
+
+            ListShowArtists = new OneList(member, ArtistController.getForList(artists_), "Artist");
+
+            ListShowGroups = new OneList(member, GroupController.getForList(groups_), "Group");
+        }
+          public ListedViewModel(contributor.Editor editor,Dictionary<string, Material> materials_, Dictionary<string, Album> albums_, Dictionary<string, Group> groups_, Dictionary<string, Artist> artists_) {
+            ListShowMaterials = new OneList(editor,MaterialController.getForList(materials_), "Material");
+
+            ListShowAlbums = new OneList(editor, AlbumController.getForList(albums_), "Album");
+
+            ListShowArtists = new OneList(editor, ArtistController.getForList(artists_), "Artist");
+
+            ListShowGroups = new OneList(editor, GroupController.getForList(groups_), "Group");
+        }
+
         public UserControl ListShowMaterials
         {
             get { return listViewMaterials; }
@@ -36,6 +56,7 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
                 OnPropertyChanged();
             }
         }
+
         public UserControl ListShowAlbums
         {
             get { return listViewAlbums; }

@@ -1,6 +1,7 @@
 ﻿using muzickiKatalog.GUI.MVVM.View.Documentation;
 using muzickiKatalog.GUI.MVVM.ViewModel;
 using muzickiKatalog.Layers.Model.performatorium;
+using contributor=muzickiKatalog.Layers.Model.contributors;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -23,6 +24,24 @@ namespace muzickiKatalog.GUI.MVVM.View.UserControls
             all = _all;
             type = _type;
             vm=new OneListViewModel(this);
+            DataContext = vm;
+            fillTableWithData(all);
+        }
+        public OneList(contributor.Editor editor,Dictionary<string, Tuple<string, string>> _all, string _type)
+        {
+            InitializeComponent();
+            all = _all;
+            type = _type;
+            vm=new OneListViewModel(this,editor);
+            DataContext = vm;
+            fillTableWithData(all);
+        }
+        public OneList(contributor.Member member,Dictionary<string, Tuple<string, string>> _all, string _type)
+        {
+            InitializeComponent();
+            all = _all;
+            type = _type;
+            vm=new OneListViewModel(this,member);
             DataContext = vm;
             fillTableWithData(all);
         }
