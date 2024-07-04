@@ -18,6 +18,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using muzickiKatalog.Layers.Model.contributors;
+using muzickiKatalog.Layers.Service.contributors;
 
 namespace muzickiKatalog.GUI.MVVM.View.Documentation
 {
@@ -29,6 +31,8 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         private ReviewSection reviewSection;
         private Album album;
         private string user;
+        private contributor.Member member;
+        private contributor.Editor editor;
         public OpenViewBasedOnUser nextView;
         public InsertOneListBasedOnUser oneLineInsert;
         public Dictionary<string, Material> allMaterials;
@@ -64,8 +68,9 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         public AlbumView(contributor.Member member, Album _album, Dictionary<string, Material> _allMaterials, Dictionary<string, Album> _allAlbums, Dictionary<string, Artist> _allArtists, Dictionary<string, Group> _allGroups)
         {
             InitializeComponent();
-            follow.Visibility = Visibility.Visible;
+            addToPlaylist.Visibility = Visibility.Visible;
             user = "member";
+            this.member = member;
             nextView = new OpenViewBasedOnUser(member);
             oneLineInsert = new InsertOneListBasedOnUser(member);
             View(_album, _allMaterials, _allAlbums, _allArtists, _allGroups);
@@ -78,6 +83,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
             InitializeComponent();
             if (album.AllMaterials.Any(a=>allMaterials[a].Editor == editor.Username)) { isAbleToEdit = true; edit.Visibility = Visibility.Visible; }
             user = "editor";
+            this.editor= editor;
             nextView=new OpenViewBasedOnUser(editor);
             oneLineInsert = new InsertOneListBasedOnUser(editor);
             View(_album, _allMaterials, _allAlbums, _allArtists, _allGroups);
@@ -88,8 +94,9 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         private void editButton(object sender, RoutedEventArgs e)
         {
         }
-        private void followButton(object sender, RoutedEventArgs e)
+        private void addToPlaylistButton(object sender, RoutedEventArgs e)
         {
+            
         }
         public void fillContents()
         {

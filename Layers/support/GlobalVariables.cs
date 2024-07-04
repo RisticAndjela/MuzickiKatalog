@@ -12,6 +12,7 @@ public static class GlobalVariables
     public static readonly string textsFile = Path.Combine("..", "..", "..", "Layers", "data", "Texts.json");
     public static readonly string usersFile = Path.Combine("..", "..", "..", "Layers", "data", "Users.json");
     public static readonly string albumsFile = Path.Combine("..", "..", "..", "Layers", "data", "Albums.json");
+    public static readonly string playListsFile = Path.Combine("..", "..", "..", "Layers", "data", "PlayList.json");
 
     //images
     public static readonly string elvis_presley = "C:\\Users\\User\\Documents\\4. semestar\\specifikacija i modeliranje\\projekat\\projekat git\\MuzickiKatalog\\Layers\\media\\elvis_presley.jfif";

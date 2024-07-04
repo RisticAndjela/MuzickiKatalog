@@ -74,6 +74,34 @@ namespace muzickiKatalog.Layers.dao
             return items;
         }
 
-
+        public bool WriteLargeDictionaryToFile(Dictionary<string, List<T>> items)
+        {
+            try
+            {
+                string data = JsonConvert.SerializeObject(items, Formatting.Indented);
+                File.WriteAllText(_filename, data);
+            }
+            catch (IOException)
+            {
+                Console.WriteLine("Error writing to file: " + _filename);
+                return false;
+            }
+            return true;
+        }
+        public Dictionary<string, List<T>> ReadLargeDictionaryFromFile()
+        {
+            Dictionary<string, List<T>> items = new();
+            try
+            {
+                string data = File.ReadAllText(_filename);
+                items = JsonConvert.DeserializeObject<Dictionary<string, List<T>>>(data);
+            }
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("Error with file: " + _filename);
+                items = new Dictionary<string, List<T>>();
+            }
+            return items;
+        }
     }
 }

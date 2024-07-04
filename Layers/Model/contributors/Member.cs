@@ -1,5 +1,5 @@
 ﻿using muzickiKatalog.Layers.support;
-using muzickiKatalog.Layers.dao;
+using muzickiKatalog.Layers.Repository.contributors;
 using muzickiKatalog.Layers.Model.performatorium;
 using muzickiKatalog.Layers.Model.contributors.Interfaces;
 namespace muzickiKatalog.Layers.Model.contributors
@@ -25,27 +25,9 @@ namespace muzickiKatalog.Layers.Model.contributors
             LastName = _lastName;
             GenderProp = _gender;
             Birthday = _birthday;
-            save();
+            MemberRepository.save(this);
         }
-        public void save()
-        {
-            SaveOneInstance<Member>.SaveOneInstanceInDictionary(this, username, GlobalVariables.membersFile);
-        }
-        public void LeaveComment(Comment comment)
-        {
-            leftComments.Add(comment);
-            save();
-        }
-        public void LeaveRating(StarRating starRating)
-        {
-            leftRatings.Add(starRating);
-            save();
-        }
-
-        public void follow(string id)
-        {
-            following.Add(id);
-            save();
-        }
+       
+        
     }
 }

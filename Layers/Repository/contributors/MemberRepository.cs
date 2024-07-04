@@ -14,5 +14,9 @@ namespace muzickiKatalog.Layers.Repository.contributors
         {
             return new Dao<Member>(GlobalVariables.membersFile).ReadDictionaryFromFile();
         }
+        public static void save(Member member)
+        {
+            SaveOneInstance<Member>.SaveOneInstanceInDictionary(member, member.username, GlobalVariables.membersFile);
+        }
     }
 }

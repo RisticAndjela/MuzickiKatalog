@@ -26,5 +26,18 @@ namespace muzickiKatalog.Layers.dao
             all.Add(instance);
             dao.WriteListToFile(all);
         }
+        public static void SaveOneInstanceInLargeDictionary(T instance,string id, string filename)
+        {
+            Dao<T> dao = new Dao<T>(filename);
+            Dictionary<string,List<T>> all = dao.ReadLargeDictionaryFromFile();
+            if (all.ContainsKey(id)) { 
+                all[id].Add(instance);
+            }
+            else
+            {
+                all.Add(id, new List<T>() { instance});
+            }
+            dao.WriteLargeDictionaryToFile(all);
+        }
     }
 }

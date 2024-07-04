@@ -1,5 +1,6 @@
 ﻿using muzickiKatalog.Layers.Model.contributors;
 using muzickiKatalog.Layers.Model.performatorium;
+using muzickiKatalog.Layers.Service.contributors;
 using muzickiKatalog.Layers.Service.performatorium.Interfaces;
 using muzickiKatalog.Layers.support.IDparser;
 using System;
@@ -43,7 +44,7 @@ namespace muzickiKatalog.Layers.Service.performatorium
             (bool have, Member member) = GetFromIDs<Member>.get(star.reviewer, GlobalVariables.membersFile);
             if (have)
             {
-                member.LeaveRating(star);
+                MemberService.LeaveRating(member,star);
             }
             (have, Material material) = GetFromIDs<Material>.get(star.idOfPlaceholder, GlobalVariables.materialsFile);
             if (have)
