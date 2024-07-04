@@ -20,6 +20,6 @@ namespace muzickiKatalog.Layers.support.IDparser
             }
             return (false, default(T));
         }
-       
+        
     }
 }

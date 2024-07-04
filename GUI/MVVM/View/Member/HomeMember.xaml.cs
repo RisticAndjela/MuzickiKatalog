@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using mn=muzickiKatalog.Layers.Model.contributors;
 using muzickiKatalog.GUI.MVVM.ViewModel;
+using muzickiKatalog.Layers.support;
 
 namespace muzickiKatalog.GUI.MVVM.View.Member
 {
@@ -15,6 +16,10 @@ namespace muzickiKatalog.GUI.MVVM.View.Member
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             viewModel = new ControlsViewModel(member);
             DataContext=viewModel;
+            foreach (var userControl in viewModel.PlayListPanels)
+            {
+                playlists.Children.Add(userControl);
+            }
         }
         private void InfoHandler(object sender, RoutedEventArgs e)
         {
@@ -36,12 +41,13 @@ namespace muzickiKatalog.GUI.MVVM.View.Member
             InfoPanel.Visibility = Visibility.Hidden;
 
         }
-        private void SuggestedHandler(object sender, RoutedEventArgs e)
+        private void PlaylistHandler(object sender, RoutedEventArgs e)
         {
-            contentPanelPopular.Visibility = Visibility.Visible;
+            contentPanelPopular.Visibility = Visibility.Hidden;
             contentPanelSearch.Visibility = Visibility.Hidden;
             InfoPanel.Visibility = Visibility.Hidden;
-
+            playlists.Visibility = Visibility.Visible;
+           
         }
         private void SearchHandler(object sender, RoutedEventArgs e)
         {

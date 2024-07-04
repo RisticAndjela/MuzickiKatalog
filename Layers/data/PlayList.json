@@ -1,0 +1,26 @@
+{
+  "marie@member.com": [
+    {
+      "owner": "marie@member.com",
+      "Name": "new playlist",
+      "isPrivate": false,
+      "materials": [
+        "The History of Classical Music:Brown-",
+        "Introduction to Music Theory:Martinez-",
+        "The Evolution of Rock Music:Martinez-",
+        "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+      ]
+    },
+    {
+      "owner": "marie@member.com",
+      "Name": "one more playlist",
+      "isPrivate": true,
+      "materials": [
+        "The History of Classical Music:Brown-",
+        "Introduction to Music Theory:Martinez-",
+        "The Evolution of Rock Music:Martinez-",
+        "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-"
+      ]
+    }
+  ]
+}

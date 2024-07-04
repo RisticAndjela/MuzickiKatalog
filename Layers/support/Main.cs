@@ -2,7 +2,8 @@
 using muzickiKatalog.Layers.Model.performatorium;
 using muzickiKatalog.Layers.Model.contributors;
 using muzickiKatalog.Layers.support.IDparser;
-
+using contributor=muzickiKatalog.Layers.Model.contributors;
+using muzickiKatalog.Layers.Service.performatorium;
 namespace muzickiKatalog.Layers.support
 {
     public class Main
@@ -22,7 +23,17 @@ namespace muzickiKatalog.Layers.support
             generateMembers();
             generateAlbums();
             generateSongs();
+            generatePlayLists();
         }
+        public void generatePlayLists()
+        {
+            PlayList playList = new PlayList(GetFromIDs<contributor.Member>.get("marie@member.com", GlobalVariables.membersFile).Item2, "new playlist", true);
+            PlayListService.addMaterialbyID(playList, "The History of Classical Music:Brown-");
+            PlayListService.addMaterialbyID(playList, "Introduction to Music Theory:Martinez-");
+            PlayListService.addMaterialbyID(playList, "The Evolution of Rock Music:Martinez-");
+            PlayListService.addMaterialbyID(playList, "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-");
+        }
+
         public void generateGenres()
         {
             new Genre("rock");

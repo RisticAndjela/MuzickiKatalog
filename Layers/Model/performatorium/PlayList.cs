@@ -11,14 +11,16 @@ namespace muzickiKatalog.Layers.Model.performatorium
 {
     public class PlayList
     {
+        public string owner { get; set; }
         public string Name { get; set; }
         public bool isPrivate {  get; set; }
         public List<string> materials { get; set; }=new List<string>();
         public PlayList() { }
         public PlayList(Member member,string name,bool _isPrivate) {
+            owner = member.username;
             Name=name;
             isPrivate=_isPrivate;
-            PlayListRepository.save(this, member.username);
+            PlayListRepository.save(this);
         }
     }
 }

@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="muzickiKatalog.GUI.MVVM.View.UserControls.PlayListUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:muzickiKatalog.GUI.MVVM.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="600">
+    <Grid Background="{StaticResource BaseColor}" Height="500">
+        <Label x:Name="naslovLabela" FontSize="40" Margin="0,30,0,30" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
+      
+        <StackPanel x:Name="main" Margin="0,90,0,0" >
+            <DockPanel Width="240" Margin="-300,0,0,0" >
+                <Label Content="change to: " Style="{StaticResource regularLabel}" />
+                <Button x:Name="isVisible" Content="PRIVATE" Width="100" Style="{StaticResource circleButton}" Click="privateButton"/>
+            </DockPanel>
+            <StackPanel >
+                <Label x:Name="materialsLabel"  Content="PLAYLIST CONTENT:" Style="{StaticResource naslov}" />
+                <ContentControl x:Name="materials"/>
+                <ContentControl x:Name="albums"/>
+            </StackPanel>
+            <DockPanel x:Name="reviews" Margin="180,620,30,30">
+                <ContentControl x:Name="panelr"/>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

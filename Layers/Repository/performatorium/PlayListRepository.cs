@@ -15,9 +15,9 @@ namespace muzickiKatalog.Layers.Repository.performatorium
         {
             return new Dao<PlayList>(GlobalVariables.playListsFile).ReadLargeDictionaryFromFile();
         }
-        public static void save(PlayList playList,string memberID)
+        public static void save(PlayList playList)
         {
-            SaveOneInstance<PlayList>.SaveOneInstanceInLargeDictionary(playList, memberID, GlobalVariables.playListsFile);
+            SaveOneInstance<PlayList>.SaveOneInstanceInLargeDictionary(playList, playList.owner, GlobalVariables.playListsFile);
         }
     }
 }

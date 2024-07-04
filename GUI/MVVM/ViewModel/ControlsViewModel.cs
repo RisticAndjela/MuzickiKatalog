@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using muzickiKatalog.Layers.Model.contributors;
+using System.Collections.ObjectModel;
 
 namespace muzickiKatalog.GUI.MVVM.ViewModel
 {
@@ -24,6 +25,7 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
         private UserControl followingListedView;
         private UserControl allListedView;
         private UserControl searchView;
+        private List<UserControl> playlistPanels = new List<UserControl>();
 
         private Dictionary<string, Material> allMaterials= MaterialRepository.getAll() ;
         private Dictionary<string, Album> allAlbums= AlbumRepository.getAll() ;
@@ -51,12 +53,26 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
             PopularListedPanel = new Listed(member,MaterialController.Get10Popular(allMaterials, allAlbums, allArtists, allGroups), AlbumController.Get10Popular(allMaterials, allAlbums, allArtists, allGroups), GroupController.Get10Popular(allMaterials, allAlbums, allArtists, allGroups), ArtistController.Get10Popular(allMaterials, allAlbums, allArtists, allGroups));
             FollowingListedPanel = new Listed(member, allMaterials, allAlbums, allGroups, allArtists);
             AllListedPanel = new Listed(member, allMaterials, allAlbums, allGroups, allArtists);
-        }
+            foreach (PlayList playlist in PlayListService.getAllPlayLists(member))
+            {
+                playlistPanels.Add(new PlayListUserControl(playlist, member));
+            }
 
+            PlayListPanels = new ObservableCollection<UserControl>(playlistPanels);
+        }
         public void ViewModel(string user)
         {
             AdsPanel = new ADs();
             SearchPanel = new SearchFilter();
+        }
+        public ObservableCollection<UserControl> PlayListPanels
+        {
+            get { return new ObservableCollection<UserControl>(playlistPanels); }
+            set
+            {
+                playlistPanels = new List<UserControl>(value);
+                OnPropertyChanged();
+            }
         }
        
         public UserControl AdsPanel
@@ -68,7 +84,8 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
                 OnPropertyChanged();
             }
         }
-            public UserControl PopularListedPanel
+       
+        public UserControl PopularListedPanel
             {
             get { return popularListedView; }
             set

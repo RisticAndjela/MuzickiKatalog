@@ -16,8 +16,8 @@
             <!--frame-->
             <ContentControl Template="{StaticResource ResourceKey=pozadina}"/>
             <Label Content="WELCOME BACK" FontSize="40" Margin="90,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
-            <DockPanel x:Name="reklame" Margin="10,30,800,30">
-                <ContentControl Content="{Binding AdsPanel}"/>
+            <DockPanel x:Name="reklame" Margin="10,30,800,830">
+                <ContentControl Content="{Binding AdsPanel}" Margin="0,0,0,1030"/>
             </DockPanel>
             <DockPanel x:Name="menu" Margin="200,80,10,450">
                 <Grid>
@@ -28,7 +28,7 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Button Content="SUGGESTED" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="SuggestedHandler"/>
+                    <Button Content="PLAYLISTS" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="PlaylistHandler"/>
                     <Button Content="FOLOWING" Grid.Column="1" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="FollowingHandler"/>
                     <Button Content="POPULAR"  Grid.Column="2" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="PopularHandler"/>
                     <Button Content="SEARCH" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="SearchHandler"/>
@@ -46,7 +46,7 @@
             <DockPanel x:Name="contentPanelSearch" Visibility="Hidden" >
                 <ContentControl Content="{Binding SearchPanel}" Margin="210,160,40,530"/>
             </DockPanel>
-
+            <StackPanel x:Name="playlists" Visibility="Hidden" Margin="210,160,40,530"/>
             <!--panel about informations of a member-->
             <DockPanel x:Name="InfoPanel" Visibility="Hidden" Margin="210,160,20,30">
                 <Grid>
