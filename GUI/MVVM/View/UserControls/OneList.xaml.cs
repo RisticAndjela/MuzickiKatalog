@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.IO;
 
 namespace muzickiKatalog.GUI.MVVM.View.UserControls
 {
@@ -79,13 +80,27 @@ namespace muzickiKatalog.GUI.MVVM.View.UserControls
                 Image image = (Image)FindName($"image{localCounter}");
                 if (image != null && !string.IsNullOrEmpty(items[key].Item2))
                 {
-                    BitmapImage bitmap = new BitmapImage();
-                    bitmap.BeginInit();
-                    bitmap.UriSource = new Uri(items[key].Item2, UriKind.RelativeOrAbsolute);
-                    bitmap.DecodePixelWidth = 120;
-                    bitmap.DecodePixelHeight = 90;
-                    bitmap.EndInit();
-                    image.Source = bitmap;
+                    try
+                    {
+                        BitmapImage bitmap = new BitmapImage();
+                        bitmap.BeginInit();
+                        bitmap.UriSource = new Uri(items[key].Item2, UriKind.RelativeOrAbsolute);
+                        bitmap.DecodePixelWidth = 120;
+                        bitmap.DecodePixelHeight = 90;
+                        bitmap.EndInit();
+                        image.Source = bitmap;
+                    }
+                    catch (DirectoryNotFoundException ex)
+                    {
+                        
+                        Console.WriteLine($"Directory not found: {ex.Message}");
+                        
+                    }
+                    catch (Exception ex)
+                    {
+                        
+                        Console.WriteLine($"An error occurred: {ex.Message}");
+                    }
                 }
 
                 Button button = (Button)FindName($"picture{localCounter}");
@@ -98,9 +113,9 @@ namespace muzickiKatalog.GUI.MVVM.View.UserControls
                 localCounter++;
             }
 
-            
             UpdateNavigationButtons();
         }
+
 
 
         public void ClearAllLabels()
