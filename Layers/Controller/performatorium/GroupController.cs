@@ -38,9 +38,29 @@ namespace muzickiKatalog.Layers.Controller.performatorium
                     if(artists.Contains(artist)) { final.Add(pair.Key, pair.Value); break; }
                 }
             }
+            foreach(KeyValuePair<string, groupNS.Group> pair in allGroups)
+            {
+                if (thisGroup.Equals(pair.Value)) { continue; }
+                if (thisGroup.Artists.Any(a => GetFromIDs<Artist>.get(a,GlobalVariables.artistsFile).Item2.Genres.Any(g => pair.Value.Artists.Any(pa => GetFromIDs<Artist>.get(pa, GlobalVariables.artistsFile).Item2.Genres.Contains(g))))) { final.Add(pair.Key,pair.Value); continue; }
+            }
             return getForList(final);
         }
-        
-        
+        public static Dictionary<string, Tuple<string, string>> FindMaterialsFromGroupArtists(groupNS.Group thisGroup, Dictionary<string, Material> allMaterials)
+        {
+            Dictionary<string, Material> final = new Dictionary<string, Material>();
+            
+            foreach (KeyValuePair<string, Material> pair in allMaterials)
+            {
+                if (thisGroup.AllMaterials.Contains(MakeIDs.makeMaterialID(pair.Value))) { continue; }
+                foreach (string artistString in pair.Value.Contributors)
+                {
+                    if (thisGroup.Artists.Contains(artistString)) { final.Add(pair.Key, pair.Value); break; }
+                }
+            }
+           
+            return MaterialController.getForList(final);
+        }
+
+
     }
 }

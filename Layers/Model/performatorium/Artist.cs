@@ -34,6 +34,13 @@ namespace muzickiKatalog.Layers.Model.performatorium
             Editor = _editor;
             Type=_type;
             Media = _media;
+            foreach(string genre in _genres)
+            {
+                if(GetFromIDs<Genre>.get(genre, GlobalVariables.genresFile).Item2== null)
+                {
+                    new Genre(genre);
+                }
+            }
             Genres = _genres;
             Type = _type;
             new Text(_biography, MakeIDs.makeArtistID(this));

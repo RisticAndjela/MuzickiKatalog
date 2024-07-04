@@ -12,7 +12,7 @@ namespace muzickiKatalog.Layers.Model.performatorium.Interfaces
         public string Title { get; set; }
         public DateOnly PublishDate { get; set; }
         public DateOnly PerformedDate { get; set; }
-        public string Genre { get; set; }
+        public List<string> Genres { get; set; }
         public string Albums { get; set; } 
         public List<string> Contributors { get; set; }
         

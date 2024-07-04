@@ -3,6 +3,7 @@ using muzickiKatalog.Layers.support;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -16,11 +17,12 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel.supportClasses
         {
             int length = descriptionString.Length;
             int i = 0;
+            int back = 0;
             while (i < length)
             {
                 string content = descriptionString.Substring(i, Math.Min(90, length - i));
-                int back = 0;
-                while (content.Length > 0 && content.Last() != ' ')
+                back = 0;
+                while (content.Length > 0 && (content.Last() != ' ' && content.Last() != '.' && content.Last() != '!' && content.Last() != '?'))
                 {
                     content = content.Substring(0, content.Length - 1);
                     back++;
@@ -33,6 +35,7 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel.supportClasses
                 };
                 main.Children.Add(description);
                 i += 90 - back;
+               
             }
         }
 

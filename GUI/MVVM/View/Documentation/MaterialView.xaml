@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:muzickiKatalog.GUI.MVVM.View.Documentation"
         mc:Ignorable="d"
-        Title="Material" Height="600" Width="1000"
+               Title="Material" Height="600" Width="1000"
         ResizeMode="NoResize"
         WindowStyle="None"
         Background="Transparent"
@@ -17,14 +17,51 @@
             <DockPanel x:Name="reklame" Margin="10,30,800,120" >
                 <ContentControl Content="{Binding AdsPanel}"/>
             </DockPanel>
-            <DockPanel x:Name="main" Margin="180,120,30,30">
+            <StackPanel x:Name="main" Margin="180,120,30,30">
+                <DockPanel>
+                    <Label Content="PUBLISH DATE:" Foreground="{StaticResource LightColor}" Style="{StaticResource regularLabel}" />
+                    <Label x:Name="PublishDate" Foreground="{StaticResource LightColor}" Style="{StaticResource regularLabel}" />
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="PERFORMED DATE:" Foreground="{StaticResource LightColor}" Style="{StaticResource regularLabel}" />
+                    <Label x:Name="PerformedDate" Foreground="{StaticResource LightColor}" Style="{StaticResource regularLabel}" />
+                </DockPanel>
+                <StackPanel x:Name="description">
+                    <Label Content="DESCRIPTION" Foreground="{StaticResource SecondBoldColor}" Style="{StaticResource regularLabel}"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="GENRES" Foreground="{StaticResource SecondBoldColor}" Style="{StaticResource regularLabel}"/>
+                    <DockPanel  x:Name="genres" />
+                </StackPanel>
 
-
-
-            </DockPanel>
+            <StackPanel>
+                <Grid  Margin="50,0"  >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Content="CONTRIBUTORS:" x:Name="Contributors" Foreground="{StaticResource SecondBoldColor}" HorizontalAlignment="Left" Grid.Column="1" Style="{StaticResource regularLabel}"/>
+                    <StackPanel Grid.Row="1" x:Name="column1"/>
+                </Grid>
+            </StackPanel>
+                <StackPanel>
+                <Label x:Name="galleryLabel" Content="GALLERY:" Style="{StaticResource naslov}" Foreground="{StaticResource SecondBoldColor}" />
+                <ContentControl x:Name="gallery"/>
+            </StackPanel>
+            <StackPanel >
+                <Label x:Name="materialsLabel"  Content="FROM THIS ARTISTS:" Style="{StaticResource naslov}" />
+                <ContentControl x:Name="materials"/>
+                <ContentControl x:Name="albums"/>
+                <Label x:Name="similarLabel"  Content="SIMILAR MATERIALS:" Style="{StaticResource naslov}" />
+                <ContentControl x:Name="similar"/>
+            </StackPanel>
             <DockPanel x:Name="reviews" Margin="180,620,30,30">
                 <ContentControl x:Name="panelr"/>
             </DockPanel>
+            </StackPanel>
         </Grid>
     </ScrollViewer>
 </Window>

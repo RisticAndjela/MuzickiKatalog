@@ -90,5 +90,26 @@ namespace muzickiKatalog.Layers.Controller.performatorium
             }
             return allAlbums;
         }
+
+        public static Dictionary<string, Tuple<string, string>> allAlbumsForSameArtists(Material material, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Material> allMaterials)
+        {
+            Dictionary<string, Album> final = new Dictionary<string, Album>();
+            
+            foreach (KeyValuePair<string,Album> pair in allAlbums)
+            {
+                if (pair.Value.AllMaterials.Contains(MakeIDs.makeMaterialID(material))) { continue; }
+                foreach (string materialsString in pair.Value.AllMaterials)
+                {
+                    Material materialCompare=GetFromIDs<Material>.get(materialsString,GlobalVariables.materialsFile).Item2;
+                    if (materialCompare.Contributors.Any(one=> material.Contributors.Contains(one)))
+                    {
+                        final.Add(pair.Key,pair.Value);
+                    }
+                }
+            }
+
+
+            return getForList(final);
+        }
     }
 }

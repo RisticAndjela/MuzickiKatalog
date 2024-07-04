@@ -2,6 +2,7 @@
 using muzickiKatalog.Layers.Repository.performatorium;
 using muzickiKatalog.Layers.Service.performatorium.Interfaces;
 using muzickiKatalog.Layers.support;
+using muzickiKatalog.Layers.support.IDparser;
 
 namespace muzickiKatalog.Layers.Service.performatorium
 {
@@ -30,6 +31,10 @@ namespace muzickiKatalog.Layers.Service.performatorium
             MaterialRepository.save(material);
         }
 
-        
+        public static string getDescription(Material material)
+        {
+            string id= MakeIDs.makeMaterialID(material);
+            return TextService.getTextByID(id).text;
+        }
     }
 }

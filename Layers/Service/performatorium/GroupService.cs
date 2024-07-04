@@ -16,7 +16,8 @@ namespace muzickiKatalog.Layers.Service.performatorium
         }
         public static void addMaterial(Group group, performatoriumNS.Material material)
         {
-            group.AllMaterials.Add(MakeIDs.makeMaterialID(material));
+            string id=MakeIDs.makeMaterialID(material);
+            if(!group.AllMaterials.Contains(id)) group.AllMaterials.Add(id);
             GroupRepository.save(group);
             foreach (string s in group.Artists)
             {
@@ -26,7 +27,8 @@ namespace muzickiKatalog.Layers.Service.performatorium
         }
         public static void addAlbum(Group group, Album album)
         {
-            group.AllMaterials.Add(MakeIDs.makeAlbumID(album));
+            string id= MakeIDs.makeAlbumID(album);
+            if(!group.AllMaterials.Contains(id))group.AllMaterials.Add(id);
             GroupRepository.save(group);
             foreach (string s in group.Artists)
             {
@@ -44,7 +46,10 @@ namespace muzickiKatalog.Layers.Service.performatorium
             group.AllStarRatings.Add(stars);
             GroupRepository.save(group);
         }
-       
-        
+
+        public static string getDescription(Group group) {
+            return TextService.getTextByID(MakeIDs.makeGroupID(group)).text;
+        }
+
     }
 }

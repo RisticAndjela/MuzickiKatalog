@@ -11,22 +11,26 @@ namespace muzickiKatalog.Layers.Service.performatorium
     {
         public static void AddGroupInfo(Artist artist, Group group)
         {
-            artist.Groups.Add(MakeIDs.makeGroupID(group));
+            string id = MakeIDs.makeGroupID(group);
+            if(!artist.Groups.Contains(id)) artist.Groups.Add(id);
             ArtistRepository.save(artist);
         }
         public static void AddMaterialInfo(Artist artist, Material material)
         {
-            artist.AllMaterials.Add(MakeIDs.makeMaterialID(material));
+            string id = MakeIDs.makeMaterialID(material); 
+            if (!artist.AllMaterials.Contains(id)) artist.AllMaterials.Add(id);
             ArtistRepository.save(artist);
         }
         public static void AddAlbumInfo(Artist artist, Album album)
         {
-            artist.AllMaterials.Add(MakeIDs.makeAlbumID(album));
+            string id = MakeIDs.makeAlbumID(album);
+            if (!artist.AllMaterials.Contains(id)) artist.AllMaterials.Add(id);
             ArtistRepository.save(artist);
         }
         public static void AddGenreInfo(Artist artist, Genre genre)
         {
-            artist.Genres.Add(genre.Name);
+            string id = genre.Name;
+            if(!artist.Genres.Contains(id))artist.Genres.Add(id);
             ArtistRepository.save(artist);
         }
         public static void LeaveComment(Artist artist, Comment comment)

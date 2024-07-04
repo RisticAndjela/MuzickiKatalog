@@ -126,5 +126,37 @@
     "AllStarRatings": [],
     "AllComments": [],
     "Visits": 0
+  },
+  "progressive rock": {
+    "Name": "progressive rock",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
+  },
+  "psychedelic rock": {
+    "Name": "psychedelic rock",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
+  },
+  "R&B": {
+    "Name": "R&B",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
+  },
+  "soul": {
+    "Name": "soul",
+    "AllMaterials": [],
+    "Media": [],
+    "AllStarRatings": [],
+    "AllComments": [],
+    "Visits": 0
   }
 }

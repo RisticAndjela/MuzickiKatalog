@@ -1,34 +1,33 @@
 ﻿using muzickiKatalog.Layers.support;
-using materialNS=muzickiKatalog.Layers.Model.performatorium;
-using System.Windows.Media.Media3D;
 using muzickiKatalog.Layers.Model.performatorium;
 using muzickiKatalog.Layers.support.IDparser;
 using muzickiKatalog.Layers.Repository.performatorium;
 using muzickiKatalog.Layers.Model.performatorium.Interfaces;
+using System.Linq;
 
 namespace muzickiKatalog.Layers.Controller.performatorium
 {
     public class MaterialController
     {
-        public static Dictionary<string, materialNS.Material> Get10Popular(Dictionary<string, materialNS.Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
+        public static Dictionary<string, Material> Get10Popular(Dictionary<string, Material> allMaterials, Dictionary<string, Album> allAlbums, Dictionary<string, Artist> allArtists, Dictionary<string, Group> allGroups)
         {
 
-            return getRatings<materialNS.Material>.Get10Popular(allMaterials, allAlbums, allArtists, allGroups);
+            return getRatings<Material>.Get10Popular(allMaterials, allAlbums, allArtists, allGroups);
 
         }
-        public static Dictionary<string, Tuple<string, string>> getForList(Dictionary<string,materialNS.Material> materials_)
+        public static Dictionary<string, Tuple<string, string>> getForList(Dictionary<string,Material> materials_)
         {
             Dictionary<string, Tuple<string, string>> allMaterials = new Dictionary<string, Tuple<string, string>>();
-            foreach (KeyValuePair<string, materialNS.Material> pair in materials_)
+            foreach (KeyValuePair<string, Material> pair in materials_)
             {
                 allMaterials.Add(pair.Key, new Tuple<string, string>(pair.Value.Title, pair.Value.Media[0]));
             }
             return allMaterials;
         }
-        public static Dictionary<string, Tuple<string, string>> FindMaterialsFromSameArtist(Artist artist, Dictionary<string, materialNS.Material> allMaterials)
+        public static Dictionary<string, Tuple<string, string>> FindMaterialsFromSameArtist(Artist artist, Dictionary<string, Material> allMaterials)
         {
-            Dictionary<string, materialNS.Material> final = new Dictionary<string, materialNS.Material>();
-            foreach (KeyValuePair<string, materialNS.Material> pair in allMaterials)
+            Dictionary<string, Material> final = new Dictionary<string, Material>();
+            foreach (KeyValuePair<string, Material> pair in allMaterials)
             {
                 if (allMaterials.Equals(pair.Value)) { continue; }
                 foreach (string s in pair.Value.Contributors)
@@ -39,11 +38,11 @@ namespace muzickiKatalog.Layers.Controller.performatorium
             }
             return getForList(final);
         }
-        public static Dictionary<string, Tuple<string, string>> FindMaterialsBasedOnAlbum(Album album, Dictionary<string, materialNS.Material> allMaterials,Dictionary<string, Artist> allArtists)
+        public static Dictionary<string, Tuple<string, string>> FindMaterialsBasedOnAlbum(Album album, Dictionary<string, Material> allMaterials,Dictionary<string, Artist> allArtists)
         {
 
             List<Artist> artists = new List<Artist>();
-            Dictionary<string, materialNS.Material> final = new Dictionary<string, materialNS.Material>();
+            Dictionary<string, Material> final = new Dictionary<string, Material>();
             foreach (string materialString in album.AllMaterials)
             {
                 foreach (string artistString in allMaterials[materialString].Contributors)
@@ -56,7 +55,7 @@ namespace muzickiKatalog.Layers.Controller.performatorium
                 }
             }
 
-            foreach (KeyValuePair<string, materialNS.Material> pair in allMaterials)
+            foreach (KeyValuePair<string, Material> pair in allMaterials)
             {
                 if (allMaterials.Equals(pair.Value)) { continue; }
                 foreach (string s in pair.Value.Contributors)
@@ -67,23 +66,38 @@ namespace muzickiKatalog.Layers.Controller.performatorium
             }
             return getForList(final);
         }
-        public static Dictionary<string, materialNS.Material> addMaterialsBasedOnGroup(string id,Dictionary<string, materialNS.Material> final, Dictionary<string, materialNS.Material> allMaterials)
+        public static Dictionary<string, Material> addMaterialsBasedOnGroup(string id,Dictionary<string, Material> final, Dictionary<string,Material> allMaterials)
         {
-            foreach(KeyValuePair<string, materialNS.Material> pair  in allMaterials)
+            foreach(KeyValuePair<string, Material> pair  in allMaterials)
             {
                 if (allMaterials.Equals(pair.Value)) { continue; }
                 if (pair.Value.Contributors.Contains(id)) { final.TryAdd(pair.Key, pair.Value); }
                 }
             return final;
         }
-        public static Dictionary<string, Tuple<string, string>> FindMaterialsWithSameGenre(materialNS.Material thisMaterial, Dictionary<string, materialNS.Material> allMaterials)
+        public static Dictionary<string, Tuple<string, string>> FindMaterialsWithSameGenre(Material thisMaterial, Dictionary<string, Material> allMaterials)
         {
-            Dictionary<string, materialNS.Material> final = new Dictionary<string, materialNS.Material>();
+            Dictionary<string, Material> final = new Dictionary<string, Material>();
 
-            foreach (KeyValuePair<string, materialNS.Material> pair in allMaterials)
+            foreach (KeyValuePair<string, Material> pair in allMaterials)
             {
                 if (thisMaterial.Equals(pair.Value)) { continue; }
-                if (thisMaterial.Genre.Equals(pair.Value.Genre)) { final.Add(pair.Key, pair.Value); }
+                if (thisMaterial.Genres.Any(one=>pair.Value.Genres.Contains(one))) { final.Add(pair.Key, pair.Value); }
+            }
+
+            return getForList(final);
+        }
+        public static Dictionary<string, Tuple<string, string>> allMaterialsForSameArtists(Material material,  Dictionary<string, Artist> allArtists, Dictionary<string, Material> allMaterials)
+        {
+            Dictionary<string, Material> final = new Dictionary<string, Material>();
+
+            foreach (KeyValuePair<string, Material> materialCompare in allMaterials)
+            {
+                if (material.Title.Equals(materialCompare.Value.Title)) { continue; }
+                foreach (string artistString in material.Contributors)
+                {
+                    if (materialCompare.Value.Contributors.Any(one=> material.Contributors.Contains(one))){ if(!final.ContainsKey(materialCompare.Key)) final.Add(materialCompare.Key, materialCompare.Value); }
+                }
             }
 
             return getForList(final);

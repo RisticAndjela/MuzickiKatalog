@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:muzickiKatalog.GUI.MVVM.View.Documentation"
         mc:Ignorable="d"
-        Title="Group" Height="600" Width="1000"
+             Title="Group" Height="600" Width="1000"
         ResizeMode="NoResize"
         WindowStyle="None"
         Background="Transparent"
@@ -14,17 +14,43 @@
         <Grid>
             <ContentControl Template="{StaticResource ResourceKey=pozadinaClose}"/>
             <Label x:Name="naslovLabela" FontSize="40" Margin="90,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
-            <DockPanel x:Name="reklame" Margin="10,30,800,120" >
+            <DockPanel x:Name="reklame"  Margin="10,30,800,720" >
                 <ContentControl Content="{Binding AdsPanel}"/>
             </DockPanel>
-            <DockPanel x:Name="main" Margin="180,120,30,30">
+            <StackPanel Margin="180,90,30,500">
+                <StackPanel x:Name="main" Margin="50,0" >
+                </StackPanel>
+                <Grid x:Name="ContribAndMaterials" Margin="50,0"  >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Content="CONTRIBUTORS:" Foreground="{StaticResource SecondBoldColor}" HorizontalAlignment="Left" Grid.Column="1" Style="{StaticResource regularLabel}"/>
+                    <Label Content="MATERIALS:" Style="{StaticResource regularLabel}" Foreground="{StaticResource SecondBoldColor}"  HorizontalAlignment="Left"/>
+                    <StackPanel Grid.Row="1" x:Name="column1"/>
+                    <StackPanel Grid.Row="1" Grid.Column="1" x:Name="column2"/>
 
-
-
-            </DockPanel>
-            <DockPanel x:Name="reviews" Margin="180,620,30,30">
-                <ContentControl x:Name="panelr"/>
-            </DockPanel>
+                </Grid>
+                <StackPanel>
+                    <Label Content="GALLERY:" x:Name="galleryLabel" Style="{StaticResource naslov}" Foreground="{StaticResource SecondBoldColor}" />
+                    <ContentControl x:Name="gallery"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="SIMILAR GROUPS:" x:Name="similarLabel" Style="{StaticResource naslov}" />
+                    <ContentControl x:Name="similarGroups"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="MATERIALS FROM MEMBERS:" x:Name="materialMembersLabel" Style="{StaticResource naslov}" />
+                    <ContentControl x:Name="materialsMembers"/>
+                </StackPanel>
+                <DockPanel x:Name="reviews">
+                    <ContentControl x:Name="panelr"/>
+                </DockPanel>
+            </StackPanel>
         </Grid>
     </ScrollViewer>
 </Window>

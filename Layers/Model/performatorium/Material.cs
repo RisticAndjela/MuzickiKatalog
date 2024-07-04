@@ -12,7 +12,7 @@ namespace muzickiKatalog.Layers.Model.performatorium
         public string Title {  get; set; }
         public DateOnly PublishDate { get; set; }
         public DateOnly PerformedDate { get; set; }
-        public string Genre {  get; set; }
+        public List<string> Genres {  get; set; }
         public string Albums { get; set; } = null;
         public List<string> Contributors {  get; set; }= new List<string>(); //ids of Artists
         public List<string> Media {  get; set; }= new List<string>(); 
@@ -21,11 +21,11 @@ namespace muzickiKatalog.Layers.Model.performatorium
         public int Visits {  get; set; } = 0;
         public Material() { }
 
-        public Material(string _editor,string _title,string _genre, DateOnly _publishDate, DateOnly _performedDate, List<string> _contributors, List<string> _media, string _description)
+        public Material(string _editor,string _title, List<string> _genres, DateOnly _publishDate, DateOnly _performedDate, List<string> _contributors, List<string> _media, string _description)
         {
             Editor = _editor;
             Title = _title;
-            Genre = _genre;
+            Genres = _genres;
             Media = _media;
             PublishDate = _publishDate;
             PerformedDate = _performedDate;

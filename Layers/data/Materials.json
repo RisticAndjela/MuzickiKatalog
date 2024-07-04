@@ -2,9 +2,11 @@
   "Introduction to Music Theory:Martinez-": {
     "Editor": "nicole@editor.com",
     "Title": "Introduction to Music Theory",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2002-12-12",
-    "Genre": "music theory",
+    "Genres": [
+      "music theory"
+    ],
     "Albums": null,
     "Contributors": [
       "Alex_Martinez_2/28/1983"
@@ -15,14 +17,16 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0
+    "Visits": 2
   },
   "The History of Classical Music:Brown-": {
     "Editor": "nicole@editor.com",
     "Title": "The History of Classical Music",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1998-09-20",
-    "Genre": "classical",
+    "Genres": [
+      "classical"
+    ],
     "Albums": null,
     "Contributors": [
       "David_Brown_5/3/1978"
@@ -33,14 +37,16 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0
+    "Visits": 2
   },
   "Understanding Jazz Improvisation:Doe-Brown-Lee-": {
     "Editor": "nicole@editor.com",
     "Title": "Understanding Jazz Improvisation",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "jazz",
+    "Genres": [
+      "jazz"
+    ],
     "Albums": null,
     "Contributors": [
       "John_Doe_7/15/1985",
@@ -58,9 +64,11 @@
   "The Evolution of Rock Music:Martinez-": {
     "Editor": "nicole@editor.com",
     "Title": "The Evolution of Rock Music",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "rock",
+    "Genres": [
+      "rock"
+    ],
     "Albums": null,
     "Contributors": [
       "Alex_Martinez_2/28/1983"
@@ -76,9 +84,11 @@
   "The Role of the Conductor:Robinson-": {
     "Editor": "nicole@editor.com",
     "Title": "The Role of the Conductor",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "orchestra",
+    "Genres": [
+      "orchestra"
+    ],
     "Albums": null,
     "Contributors": [
       "Jessica_Robinson_8/7/1984"
@@ -94,9 +104,11 @@
   "The Impact of Digital Technology on Music Production:Doe-Lee-": {
     "Editor": "nicole@editor.com",
     "Title": "The Impact of Digital Technology on Music Production",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "music theory",
+    "Genres": [
+      "music theory"
+    ],
     "Albums": null,
     "Contributors": [
       "John_Doe_7/15/1985",
@@ -108,14 +120,16 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0
+    "Visits": 2
   },
   "Exploring World Music Traditions:Doe-": {
     "Editor": "nicole@editor.com",
     "Title": "Exploring World Music Traditions",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "world",
+    "Genres": [
+      "world"
+    ],
     "Albums": null,
     "Contributors": [
       "John_Doe_7/15/1985"
@@ -131,9 +145,11 @@
   "The Psychology of Music:Davis-Martinez-": {
     "Editor": "nicole@editor.com",
     "Title": "The Psychology of Music",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "music theory",
+    "Genres": [
+      "music theory"
+    ],
     "Albums": null,
     "Contributors": [
       "Emily_Davis_12/10/1987",
@@ -150,9 +166,11 @@
   "Film Scoring Techniques:Doe-": {
     "Editor": "nicole@editor.com",
     "Title": "Film Scoring Techniques",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "music theory",
+    "Genres": [
+      "music theory"
+    ],
     "Albums": null,
     "Contributors": [
       "John_Doe_7/15/1985"
@@ -163,14 +181,16 @@
     ],
     "AllComments": [],
     "AllStarRatings": [],
-    "Visits": 0
+    "Visits": 1
   },
   "The Business of Music:Brown-": {
     "Editor": "nicole@editor.com",
     "Title": "The Business of Music",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "music theory",
+    "Genres": [
+      "music theory"
+    ],
     "Albums": null,
     "Contributors": [
       "David_Brown_5/3/1978"
@@ -186,9 +206,11 @@
   "Mozart's 'The Magic Flute' Opera:Lee-": {
     "Editor": "nicole@editor.com",
     "Title": "Mozart's 'The Magic Flute' Opera",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "opera",
+    "Genres": [
+      "opera"
+    ],
     "Albums": null,
     "Contributors": [
       "Rachel_Lee_6/25/1986"
@@ -204,9 +226,11 @@
   "Beethoven's Symphony No. 9: 'Ode to Joy':Doe-": {
     "Editor": "nicole@editor.com",
     "Title": "Beethoven's Symphony No. 9: 'Ode to Joy'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "classical",
+    "Genres": [
+      "classical"
+    ],
     "Albums": null,
     "Contributors": [
       "John_Doe_7/15/1985"
@@ -222,9 +246,11 @@
   "The Beatles: 'Sgt. Pepper's Lonely Hearts Club Band' Album:Wilson-": {
     "Editor": "nicole@editor.com",
     "Title": "The Beatles: 'Sgt. Pepper's Lonely Hearts Club Band' Album",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "rock",
+    "Genres": [
+      "rock"
+    ],
     "Albums": null,
     "Contributors": [
       "Mark_Wilson_10/12/1981"
@@ -240,9 +266,11 @@
   "Miles Davis: 'Kind of Blue' Album:Davis-": {
     "Editor": "nicole@editor.com",
     "Title": "Miles Davis: 'Kind of Blue' Album",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "jazz",
+    "Genres": [
+      "jazz"
+    ],
     "Albums": null,
     "Contributors": [
       "Emily_Davis_12/10/1987"
@@ -258,9 +286,11 @@
   "Puccini's 'La Bohème' Opera:Doe-": {
     "Editor": "nicole@editor.com",
     "Title": "Puccini's 'La Bohème' Opera",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "opera",
+    "Genres": [
+      "opera"
+    ],
     "Albums": null,
     "Contributors": [
       "John_Doe_7/15/1985"
@@ -276,9 +306,11 @@
   "Woodstock Music Festival 1969: Cultural Impact and Legacy:Wilson-": {
     "Editor": "nicole@editor.com",
     "Title": "Woodstock Music Festival 1969: Cultural Impact and Legacy",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "rock",
+    "Genres": [
+      "rock"
+    ],
     "Albums": null,
     "Contributors": [
       "Mark_Wilson_10/12/1981"
@@ -294,9 +326,11 @@
   "The Rolling Stones: 'Exile on Main St.' Album:Doe-Robinson-": {
     "Editor": "nicole@editor.com",
     "Title": "The Rolling Stones: 'Exile on Main St.' Album",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2005-03-10",
-    "Genre": "rock",
+    "Genres": [
+      "rock"
+    ],
     "Albums": null,
     "Contributors": [
       "John_Doe_7/15/1985",
@@ -313,9 +347,11 @@
   "Johann Strauss II: 'The Blue Danube' Waltz:Johnson-": {
     "Editor": "nicole@editor.com",
     "Title": "Johann Strauss II: 'The Blue Danube' Waltz",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2006-11-12",
-    "Genre": "classical",
+    "Genres": [
+      "classical"
+    ],
     "Albums": null,
     "Contributors": [
       "Michael_Johnson_9/5/1982"
@@ -331,9 +367,11 @@
   "Speak to Me:Pink Floyd": {
     "Editor": "nicole@editor.com",
     "Title": "Speak to Me",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2002-12-12",
-    "Genre": "blues",
+    "Genres": [
+      "blues"
+    ],
     "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
     "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
@@ -348,9 +386,11 @@
   "Breathe:Pink Floyd": {
     "Editor": "nicole@editor.com",
     "Title": "Breathe",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2002-12-12",
-    "Genre": "blues",
+    "Genres": [
+      "blues"
+    ],
     "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
     "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
@@ -365,9 +405,11 @@
   "On the Run:Pink Floyd": {
     "Editor": "nicole@editor.com",
     "Title": "On the Run",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2002-12-12",
-    "Genre": "blues",
+    "Genres": [
+      "blues"
+    ],
     "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
     "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
@@ -382,9 +424,11 @@
   "Time:Pink Floyd": {
     "Editor": "nicole@editor.com",
     "Title": "Time",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2002-12-12",
-    "Genre": "blues",
+    "Genres": [
+      "blues"
+    ],
     "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
     "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
@@ -399,9 +443,11 @@
   "The Great Gig in the Sky:Pink Floyd": {
     "Editor": "nicole@editor.com",
     "Title": "The Great Gig in the Sky",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2002-12-12",
-    "Genre": "blues",
+    "Genres": [
+      "blues"
+    ],
     "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
     "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
@@ -416,9 +462,11 @@
   "Money:Pink Floyd": {
     "Editor": "nicole@editor.com",
     "Title": "Money",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2002-12-12",
-    "Genre": "blues",
+    "Genres": [
+      "blues"
+    ],
     "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
     "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
@@ -433,9 +481,11 @@
   "Us and Them:Pink Floyd": {
     "Editor": "nicole@editor.com",
     "Title": "Us and Them",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2002-12-12",
-    "Genre": "blues",
+    "Genres": [
+      "blues"
+    ],
     "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
     "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
@@ -450,9 +500,11 @@
   "Any Colour You Like:Pink Floyd": {
     "Editor": "nicole@editor.com",
     "Title": "Any Colour You Like",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2002-12-12",
-    "Genre": "blues",
+    "Genres": [
+      "blues"
+    ],
     "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
     "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
@@ -467,9 +519,11 @@
   "Brain Damage:Pink Floyd": {
     "Editor": "nicole@editor.com",
     "Title": "Brain Damage",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2002-12-12",
-    "Genre": "blues",
+    "Genres": [
+      "blues"
+    ],
     "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
     "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
@@ -484,9 +538,11 @@
   "Eclipse:Pink Floyd": {
     "Editor": "nicole@editor.com",
     "Title": "Eclipse",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "2002-12-12",
-    "Genre": "blues",
+    "Genres": [
+      "blues"
+    ],
     "Albums": "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-",
     "Contributors": [
       "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-"
@@ -501,9 +557,11 @@
   "Elvis Presley's 'Can't Help Falling in Love':Presley-": {
     "Editor": "nicole@editor.com",
     "Title": "Elvis Presley's 'Can't Help Falling in Love'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1961-10-01",
-    "Genre": "rock",
+    "Genres": [
+      "rock"
+    ],
     "Albums": null,
     "Contributors": [
       "Elvis_Presley_1/8/1935"
@@ -518,9 +576,11 @@
   "Elvis Presley's 'Jailhouse Rock':Presley-": {
     "Editor": "nicole@editor.com",
     "Title": "Elvis Presley's 'Jailhouse Rock'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1957-09-24",
-    "Genre": "rock",
+    "Genres": [
+      "rock"
+    ],
     "Albums": null,
     "Contributors": [
       "Elvis_Presley_1/8/1935"
@@ -535,9 +595,11 @@
   "Elvis Presley's 'Suspicious Minds':Presley-": {
     "Editor": "nicole@editor.com",
     "Title": "Elvis Presley's 'Suspicious Minds'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1969-08-26",
-    "Genre": "rock",
+    "Genres": [
+      "rock"
+    ],
     "Albums": null,
     "Contributors": [
       "Elvis_Presley_1/8/1935"
@@ -552,9 +614,11 @@
   "Elvis Presley's 'Heartbreak Hotel':Presley-": {
     "Editor": "nicole@editor.com",
     "Title": "Elvis Presley's 'Heartbreak Hotel'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1956-01-27",
-    "Genre": "rock",
+    "Genres": [
+      "rock"
+    ],
     "Albums": null,
     "Contributors": [
       "Elvis_Presley_1/8/1935"
@@ -569,9 +633,11 @@
   "Elvis Presley's 'Love Me Tender':Presley-": {
     "Editor": "nicole@editor.com",
     "Title": "Elvis Presley's 'Love Me Tender'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1956-09-28",
-    "Genre": "rock",
+    "Genres": [
+      "rock"
+    ],
     "Albums": null,
     "Contributors": [
       "Elvis_Presley_1/8/1935"
@@ -586,9 +652,11 @@
   "Michael Jackson's 'Billie Jean':Jackson-": {
     "Editor": "nicole@editor.com",
     "Title": "Michael Jackson's 'Billie Jean'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1982-01-02",
-    "Genre": "pop",
+    "Genres": [
+      "pop"
+    ],
     "Albums": null,
     "Contributors": [
       "Michael_Jackson_8/29/1958"
@@ -603,9 +671,11 @@
   "Michael Jackson's 'Thriller':Jackson-": {
     "Editor": "nicole@editor.com",
     "Title": "Michael Jackson's 'Thriller'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1983-11-30",
-    "Genre": "pop",
+    "Genres": [
+      "pop"
+    ],
     "Albums": null,
     "Contributors": [
       "Michael_Jackson_8/29/1958"
@@ -620,9 +690,11 @@
   "Michael Jackson's 'Beat It':Jackson-": {
     "Editor": "nicole@editor.com",
     "Title": "Michael Jackson's 'Beat It'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1983-02-14",
-    "Genre": "pop",
+    "Genres": [
+      "pop"
+    ],
     "Albums": null,
     "Contributors": [
       "Michael_Jackson_8/29/1958"
@@ -637,9 +709,11 @@
   "Michael Jackson's 'Smooth Criminal':Jackson-": {
     "Editor": "nicole@editor.com",
     "Title": "Michael Jackson's 'Smooth Criminal'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1987-10-24",
-    "Genre": "pop",
+    "Genres": [
+      "pop"
+    ],
     "Albums": null,
     "Contributors": [
       "Michael_Jackson_8/29/1958"
@@ -654,9 +728,11 @@
   "Michael Jackson's 'Man in the Mirror':Jackson-": {
     "Editor": "nicole@editor.com",
     "Title": "Michael Jackson's 'Man in the Mirror'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1988-01-16",
-    "Genre": "pop",
+    "Genres": [
+      "pop"
+    ],
     "Albums": null,
     "Contributors": [
       "Michael_Jackson_8/29/1958"
@@ -671,9 +747,11 @@
   "Bob Dylan's 'Like a Rolling Stone':Dylan-": {
     "Editor": "nicole@editor.com",
     "Title": "Bob Dylan's 'Like a Rolling Stone'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1965-07-20",
-    "Genre": "rock",
+    "Genres": [
+      "rock"
+    ],
     "Albums": null,
     "Contributors": [
       "Bob_Dylan_5/24/1941"
@@ -688,9 +766,11 @@
   "Bob Dylan's 'Blowin' in the Wind':Dylan-": {
     "Editor": "nicole@editor.com",
     "Title": "Bob Dylan's 'Blowin' in the Wind'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1963-04-16",
-    "Genre": "folk",
+    "Genres": [
+      "folk"
+    ],
     "Albums": null,
     "Contributors": [
       "Bob_Dylan_5/24/1941"
@@ -705,9 +785,11 @@
   "Bob Dylan's 'The Times They Are A-Changin':Dylan-": {
     "Editor": "nicole@editor.com",
     "Title": "Bob Dylan's 'The Times They Are A-Changin'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1964-01-13",
-    "Genre": "folk",
+    "Genres": [
+      "folk"
+    ],
     "Albums": null,
     "Contributors": [
       "Bob_Dylan_5/24/1941"
@@ -722,9 +804,11 @@
   "Bob Dylan's 'Knockin' on Heaven's Door':Dylan-": {
     "Editor": "nicole@editor.com",
     "Title": "Bob Dylan's 'Knockin' on Heaven's Door'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1973-07-12",
-    "Genre": "rock",
+    "Genres": [
+      "rock"
+    ],
     "Albums": null,
     "Contributors": [
       "Bob_Dylan_5/24/1941"
@@ -739,9 +823,11 @@
   "Bob Dylan's 'Mr. Tambourine Man':Dylan-": {
     "Editor": "nicole@editor.com",
     "Title": "Bob Dylan's 'Mr. Tambourine Man'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1965-04-12",
-    "Genre": "folk",
+    "Genres": [
+      "folk"
+    ],
     "Albums": null,
     "Contributors": [
       "Bob_Dylan_5/24/1941"
@@ -756,9 +842,11 @@
   "Aretha Franklin's 'Respect':Franklin-": {
     "Editor": "nicole@editor.com",
     "Title": "Aretha Franklin's 'Respect'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1967-04-29",
-    "Genre": "soul",
+    "Genres": [
+      "soul"
+    ],
     "Albums": null,
     "Contributors": [
       "Aretha_Franklin_3/25/1942"
@@ -773,9 +861,11 @@
   "Aretha Franklin's 'Natural Woman':Franklin-": {
     "Editor": "nicole@editor.com",
     "Title": "Aretha Franklin's 'Natural Woman'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1967-09-22",
-    "Genre": "soul",
+    "Genres": [
+      "soul"
+    ],
     "Albums": null,
     "Contributors": [
       "Aretha_Franklin_3/25/1942"
@@ -790,9 +880,11 @@
   "Aretha Franklin's 'Chain of Fools':Franklin-": {
     "Editor": "nicole@editor.com",
     "Title": "Aretha Franklin's 'Chain of Fools'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1967-11-21",
-    "Genre": "soul",
+    "Genres": [
+      "soul"
+    ],
     "Albums": null,
     "Contributors": [
       "Aretha_Franklin_3/25/1942"
@@ -807,9 +899,11 @@
   "Aretha Franklin's 'Think':Franklin-": {
     "Editor": "nicole@editor.com",
     "Title": "Aretha Franklin's 'Think'",
-    "PublishDate": "2024-07-03",
+    "PublishDate": "2024-07-04",
     "PerformedDate": "1968-05-02",
-    "Genre": "soul",
+    "Genres": [
+      "soul"
+    ],
     "Albums": null,
     "Contributors": [
       "Aretha_Franklin_3/25/1942"
