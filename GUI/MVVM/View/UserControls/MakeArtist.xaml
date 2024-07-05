@@ -20,7 +20,7 @@
             <Border Height="NaN" Grid.Column="2" Style="{StaticResource TextBoxBorder}" Margin="0,10,0,275">
                 <TextBox x:Name="biography" Height="100" Style="{StaticResource regularBox}"  Width="288"/>
             </Border>
-            <ListBox x:Name="genres" Grid.Column="2" Margin="50,260,50,160" SelectionMode="Multiple"/>
+            <ListBox x:Name="genres" Grid.Column="2" Margin="50,260,50,50" SelectionMode="Multiple"/>
             <ComboBox x:Name="artistType" Grid.Column="2" Margin="50,195,50,225"></ComboBox>
             <Button  Grid.ColumnSpan="4" Content="DONE" Width="100" Style="{StaticResource circleButton}" Click="doneButton" VerticalAlignment="Bottom" Margin="20"/>
             <Label Content="TYPE: " Style="{StaticResource regularLabel}" Margin="0,170,0,200" Grid.Column="1"/>

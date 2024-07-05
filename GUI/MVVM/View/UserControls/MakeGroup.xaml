@@ -21,7 +21,7 @@
         <!--name-->
         <Label Content="NAME:" Style="{StaticResource regularLabel}" Margin="30,10,0,6"/>
         <Border Grid.Column="1" Width="200" Style="{StaticResource TextBoxBorder}">
-            <TextBox x:Name="name" Width="183" Style="{StaticResource regularBox}" Margin="2,2,0,-2"/>
+            <TextBox x:Name="name" Width="183" Style="{StaticResource regularBox}" Margin="2,2,0,2"/>
         </Border>
 
         <!--birthday-->

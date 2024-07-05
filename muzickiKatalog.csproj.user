@@ -19,10 +19,16 @@
     <Compile Update="GUI\MVVM\View\UserControls\ADs.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="GUI\MVVM\View\UserControls\MakeAlbum.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="GUI\MVVM\View\UserControls\MakeArtist.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="GUI\MVVM\View\UserControls\MakeGroup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\UserControls\MakeMaterial.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="GUI\MVVM\View\UserControls\MakePerson.xaml.cs">
@@ -87,10 +93,16 @@
     <Page Update="GUI\MVVM\View\UserControls\ADs.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="GUI\MVVM\View\UserControls\MakeAlbum.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="GUI\MVVM\View\UserControls\MakeArtist.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\UserControls\MakeGroup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\UserControls\MakeMaterial.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\UserControls\MakePerson.xaml">

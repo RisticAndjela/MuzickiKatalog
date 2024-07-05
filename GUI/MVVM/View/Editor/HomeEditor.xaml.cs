@@ -21,6 +21,8 @@ using muzickiKatalog.Layers.Model.performatorium;
 using muzickiKatalog.Layers.Repository.performatorium;
 using muzickiKatalog.Layers.support;
 using muzickiKatalog.Layers.Model.performatorium.Interfaces;
+using muzickiKatalog.GUI.MVVM.ViewModel.supportClasses;
+using muzickiKatalog.Layers.support.IDparser;
 
 namespace muzickiKatalog.GUI.MVVM.View.Editor
 {
@@ -32,6 +34,8 @@ namespace muzickiKatalog.GUI.MVVM.View.Editor
         private contributor.Editor editor;
         private MakeArtist ma;
         private MakeGroup mg;
+        private MakeAlbum mab;
+        private MakeMaterial mm;
 
         private Dictionary<string, Material> allMaterials = MaterialRepository.getAll();
         private Dictionary<string, Album> allAlbums = AlbumRepository.getAll();
@@ -52,17 +56,26 @@ namespace muzickiKatalog.GUI.MVVM.View.Editor
         private void TaskReviewsHandler(object sender, RoutedEventArgs e)
         {
             hideAll();
+            reviewsTasks.Visibility= Visibility.Visible;
             (Dictionary<string, Tuple<string, string>> materials, Dictionary<string, Tuple<string, string>> albums, Dictionary<string, Tuple<string, string>> artists, Dictionary<string, Tuple<string, string>> groups)=EditorController.getTasks(editor,allMaterials,allAlbums,allArtists,allGroups);
             reviewsTasks.Children.Add(new ReviewList(editor, materials, "Material"));
             reviewsTasks.Children.Add(new ReviewList(editor, albums, "Album"));
             reviewsTasks.Children.Add(new ReviewList(editor, artists, "Artist"));
             reviewsTasks.Children.Add(new ReviewList(editor, groups, "Group"));
-            reviewsTasks.Visibility= Visibility.Visible;
         }
         private void myInfoHandler(object sender, RoutedEventArgs e)
         {
             hideAll();
-
+            InfoPanel.Visibility = Visibility.Visible;
+            name.Content = editor.Name;
+            lastname.Content = editor.LastName;
+            gender.Content = editor.GenderProp.ToString();
+            birthday.Content = editor.Birthday.ToString();
+            foreach (string genreID in editor.genres)
+            {
+                Genre genre = GetFromIDs<Genre>.get(genreID, GlobalVariables.genresFile).Item2;
+                ButtonLabelManipulation.AddButtonToPanel(specializedForGenres, genre.Name, (sender, e) => new OpenViewBasedOnUser(editor).OpenGenreView("editor", genre, allMaterials, allAlbums, allArtists, allGroups), this);
+            }
         }
         private void seeAllAlbumsHandler(object sender, RoutedEventArgs e)
         {
@@ -94,25 +107,30 @@ namespace muzickiKatalog.GUI.MVVM.View.Editor
         private void makeAlbumHandler(object sender, RoutedEventArgs e)
         {
             hideAll();
-
+            make.Visibility = Visibility.Visible;
+            mab = new MakeAlbum(editor);
+            make.Children.Add(mab);
         }
         private void makeMaterialHandler(object sender, RoutedEventArgs e)
         {
             hideAll();
+            make.Visibility = Visibility.Visible;
+            mm = new MakeMaterial(editor);
+            make.Children.Add(mm);
         }
         private void makeGroupHandler(object sender, RoutedEventArgs e)
         {
             hideAll();
-            makeGroup.Visibility = Visibility.Visible;
+            make.Visibility = Visibility.Visible;
             mg = new MakeGroup(editor);
-            makeGroup.Children.Add(mg);
+            make.Children.Add(mg);
         }
         private void makeArtistHandler(object sender, RoutedEventArgs e)
         {
             hideAll();
-            makeArtist.Visibility = Visibility.Visible;
+            make.Visibility = Visibility.Visible;
             ma = new MakeArtist(editor);
-            makeArtist.Children.Add(ma);
+            make.Children.Add(ma);
 
         }
        
@@ -120,8 +138,9 @@ namespace muzickiKatalog.GUI.MVVM.View.Editor
 
         private void hideAll()
         {
-            makeArtist.Visibility = Visibility.Hidden;
-            makeGroup.Visibility = Visibility.Hidden;
+            make.Visibility = Visibility.Hidden;
+            InfoPanel.Visibility= Visibility.Hidden;
+            make.Children.Clear();
             ListShow.Children.Clear();
             reviews.Children.Clear();
             reviewsTasks.Children.Clear();

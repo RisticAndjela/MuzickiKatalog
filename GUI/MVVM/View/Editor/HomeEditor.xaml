@@ -66,13 +66,37 @@
                 </Grid>
             </DockPanel>
 
-            
-            <StackPanel x:Name="reviewsTasks" Visibility="Hidden" Margin="50,180,50,20"/>
-            <DockPanel x:Name="ListShow" Margin="50,180,50,20"/>
-            <DockPanel x:Name="makeArtist" Visibility="Hidden" Margin="50,180,50,20"/>
-            <DockPanel x:Name="makeGroup" Visibility="Hidden" Margin="50,180,50,20"/>
+            <StackPanel x:Name="InfoPanel" Visibility="Hidden" Margin="210,200,100,150">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Content="NAME:" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label x:Name="name" Foreground="{StaticResource ResourceKey=LightColor}" Grid.Column="1" Content="name" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label Grid.Column="2" Content="LAST NAME:" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label x:Name="lastname" Foreground="{StaticResource ResourceKey=LightColor}" Grid.Column="3" Content="last name" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label Grid.Row="1" Content="BIRTHDAY:" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label x:Name="birthday" Foreground="{StaticResource ResourceKey=LightColor}" Grid.Row="1" Grid.Column="1" Content="birthday" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label Grid.Row="1" Grid.Column="2" Content="GENDER:" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                    <Label x:Name="gender" Foreground="{StaticResource ResourceKey=LightColor}" Grid.Row="1" Grid.Column="3" Content="gender" Style="{StaticResource ResourceKey=regularLabel}" Margin="10,0"/>
+                </Grid>
+                <DockPanel x:Name="specializedForGenres" />
+            </StackPanel>
 
+            <StackPanel x:Name="reviewsTasks" Visibility="Hidden" Margin="100,160,20,190"/>
 
+            <DockPanel x:Name="ListShow" Height="260" Margin="50,180,50,20"/>
+            <DockPanel x:Name="make" Visibility="Hidden" Margin="50,180,50,20"/>
 
 
 
