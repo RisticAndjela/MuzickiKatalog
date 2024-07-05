@@ -24,5 +24,11 @@ namespace muzickiKatalog.GUI.MVVM.View.Admin
             InitializeComponent();
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
         }
+
+
+        public void ManageEditors(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("hii");
+        }
     }
 }
