@@ -24,6 +24,7 @@ namespace muzickiKatalog.Layers.support
             generateAlbums();
             generateSongs();
             generatePlayLists();
+            generateComments();
         }
         public void generatePlayLists()
         {
@@ -33,7 +34,19 @@ namespace muzickiKatalog.Layers.support
             PlayListService.addMaterialbyID(playList, "The Evolution of Rock Music:Martinez-");
             PlayListService.addMaterialbyID(playList, "'The Dark Side of the Moon' Album:Speak to Me:Pink Floyd-Breathe:Pink Floyd-On the Run:Pink Floyd-Time:Pink Floyd-The Great Gig in the Sky:Pink Floyd-Money:Pink Floyd-Us and Them:Pink Floyd-Any Colour You Like:Pink Floyd-Brain Damage:Pink Floyd-Eclipse:Pink Floyd-");
         }
+        public void generateComments()
+        {
+            new Comment("John_Doe_7/15/1985", "Introduction to Music Theory:Martinez-", DateTime.Now, "This biography was very insightful!");
+            new StarRating("John_Doe_7/15/1985", "Introduction to Music Theory:Martinez-", DateTime.Now, 3);
+            new Comment("Michael_Johnson_9/5/1982", "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-", DateTime.Now, "This biography was very insightful!");
+            new StarRating("Michael_Johnson_9/5/1982", "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-", DateTime.Now, 4);
+            new Comment("Emily_Davis_12/10/1987", "The History of Classical Music:Brown-", DateTime.Now, "This biography was very insightful!");
+            new StarRating("Emily_Davis_12/10/1987", "The History of Classical Music:Brown-", DateTime.Now, 5);
+            new Comment("John_Doe_7/15/1985", "Jane_Smith_3/22/1990", DateTime.Now, "This biography was very insightful!");
+            new StarRating("John_Doe_7/15/1985", "Jane_Smith_3/22/1990", DateTime.Now, 3);
 
+
+        }
         public void generateGenres()
         {
             new Genre("rock");
@@ -182,6 +195,7 @@ namespace muzickiKatalog.Layers.support
             new Dao<Group>(GlobalVariables.groupsFile).WriteDictionaryToFile(new Dictionary<string, Group>());
             new Dao<Album>(GlobalVariables.albumsFile).WriteDictionaryToFile(new Dictionary<string, Album>());
             new Dao<Genre>(GlobalVariables.genresFile).WriteDictionaryToFile(new Dictionary<string, Genre>());
+            //erase playlists and comments...
         }
     }
 }

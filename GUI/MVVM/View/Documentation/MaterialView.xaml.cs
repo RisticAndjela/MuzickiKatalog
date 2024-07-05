@@ -22,6 +22,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using muzickiKatalog.Layers.Model.contributors;
 using muzickiKatalog.Layers.Service.contributors;
+using muzickiKatalog.Layers.Model.performatorium.Interfaces;
 
 namespace muzickiKatalog.GUI.MVVM.View.Documentation
 {
@@ -71,7 +72,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         {
             InitializeComponent();
             this.editor= editor;
-            if (material.Editor == editor.Username) { isAbleToEdit = true; edit.Visibility = Visibility.Visible; }
+            if (_material.Editor == editor.Username) { isAbleToEdit = true; edit.Visibility = Visibility.Visible; }
             user = "editor";
             nextView = new OpenViewBasedOnUser(editor);
             oneLineInsert= new InsertOneListBasedOnUser(editor);
@@ -96,7 +97,41 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
        
         private void addToPlaylistButton(object sender, RoutedEventArgs e)
         {
+            options.Children.Clear();
+            ButtonLabelManipulation.AddButtonToPanel(options, "ADD NEW", namePlaylist, this);
+            foreach (PlayList addToPlaylist in PlayListService.getAllPlayLists(member))
+            {
+                ButtonLabelManipulation.AddButtonToPanel(options, $"{addToPlaylist.Name}", (sender, e) => { PlayListService.addMaterial(addToPlaylist, material); }, this);
+            }
+        }
+        private void namePlaylist(object sender, RoutedEventArgs e)
+        {
+            DockPanel dockPanel = new DockPanel();
+            TextBox textBox = new TextBox
+            {
+                Style = (Style)FindResource("regularBox"),
+                Name = "name"
+            };
+            this.RegisterName(textBox.Name, textBox);
+            Button button = new Button
+            {
+                Style = (Style)FindResource("circleButton"),
+                Content = "DONE"
+            };
+            button.Click += (s, eArgs) =>
+            {
+                var textBoxControl = (TextBox)this.FindName("name");
+                if (textBoxControl != null)
+                {
+                    PlayListService.addMaterial(new PlayList(member, textBoxControl.Text, true), material);
+                    options.Children.Remove(dockPanel);
+                }
+            };
 
+            dockPanel.Children.Add(button);
+            dockPanel.Children.Add(textBox);
+
+            options.Children.Add(dockPanel);
         }
         private void editButton(object sender, RoutedEventArgs e)
         {

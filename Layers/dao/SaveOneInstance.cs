@@ -30,7 +30,7 @@ namespace muzickiKatalog.Layers.dao
         {
             Dao<T> dao = new Dao<T>(filename);
             Dictionary<string,List<T>> all = dao.ReadLargeDictionaryFromFile();
-            if (all.ContainsKey(id)) { 
+            if (all.ContainsKey(id)) {
                 all[id].Add(instance);
             }
             else

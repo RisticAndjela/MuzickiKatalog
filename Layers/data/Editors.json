@@ -8,8 +8,244 @@
     "genres": [
       "jazz"
     ],
-    "needToApproveComments": [],
-    "needToApproveRatings": [],
+    "needToApproveComments": [
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:24:57.4315788+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:04.0501869+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:18.3904805+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:24.1236578+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:34.9666347+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:36.9764594+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:37.1943356+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:37.5545477+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:37.8345925+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:38.1208846+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:38.4013229+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:38.8040968+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:39.8797475+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:42.5778503+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:47.6035531+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:34.7536688+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:56.4406468+02:00"
+      },
+      {
+        "reviewer": "Michael_Johnson_9/5/1982",
+        "idOfPlaceholder": "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:25:56.291466+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:26:00.182125+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:31:29.6514891+02:00"
+      },
+      {
+        "reviewer": "Michael_Johnson_9/5/1982",
+        "idOfPlaceholder": "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+        "comment": "This biography was very insightful!",
+        "reviewed": "2024-07-05T03:31:29.853022+02:00"
+      }
+    ],
+    "needToApproveRatings": [
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:18.3481919+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:24.077454+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:35.0146558+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:37.024546+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:37.24478+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:37.5982354+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:37.8836489+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:38.1678906+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:38.4491805+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:38.8515576+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:39.9204173+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:42.6955253+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:47.6509977+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:56.2722618+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:25:56.4881083+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:26:00.2306899+02:00"
+      },
+      {
+        "reviewer": "John_Doe_7/15/1985",
+        "idOfPlaceholder": "Introduction to Music Theory:Martinez-",
+        "rating": 3,
+        "reviewed": "2024-07-05T03:31:29.8470751+02:00"
+      },
+      {
+        "reviewer": "Michael_Johnson_9/5/1982",
+        "idOfPlaceholder": "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-",
+        "rating": 4,
+        "reviewed": "2024-07-05T03:31:29.8699645+02:00"
+      }
+    ],
     "needToLeaveReviews": []
   }
 }

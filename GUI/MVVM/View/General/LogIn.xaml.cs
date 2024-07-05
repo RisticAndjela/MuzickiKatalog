@@ -61,7 +61,7 @@ namespace muzickiKatalog.GUI.MVVM.View.General
                             this.Close();
                             break;
                         case personType.editor:
-                            new HomeEditor().Show();
+                            new HomeEditor(GetFromIDs<nm.Editor>.get(usernameText, GlobalVariables.editorsFile).Item2).Show();
                             this.Close();
                             break;
                         case personType.admin:

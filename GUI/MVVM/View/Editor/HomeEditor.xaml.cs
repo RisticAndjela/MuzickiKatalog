@@ -1,4 +1,5 @@
-﻿using System;
+﻿using muzickiKatalog.Layers.Controller.contributors;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,14 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using contributor=muzickiKatalog.Layers.Model.contributors;
+using muzickiKatalog.GUI.MVVM.View.UserControls;
+using muzickiKatalog.GUI.MVVM.View.General;
+using muzickiKatalog.Layers.Controller.performatorium;
+using muzickiKatalog.Layers.Model.performatorium;
+using muzickiKatalog.Layers.Repository.performatorium;
+using muzickiKatalog.Layers.support;
+using muzickiKatalog.Layers.Model.performatorium.Interfaces;
 
 namespace muzickiKatalog.GUI.MVVM.View.Editor
 {
@@ -20,42 +29,116 @@ namespace muzickiKatalog.GUI.MVVM.View.Editor
     /// </summary>
     public partial class HomeEditor : Window
     {
-        public HomeEditor()
+        private contributor.Editor editor;
+        private MakeArtist ma;
+        private MakeGroup mg;
+
+        private Dictionary<string, Material> allMaterials = MaterialRepository.getAll();
+        private Dictionary<string, Album> allAlbums = AlbumRepository.getAll();
+        private Dictionary<string, Artist> allArtists = ArtistRepository.getAll();
+        private Dictionary<string, Group> allGroups = GroupRepository.getAll();
+
+        public HomeEditor(contributor.Editor editor)
         {
             InitializeComponent();
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
-
+            this.editor = editor;
         }
         private void ApproveReviewsHandler(object sender, RoutedEventArgs e) {
+            hideAll();
             ApproveReviewsPanel.Visibility = Visibility.Visible;
-            TaskListPanel.Visibility = Visibility.Hidden;
-
+            reviews.Children.Add(new ReviewList(editor, EditorController.getReviews(editor),"Review"));
         }
         private void TaskReviewsHandler(object sender, RoutedEventArgs e)
         {
-            ApproveReviewsPanel.Visibility = Visibility.Hidden;
-            TaskListPanel.Visibility = Visibility.Visible;
+            hideAll();
+            (Dictionary<string, Tuple<string, string>> materials, Dictionary<string, Tuple<string, string>> albums, Dictionary<string, Tuple<string, string>> artists, Dictionary<string, Tuple<string, string>> groups)=EditorController.getTasks(editor,allMaterials,allAlbums,allArtists,allGroups);
+            reviewsTasks.Children.Add(new ReviewList(editor, materials, "Material"));
+            reviewsTasks.Children.Add(new ReviewList(editor, albums, "Album"));
+            reviewsTasks.Children.Add(new ReviewList(editor, artists, "Artist"));
+            reviewsTasks.Children.Add(new ReviewList(editor, groups, "Group"));
+            reviewsTasks.Visibility= Visibility.Visible;
         }
-        private void Star_Click(object sender, RoutedEventArgs e)
+        private void myInfoHandler(object sender, RoutedEventArgs e)
         {
-            if (sender is ToggleButton button)
-            {
-                string starName = button.Name;
-                int starNumber = int.Parse(starName.Substring(4)); // Extracts the numeric part from the Name
+            hideAll();
 
-                // Update stars based on clicked star number
-                for (int i = 1; i <= 5; i++)
-                {
-                    ToggleButton star = FindName($"Star{i}") as ToggleButton;
-                    if (star != null)
-                    {
-                        star.IsChecked = i <= starNumber;
-                    }
-                }
-            }
+        }
+        private void seeAllAlbumsHandler(object sender, RoutedEventArgs e)
+        {
+            hideAll();
+            ListShow.Children.Add(new OneList(editor, AlbumController.getForList(AlbumRepository.getAll()), "Album"));
+        }
+        private void seeAllMaterialsHandler(object sender, RoutedEventArgs e)
+        {
+            hideAll();
+            ListShow.Children.Add(new OneList(editor,MaterialController.getForList(MaterialRepository.getAll()), "Material")) ;
+        }
+        private void seeAllGroupsHandler(object sender, RoutedEventArgs e)
+        {
+            hideAll();
+            ListShow.Children.Add(new OneList(editor, GroupController.getForList(GroupRepository.getAll()), "Group"));
+
+        }
+        private void seeAllArtistsHandler(object sender, RoutedEventArgs e)
+        {
+            hideAll();
+            ListShow.Children.Add(new OneList(editor, ArtistController.getForList(ArtistRepository.getAll()), "Artist"));
+
+        }
+        private void TopListsHandler(object sender, RoutedEventArgs e)
+        {
+            hideAll();
+            new MessageWindow("WE ARE SORRY","NO AVALIABLE TOP LISTS").Show();
+        }
+        private void makeAlbumHandler(object sender, RoutedEventArgs e)
+        {
+            hideAll();
+
+        }
+        private void makeMaterialHandler(object sender, RoutedEventArgs e)
+        {
+            hideAll();
+        }
+        private void makeGroupHandler(object sender, RoutedEventArgs e)
+        {
+            hideAll();
+            makeGroup.Visibility = Visibility.Visible;
+            mg = new MakeGroup(editor);
+            makeGroup.Children.Add(mg);
+        }
+        private void makeArtistHandler(object sender, RoutedEventArgs e)
+        {
+            hideAll();
+            makeArtist.Visibility = Visibility.Visible;
+            ma = new MakeArtist(editor);
+            makeArtist.Children.Add(ma);
+
+        }
+       
+
+
+        private void hideAll()
+        {
+            makeArtist.Visibility = Visibility.Hidden;
+            makeGroup.Visibility = Visibility.Hidden;
+            ListShow.Children.Clear();
+            reviews.Children.Clear();
+            reviewsTasks.Children.Clear();
+            ApproveReviewsPanel.Visibility = Visibility.Hidden;
         }
 
-
+        private void approve(object sender, RoutedEventArgs e)
+        {
+            MessageWindow message = new MessageWindow("SUCCESFUL", "APPROVED");
+            message.Show();
+        }
+        private void disapprove(object sender, RoutedEventArgs e)
+        {
+            MessageWindow message = new MessageWindow("SUCCESFUL", "DISAPPROVED");
+            message.Show();
+        }
+         
 
     }
 }

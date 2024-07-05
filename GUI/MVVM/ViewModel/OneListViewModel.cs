@@ -17,6 +17,7 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
     public class OneListViewModel : INotifyPropertyChanged
     {
         private OneList view;
+        private ReviewList reviewView;
         private string user;
         private contributor.Editor editor;
         private contributor.Member member;
@@ -36,6 +37,12 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
             this.editor= editor;
             this.view= view;
         }
+        public OneListViewModel(ReviewList view, contributor.Editor editor,bool task=false)
+        {
+            this.user = "editor";
+            this.editor = editor;
+            this.reviewView = view;
+        }
         public OneListViewModel(OneList view,contributor.Member member)
         {
             this.user= "member";
@@ -47,7 +54,7 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
         public void open(string key,string type)
         {
 
-            if (view.all.ContainsKey(key))
+            if ((view != null && view.all.ContainsKey(key)) || (reviewView!=null && reviewView.all.ContainsKey(key)));
             {
                 if (type == "Artist")
                 {
@@ -75,6 +82,11 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
                 }
                 
             }
+        }
+
+        public void open()
+        {
+
         }
         public event PropertyChangedEventHandler PropertyChanged;
 

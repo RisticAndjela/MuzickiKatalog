@@ -7,7 +7,7 @@
              xmlns:local2="clr-namespace:muzickiKatalog.GUI.Core.Media"
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="200" Background="{StaticResource BaseColor}">
-    <Grid>
+    <Grid Height="550">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition/>

@@ -30,16 +30,8 @@ namespace muzickiKatalog.Layers.Service.contributors
             member.following.Add(id);
             MemberRepository.save(member);
         }
-         public static void follow(Member member,Genre genre)
-        {
-            member.following.Add(genre.Name);
-            MemberRepository.save(member);
-        }
-         public static void follow(Member member,Album album)
-        {
-            member.following.Add(MakeIDs.makeAlbumID(album));
-            MemberRepository.save(member);
-        }
+       
+        
          public static void follow(Member member,Artist artist)
         {
             member.following.Add(MakeIDs.makeArtistID(artist));
@@ -50,11 +42,12 @@ namespace muzickiKatalog.Layers.Service.contributors
             member.following.Add(MakeIDs.makeGroupID(group));
             MemberRepository.save(member);
         }
-         public static void follow(Member member,Material material)
+       public static void unfollow(Member member,string id)
         {
-            member.following.Add(MakeIDs.makeMaterialID(material));
+            member.following.Remove(id);
             MemberRepository.save(member);
         }
+       
 
     }
 }

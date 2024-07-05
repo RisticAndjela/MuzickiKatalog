@@ -18,6 +18,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using muzickiKatalog.Layers.Model.contributors;
+using muzickiKatalog.Layers.Service.contributors;
 
 namespace muzickiKatalog.GUI.MVVM.View.Documentation
 {
@@ -28,6 +30,8 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
     {
         private ReviewSection reviewSection;
         private Artist artist;
+        private contributor.Member member;
+        private contributor.Editor editor;
         public OpenViewBasedOnUser nextView;
         public InsertOneListBasedOnUser oneLineInsert;
         private string user;
@@ -65,9 +69,11 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
             InitializeComponent();
             follow.Visibility = Visibility.Visible;
             user = "member";
+            this.member = member;
             nextView = new OpenViewBasedOnUser(member);
             oneLineInsert= new InsertOneListBasedOnUser(member);
             View(_artist, _allMaterials, _allAlbums, _allArtists, _allGroups);
+            if (member.following.Contains(MakeIDs.makeArtistID(artist))) { follow.Content = "FOLLOWING"; }
             ControlsViewModel viewModel = new ControlsViewModel(member);
             DataContext = viewModel;
             fillContents();
@@ -76,8 +82,9 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         public ArtistView(contributor.Editor editor, Artist _artist, Dictionary<string, Material> _allMaterials, Dictionary<string, Album> _allAlbums, Dictionary<string, Artist> _allArtists, Dictionary<string, Group> _allGroups)
         {
             InitializeComponent();
-            if (artist.Editor == editor.Username) { isAbleToEdit = true; edit.Visibility = Visibility.Visible; }
+            if (_artist.Editor == editor.Username) { isAbleToEdit = true; edit.Visibility = Visibility.Visible; }
             user = "editor";
+            this.editor = editor;
             nextView = new OpenViewBasedOnUser(editor);
             oneLineInsert=new InsertOneListBasedOnUser(editor);
             View(_artist, _allMaterials, _allAlbums, _allArtists, _allGroups);
@@ -90,7 +97,16 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         }
         private void followButton(object sender, RoutedEventArgs e)
         {
-
+            if(sender is Button button)
+            {
+                if (button.Content == "FOLLOWING")
+                {
+                    MemberService.unfollow(member,MakeIDs.makeArtistID(artist));
+                    button.Content = "FOLLOW";
+                }
+                else {MemberService.follow(member, artist); button.Content = "FOLLOWING"; }
+                
+            }
         }
         public void fillContents()
         {

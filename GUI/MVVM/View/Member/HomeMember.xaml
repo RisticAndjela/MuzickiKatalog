@@ -14,12 +14,12 @@
     <ScrollViewer  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
         <Grid>
             <!--frame-->
-            <ContentControl Template="{StaticResource ResourceKey=pozadina}"/>
+            <ContentControl Template="{StaticResource ResourceKey=pozadinaClose}"/>
             <Label Content="WELCOME BACK" FontSize="40" Margin="90,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
-            <DockPanel x:Name="reklame" Margin="10,30,800,830">
-                <ContentControl Content="{Binding AdsPanel}" Margin="0,0,0,1030"/>
+            <DockPanel x:Name="reklame" Margin="10,30,800,400">
+                <ContentControl Content="{Binding AdsPanel}" />
             </DockPanel>
-            <DockPanel x:Name="menu" Margin="200,80,10,450">
+            <DockPanel x:Name="menu" Margin="200,100,0,450">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -36,19 +36,18 @@
                 </Grid>
             </DockPanel>
             <!--panel for suggested following and popular content-->
-            <DockPanel  x:Name="following" Visibility="Hidden" Margin="210,160,20,30">
-                <ContentControl />
-            </DockPanel>
-            <DockPanel x:Name="contentPanelPopular" Visibility="Hidden" Margin="210,160,20,30">
-                <ContentControl x:Name="popular" Content="{Binding PopularListedPanel}" />
+            <DockPanel x:Name="following" Visibility="Hidden" Margin="210,180,20,0"/>
+
+            <DockPanel x:Name="contentPanelPopular" Visibility="Hidden">
+                <ContentControl x:Name="popular" Content="{Binding PopularListedPanel}"  Margin="210,160,20,0"/>
             </DockPanel>
 
             <DockPanel x:Name="contentPanelSearch" Visibility="Hidden" >
-                <ContentControl Content="{Binding SearchPanel}" Margin="210,160,40,530"/>
+                <ContentControl Content="{Binding SearchPanel}" Margin="210,160,40,0"/>
             </DockPanel>
-            <StackPanel x:Name="playlists" Visibility="Hidden" Margin="210,160,40,530"/>
+            <StackPanel x:Name="playlists" Visibility="Hidden" Margin="210,160,40,0"/>
             <!--panel about informations of a member-->
-            <DockPanel x:Name="InfoPanel" Visibility="Hidden" Margin="210,160,20,30">
+            <DockPanel x:Name="InfoPanel" Visibility="Hidden" Margin="210,160,20,150">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="150"/>
@@ -75,7 +74,7 @@
                     <Button x:Name="Commnents" Content="SEE COMMENT HISTORY" Grid.ColumnSpan="2" Grid.Row="2" Style="{StaticResource ResourceKey=regularButton}" Width="250" Click="CommentsHandler"/>
                     <Button x:Name="Ratings" Content="SEE RATING HISTORY" Grid.ColumnSpan="2" Grid.Column="2"  Grid.Row="2" Style="{StaticResource ResourceKey=regularButton}" Width="250" Click="RatingsHandler"/>
 
-                    <Grid x:Name="Reviews" Visibility="Hidden" Margin="110,0" Grid.Row="3" Grid.ColumnSpan="4" Grid.RowSpan="2">
+                    <Grid x:Name="Reviews" Visibility="Hidden" Margin="110,0,110,0" Grid.Row="3" Grid.ColumnSpan="4" Grid.RowSpan="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="100"/>
                             <ColumnDefinition/>

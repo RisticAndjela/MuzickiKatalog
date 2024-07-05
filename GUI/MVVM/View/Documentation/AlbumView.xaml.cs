@@ -2,6 +2,7 @@
 using muzickiKatalog.GUI.MVVM.ViewModel.supportClasses;
 using muzickiKatalog.GUI.MVVM.ViewModel;
 using muzickiKatalog.Layers.Controller.performatorium;
+using muzickiKatalog.Layers.Service.performatorium;
 using muzickiKatalog.Layers.Model.performatorium;
 using contributor=muzickiKatalog.Layers.Model.contributors;
 using muzickiKatalog.Layers.support.IDparser;
@@ -81,7 +82,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         public AlbumView(contributor.Editor editor, Album _album, Dictionary<string, Material> _allMaterials, Dictionary<string, Album> _allAlbums, Dictionary<string, Artist> _allArtists, Dictionary<string, Group> _allGroups)
         {
             InitializeComponent();
-            if (album.AllMaterials.Any(a=>allMaterials[a].Editor == editor.Username)) { isAbleToEdit = true; edit.Visibility = Visibility.Visible; }
+            if (_album.AllMaterials.Any(a=>_allMaterials[a].Editor == editor.Username)) { isAbleToEdit = true; edit.Visibility = Visibility.Visible; }
             user = "editor";
             this.editor= editor;
             nextView=new OpenViewBasedOnUser(editor);
@@ -96,8 +97,43 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         }
         private void addToPlaylistButton(object sender, RoutedEventArgs e)
         {
-            
+            options.Children.Clear();
+            ButtonLabelManipulation.AddButtonToPanel(options,"MAKE NEW", namePlaylist, this);
+            foreach(PlayList addToPlaylist in PlayListService.getAllPlayLists(member))
+            {
+                ButtonLabelManipulation.AddButtonToPanel(options, $"{addToPlaylist.Name}", (sender, e) => { PlayListService.addMaterial(addToPlaylist, album); }, this);
+            }
         }
+        private void namePlaylist(object sender, RoutedEventArgs e)
+        {
+            DockPanel dockPanel = new DockPanel();
+            TextBox textBox = new TextBox
+            {
+                Style = (Style)FindResource("regularBox"),
+                Name = "name"
+            };
+            this.RegisterName(textBox.Name, textBox);
+            Button button = new Button
+            {
+                Style = (Style)FindResource("regularBox"),
+                Content = "DONE"
+            };
+            button.Click += (s, eArgs) =>
+            {
+                var textBoxControl = (TextBox)this.FindName("name");
+                if (textBoxControl != null)
+                {
+                    PlayListService.addMaterial(new PlayList(member, textBoxControl.Text, true), album);
+                    options.Children.Remove(dockPanel);
+                }
+            };
+
+            dockPanel.Children.Add(button);
+            dockPanel.Children.Add(textBox);
+
+            options.Children.Add(dockPanel);
+        }
+
         public void fillContents()
         {
             Dictionary<string, Tuple<string, string>> similarDict = AlbumController.FindAlbumsFromSameArtist(album, allAlbums, allArtists, allMaterials);

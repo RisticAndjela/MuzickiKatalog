@@ -18,6 +18,7 @@
                 <ContentControl Content="{Binding AdsPanel}"/>
             </DockPanel>
             <StackPanel x:Name="main" Margin="180,120,30,30">
+                <StackPanel x:Name="options"/>
                 <Button x:Name="addToPlaylist" Content="ADD TO PLAYLIST" Visibility="Hidden" Width="150" Style="{StaticResource circleButton}" Click="addToPlaylistButton"/>
                 <Button x:Name="edit" Content="EDIT" Visibility="Hidden" Width="100" Style="{StaticResource circleButton}" Click="editButton"/>
                 <DockPanel>

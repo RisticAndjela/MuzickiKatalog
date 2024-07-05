@@ -18,9 +18,10 @@
                 <ContentControl Content="{Binding AdsPanel}"/>
             </DockPanel>
             <StackPanel Margin="180,90,30,500">
-                <StackPanel x:Name="main" Margin="50,0" >
+                <StackPanel x:Name="main">
+                    <StackPanel x:Name="options"/>
                     <Button x:Name="edit" Content="EDIT" Visibility="Hidden" Width="100" Style="{StaticResource circleButton}" Click="editButton"/>
-                        <Button x:Name="addToPlaylist" Content="ADD TO PLAYLIST" Visibility="Hidden" Width="150" Style="{StaticResource circleButton}" Click="addToPlaylistButton"/>
+                    <Button x:Name="addToPlaylist" Content="ADD TO PLAYLIST" Visibility="Hidden" Width="150" Style="{StaticResource circleButton}" Click="addToPlaylistButton"/>
                 </StackPanel>
                 <Grid x:Name="ContribAndMaterials" Margin="50,0"  >
                     <Grid.ColumnDefinitions>

@@ -2,6 +2,7 @@
 using mn=muzickiKatalog.Layers.Model.contributors;
 using muzickiKatalog.GUI.MVVM.ViewModel;
 using muzickiKatalog.Layers.support;
+using muzickiKatalog.Layers.Model.performatorium;
 
 namespace muzickiKatalog.GUI.MVVM.View.Member
 {
@@ -16,17 +17,18 @@ namespace muzickiKatalog.GUI.MVVM.View.Member
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             viewModel = new ControlsViewModel(member);
             DataContext=viewModel;
-            foreach (var userControl in viewModel.PlayListPanels)
-            {
-                playlists.Children.Add(userControl);
-            }
-        }
+            if(viewModel.FollowingListedPanel.Count>0)following.Children.Add(viewModel.FollowingListedPanel[0]);
+            if (viewModel.FollowingListedPanel.Count > 1) following.Children.Add(viewModel.FollowingListedPanel[1]);
+           }
         private void InfoHandler(object sender, RoutedEventArgs e)
         {
+            playlists.Children.Clear();
+            following.Visibility = Visibility.Hidden;
             contentPanelSearch.Visibility = Visibility.Hidden;
             contentPanelPopular.Visibility = Visibility.Hidden;
             InfoPanel.Visibility = Visibility.Visible;
             Reviews.Visibility = Visibility.Hidden;
+            playlists.Visibility = Visibility.Hidden;
 
             name.Content = thisMember.Name;
             lastname.Content=thisMember.LastName;
@@ -36,13 +38,20 @@ namespace muzickiKatalog.GUI.MVVM.View.Member
         }
         private void FollowingHandler(object sender, RoutedEventArgs e)
         {
-            contentPanelPopular.Visibility = Visibility.Visible;
+            playlists.Children.Clear();
+            following.Visibility = Visibility.Visible;
+            contentPanelPopular.Visibility = Visibility.Hidden;
             contentPanelSearch.Visibility = Visibility.Hidden;
             InfoPanel.Visibility = Visibility.Hidden;
-
+            playlists.Visibility = Visibility.Hidden;
         }
         private void PlaylistHandler(object sender, RoutedEventArgs e)
         {
+            foreach (var userControl in viewModel.PlayListPanels)
+            {
+                playlists.Children.Add(userControl);
+            }
+            following.Visibility = Visibility.Hidden;
             contentPanelPopular.Visibility = Visibility.Hidden;
             contentPanelSearch.Visibility = Visibility.Hidden;
             InfoPanel.Visibility = Visibility.Hidden;
@@ -51,15 +60,21 @@ namespace muzickiKatalog.GUI.MVVM.View.Member
         }
         private void SearchHandler(object sender, RoutedEventArgs e)
         {
+            playlists.Children.Clear();
+            following.Visibility = Visibility.Hidden;
             contentPanelSearch.Visibility = Visibility.Visible;
             contentPanelPopular.Visibility = Visibility.Hidden;
             InfoPanel.Visibility = Visibility.Hidden;
+            playlists.Visibility = Visibility.Hidden;
         }
         private void PopularHandler(object sender, RoutedEventArgs e)
         {
+            playlists.Children.Clear();
+            following.Visibility = Visibility.Hidden;
             contentPanelSearch.Visibility = Visibility.Hidden;
             contentPanelPopular.Visibility = Visibility.Visible;
             InfoPanel.Visibility = Visibility.Hidden;
+            playlists.Visibility = Visibility.Hidden;
         }
         private void RatingsHandler(object sender, RoutedEventArgs e)
         {

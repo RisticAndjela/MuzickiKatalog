@@ -35,8 +35,11 @@ namespace muzickiKatalog.Layers.Service.performatorium
             if (have)
             {
                 (_, Material materialInAlbum) = GetFromIDs<Material>.get(album.AllMaterials[0], GlobalVariables.materialsFile);
-                (_, Artist artistInAlbum) = GetFromIDs<Artist>.get(materialInAlbum.Editor, GlobalVariables.artistsFile);
-                GetFromIDs<Editor>.get(artistInAlbum.Editor, GlobalVariables.editorsFile).Item2.addComment(comment);
+                if (materialInAlbum != null)
+                {
+                    (_, Artist artistInAlbum) = GetFromIDs<Artist>.get(materialInAlbum.Editor, GlobalVariables.artistsFile);
+                    GetFromIDs<Editor>.get(artistInAlbum.Editor, GlobalVariables.editorsFile).Item2.addComment(comment);                  
+                }
             }
         }
         public static void Approved(Comment comment)

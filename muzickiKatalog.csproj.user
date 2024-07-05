@@ -19,6 +19,12 @@
     <Compile Update="GUI\MVVM\View\UserControls\ADs.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="GUI\MVVM\View\UserControls\MakeArtist.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\UserControls\MakeGroup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="GUI\MVVM\View\UserControls\MakePerson.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -29,6 +35,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="GUI\MVVM\View\UserControls\PlayListUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\UserControls\ReviewList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="GUI\MVVM\View\UserControls\ReviewSection.xaml.cs">
@@ -50,12 +59,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="GUI\MVVM\View\Editor\HomeEditor.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="GUI\MVVM\View\Editor\MakeArtist.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="GUI\MVVM\View\Editor\MakeGroup.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="GUI\MVVM\View\General\MakeMember.xaml.cs">
@@ -84,6 +87,12 @@
     <Page Update="GUI\MVVM\View\UserControls\ADs.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="GUI\MVVM\View\UserControls\MakeArtist.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\UserControls\MakeGroup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="GUI\MVVM\View\UserControls\MakePerson.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -94,6 +103,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\UserControls\PlayListUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\UserControls\ReviewList.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\UserControls\ReviewSection.xaml">
@@ -115,12 +127,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\Editor\HomeEditor.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="GUI\MVVM\View\Editor\MakeArtist.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="GUI\MVVM\View\Editor\MakeGroup.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\General\MakeMember.xaml">

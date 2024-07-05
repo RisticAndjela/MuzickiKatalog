@@ -1,5 +1,6 @@
 ﻿using muzickiKatalog.GUI.MVVM.View.UserControls;
 using muzickiKatalog.Layers.Controller.performatorium;
+using muzickiKatalog.Layers.Controller.contributors;
 using muzickiKatalog.Layers.Repository.performatorium;
 using muzickiKatalog.Layers.Repository.contributors;
 using muzickiKatalog.Layers.Service.performatorium;
@@ -22,7 +23,7 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
     { 
         private UserControl ADsView;
         private UserControl popularListedView;
-        private UserControl followingListedView;
+        private List<UserControl> followingListedView=new List<UserControl>();
         private UserControl allListedView;
         private UserControl searchView;
         private List<UserControl> playlistPanels = new List<UserControl>();
@@ -47,19 +48,24 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
             AllListedPanel = new Listed(editor, allMaterials, allAlbums, allGroups, allArtists);
         }
          public ControlsViewModel(contributor.Member member)
-        {
+         {
             string user = "member";
             ViewModel(user);
+            
             PopularListedPanel = new Listed(member,MaterialController.Get10Popular(allMaterials, allAlbums, allArtists, allGroups), AlbumController.Get10Popular(allMaterials, allAlbums, allArtists, allGroups), GroupController.Get10Popular(allMaterials, allAlbums, allArtists, allGroups), ArtistController.Get10Popular(allMaterials, allAlbums, allArtists, allGroups));
-            FollowingListedPanel = new Listed(member, allMaterials, allAlbums, allGroups, allArtists);
+            
+            (Dictionary<string, Tuple<string, string>> artists, Dictionary<string, Tuple<string, string>> groups) = MemberController.followingArtistsAndGroups(member,allArtists,allGroups);
+            FollowingListedPanel.Add(new OneList(member, artists, "Artist"));
+            FollowingListedPanel.Add(new OneList(member, groups, "Group"));
+            
             AllListedPanel = new Listed(member, allMaterials, allAlbums, allGroups, allArtists);
+            
             foreach (PlayList playlist in PlayListService.getAllPlayLists(member))
             {
                 playlistPanels.Add(new PlayListUserControl(playlist, member));
             }
-
             PlayListPanels = new ObservableCollection<UserControl>(playlistPanels);
-        }
+         }
         public void ViewModel(string user)
         {
             AdsPanel = new ADs();
@@ -75,6 +81,15 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
             }
         }
        
+        public ObservableCollection<UserControl> FollowingListedPanel
+        {
+            get { return new ObservableCollection<UserControl>(followingListedView); }
+            set
+            {
+            followingListedView  = new List<UserControl>(value);
+                OnPropertyChanged();
+            }
+        }
         public UserControl AdsPanel
         {
             get { return ADsView; }
@@ -91,15 +106,6 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel
             set
             {
                 popularListedView = value;
-                OnPropertyChanged();
-            }
-        }
-        public UserControl FollowingListedPanel
-        {
-            get { return followingListedView; }
-            set
-            {
-            followingListedView = value;
                 OnPropertyChanged();
             }
         }

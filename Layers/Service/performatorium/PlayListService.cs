@@ -19,21 +19,21 @@ namespace muzickiKatalog.Layers.Service.performatorium
             {
                 playlist.materials.Add(material);
             }
-            PlayListRepository.save(playlist);
+            PlayListRepository.saveChanges(playlist);
         }
         public static void addMaterial(PlayList playlist, Material material) {
             if (!playlist.materials.Any(m => m == MakeIDs.makeMaterialID(material)))
             {
                 playlist.materials.Add(MakeIDs.makeMaterialID(material));
             }
-            PlayListRepository.save(playlist);
+            PlayListRepository.saveChanges(playlist);
         }
         public static void addMaterial( PlayList playlist, Album material) {
             if (!playlist.materials.Any(m => m == MakeIDs.makeAlbumID(material)))
             {
                 playlist.materials.Add(MakeIDs.makeAlbumID(material));
             }
-            PlayListRepository.save(playlist);
+            PlayListRepository.saveChanges(playlist);
         }
         public static PlayList getPlayList(Member member, string name)
         {
@@ -43,7 +43,7 @@ namespace muzickiKatalog.Layers.Service.performatorium
         public static void changeVisibility(PlayList playlist)
         {
             playlist.isPrivate=!playlist.isPrivate;
-            PlayListRepository.save(playlist);
+            PlayListRepository.saveChanges(playlist);
         }
 
         public static List<PlayList> getAllPlayLists(Member member)

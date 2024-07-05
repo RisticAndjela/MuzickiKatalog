@@ -12,7 +12,7 @@ namespace muzickiKatalog.Layers.Model.performatorium
         public DateTime reviewed { get; set; }
 
         public StarRating() { }
-        public StarRating(string _reviewer, int _rating, DateTime _reviewed, string _ratedOn) {
+        public StarRating(string _reviewer, string _ratedOn, DateTime _reviewed, int _rating) {
             reviewer = _reviewer;
             rating = _rating;
             reviewed = _reviewed;

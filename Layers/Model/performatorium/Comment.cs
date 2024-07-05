@@ -11,7 +11,7 @@ namespace muzickiKatalog.Layers.Model.performatorium
         public DateTime reviewed { get; set; }
    
         public Comment() {}
-        public Comment(string _reviewer, string _comment, DateTime _reviewed, string _commentedOn_ID)
+        public Comment(string _reviewer, string _commentedOn_ID, DateTime _reviewed, string _comment)
         {
             reviewer = _reviewer;
             comment = _comment;

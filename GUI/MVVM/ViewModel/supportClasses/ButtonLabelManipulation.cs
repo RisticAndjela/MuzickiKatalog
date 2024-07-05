@@ -13,14 +13,14 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel.supportClasses
 {
     public class ButtonLabelManipulation
     {
-        public static void fillDescription(string descriptionString, StackPanel main, FrameworkElement resourceSource)
+        public static void fillDescription(string descriptionString, StackPanel main, FrameworkElement resourceSource,int size=90)
         {
             int length = descriptionString.Length;
             int i = 0;
             int back = 0;
             while (i < length)
             {
-                string content = descriptionString.Substring(i, Math.Min(90, length - i));
+                string content = descriptionString.Substring(i, Math.Min(size, length - i));
                 back = 0;
                 while (content.Length > 0 && (content.Last() != ' ' && content.Last() != '.' && content.Last() != '!' && content.Last() != '?'))
                 {
@@ -34,7 +34,7 @@ namespace muzickiKatalog.GUI.MVVM.ViewModel.supportClasses
                     Content = content
                 };
                 main.Children.Add(description);
-                i += 90 - back;
+                i += size - back;
                
             }
         }

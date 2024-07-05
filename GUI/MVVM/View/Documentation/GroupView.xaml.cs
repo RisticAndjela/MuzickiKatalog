@@ -20,6 +20,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using muzickiKatalog.Layers.Model.contributors;
+using muzickiKatalog.Layers.Service.contributors;
 
 namespace muzickiKatalog.GUI.MVVM.View.Documentation
 {
@@ -31,6 +32,8 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         private ReviewSection reviewSection;
         private Group group;
         private string user;
+        private contributor.Member member;
+        private contributor.Editor editor;
         public OpenViewBasedOnUser nextView;
         private InsertOneListBasedOnUser oneLineInsert;
         public Dictionary<string, Material> allMaterials;
@@ -65,8 +68,17 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         public GroupView(contributor.Editor editor,Group _group, Dictionary<string, Material> _allMaterials, Dictionary<string, Album> _allAlbums, Dictionary<string, Artist> _allArtists, Dictionary<string, Group> _allGroups)
         {
             InitializeComponent();
-            if (_group.AllMaterials.Any(a => _allMaterials[a].Editor==editor.Username)) { isAbleToEdit = true; edit.Visibility = Visibility.Visible; }
+            if (_group.AllMaterials.Any(a =>
+                _allMaterials.ContainsKey(a) &&
+                (_allMaterials[a].Editor == editor.Username ||
+                (GetFromIDs<Material>.get(_group.AllMaterials[0], GlobalVariables.materialsFile).Item1 &&
+                GetFromIDs<Material>.get(_group.AllMaterials[0], GlobalVariables.materialsFile).Item2.Editor == editor.Username))))
+            {
+                isAbleToEdit = true;
+                edit.Visibility = Visibility.Visible;
+            }
             user = "editor";
+            this.editor= editor;
             nextView = new OpenViewBasedOnUser(editor);
             oneLineInsert = new InsertOneListBasedOnUser(editor);
             View(_group, _allMaterials, _allAlbums, _allArtists, _allGroups);
@@ -78,7 +90,8 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         {
             InitializeComponent();
             follow.Visibility = Visibility.Visible;
-            user = "member"; 
+            user = "member";
+            this.member = member;
             nextView = new OpenViewBasedOnUser(member);
             oneLineInsert=new InsertOneListBasedOnUser(member);
             View(_group, _allMaterials, _allAlbums, _allArtists, _allGroups);
@@ -92,6 +105,7 @@ namespace muzickiKatalog.GUI.MVVM.View.Documentation
         }
         private void followButton(object sender, RoutedEventArgs e)
         {
+            MemberService.follow(member, group);
         }
         public void fillContents()
         {
