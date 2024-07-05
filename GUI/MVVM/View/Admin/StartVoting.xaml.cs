@@ -15,15 +15,13 @@ using System.Windows.Shapes;
 namespace muzickiKatalog.GUI.MVVM.View.Admin
 {
     /// <summary>
-    /// Interaction logic for MakeEditor.xaml
+    /// Interaction logic for StartVoting.xaml
     /// </summary>
-    public partial class MakeEditor : Window
+    public partial class StartVoting : Window
     {
-        public MakeEditor()
+        public StartVoting()
         {
             InitializeComponent();
-            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
-
         }
     }
 }

@@ -48,8 +48,18 @@ namespace muzickiKatalog.Layers.Service.performatorium
 
         public static List<PlayList> getAllPlayLists(Member member)
         {
-            return PlayListRepository.getAll()[member.username];
-
+            var allPlaylists = PlayListRepository.getAll();
+            if (allPlaylists.ContainsKey(member.username))
+            {
+                return allPlaylists[member.username];
+            }
+            else
+            {
+  
+                return new List<PlayList>();
+            
+            }
         }
+
     }
 }

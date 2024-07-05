@@ -12,7 +12,7 @@
         AllowsTransparency="True">
     <Grid>
         <ContentControl Template="{StaticResource ResourceKey=pozadina}"/>
-        <Label Content="ADMINS HOME VIEW" FontSize="40" Margin="90,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
+        <Label Content="ADMINS HOME VIEW" FontSize="40" Margin="30,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
 
         <DockPanel x:Name="menu" Margin="20,80,10,450">
             <Grid>
@@ -23,11 +23,16 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button Content="SUGGESTED" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" />
-                <Button Content="FOLOWING" Grid.Column="1" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" />
-                <Button Content="POPULAR"  Grid.Column="2" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}"/>
-                <Button Content="SEARCH" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}"/>
-                <Button Content="MY INFO" Grid.Column="4" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" />
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Content="MANAGE EDITORS" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="ManageEditors" />
+                <Button Content="MANAGE MUSICIANS" Grid.Column="1" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" />
+                <Button Content="MANAGE BANDS"  Grid.Column="2" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}"/>
+                <Button Content="MANAGE ADS" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="ManageAds"/>
+                <Button Content="TASKLISTS" Grid.Column="4" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="ManageTaskLists"/>
+                <Button Content="START VOTING" Grid.Row="1" Grid.Column="0" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="Voting" />
             </Grid>
         </DockPanel>
 

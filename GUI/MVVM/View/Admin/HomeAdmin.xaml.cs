@@ -24,5 +24,30 @@ namespace muzickiKatalog.GUI.MVVM.View.Admin
             InitializeComponent();
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
         }
+
+
+        public void ManageEditors(object sender, RoutedEventArgs e)
+        {
+            ManageEditorsWindow mew = new ManageEditorsWindow();
+            mew.Show();
+        }
+
+        public void Voting(object sender, RoutedEventArgs e)
+        {
+            StartVoting sv = new StartVoting();
+            sv.Show();
+        }
+
+        public void ManageTaskLists(object sender, RoutedEventArgs e)
+        {
+            EditorTaskList el = new EditorTaskList();
+            el.Show();
+        }
+
+        public void ManageAds(object sender, RoutedEventArgs e)
+        {
+            ManageAds ma = new ManageAds();
+            ma.Show();
+        }
     }
 }
