@@ -7,7 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="GUI\MVVM\View\Admin\EditorTaskList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="GUI\MVVM\View\Admin\HomeAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\MVVM\View\Admin\ManageAds.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="GUI\MVVM\View\Admin\ManageEditorsWindow.xaml.cs">
@@ -75,7 +81,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="GUI\MVVM\View\Admin\EditorTaskList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="GUI\MVVM\View\Admin\HomeAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\Admin\ManageAds.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\Admin\ManageEditorsWindow.xaml">

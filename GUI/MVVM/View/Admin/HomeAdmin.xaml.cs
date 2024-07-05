@@ -37,5 +37,11 @@ namespace muzickiKatalog.GUI.MVVM.View.Admin
             StartVoting sv = new StartVoting();
             sv.Show();
         }
+
+        public void ManageTaskLists(object sender, RoutedEventArgs e)
+        {
+            EditorTaskList el = new EditorTaskList();
+            el.Show();
+        }
     }
 }
