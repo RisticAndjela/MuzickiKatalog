@@ -18,8 +18,9 @@ namespace muzickiKatalog.GUI.MVVM.View.Admin
             
             allEditors = new List<Editor>
             {
-                new Editor { Username = "nicole@editor.com", Name = "nicole", Surname = "julius" },
-                
+                new Editor { Username = "nicole@editor.com", Name = "nicole", Surname = "julius", Gender = "Female", BirthDate = "1879-03-14", Genres = "jazz" },
+                new Editor { Username = "john@editor.com", Name = "John", Surname = "Doe", Gender = "Male", BirthDate = "1980-05-20", Genres = "rock" },
+                new Editor { Username = "anna@editor.com", Name = "Anna", Surname = "Smith", Gender = "Female", BirthDate = "1990-08-15", Genres = "pop" }
             };
 
             EditorsDataGrid.ItemsSource = allEditors;
@@ -46,6 +47,9 @@ namespace muzickiKatalog.GUI.MVVM.View.Admin
         public string Username { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
+        public string Gender { get; set; }
+        public string BirthDate { get; set; }
+        public string Genres {  get; set; }
 
 
 

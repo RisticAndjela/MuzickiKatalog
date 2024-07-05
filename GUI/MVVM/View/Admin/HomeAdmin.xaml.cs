@@ -31,5 +31,11 @@ namespace muzickiKatalog.GUI.MVVM.View.Admin
             ManageEditorsWindow mew = new ManageEditorsWindow();
             mew.Show();
         }
+
+        public void Voting(object sender, RoutedEventArgs e)
+        {
+            StartVoting sv = new StartVoting();
+            sv.Show();
+        }
     }
 }

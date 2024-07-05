@@ -10,10 +10,10 @@
     <Compile Update="GUI\MVVM\View\Admin\HomeAdmin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="GUI\MVVM\View\Admin\MakeEditor.xaml.cs">
+    <Compile Update="GUI\MVVM\View\Admin\ManageEditorsWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="GUI\MVVM\View\Admin\ManageEditorsWindow.xaml.cs">
+    <Compile Update="GUI\MVVM\View\Admin\StartVoting.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="GUI\MVVM\View\General\MessageWindow.xaml.cs">
@@ -78,10 +78,10 @@
     <Page Update="GUI\MVVM\View\Admin\HomeAdmin.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="GUI\MVVM\View\Admin\MakeEditor.xaml">
+    <Page Update="GUI\MVVM\View\Admin\ManageEditorsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="GUI\MVVM\View\Admin\ManageEditorsWindow.xaml">
+    <Page Update="GUI\MVVM\View\Admin\StartVoting.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\General\MessageWindow.xaml">

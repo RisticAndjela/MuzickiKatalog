@@ -17,15 +17,19 @@
         <Label Content="Update" FontSize="25" Margin="-500,90,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
         <Label Content="Delete" FontSize="25" Margin="-300,90,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
 
-
-        <DataGrid x:Name="EditorsDataGrid" Margin="30,150,30,30" AutoGenerateColumns="False">
+        <DataGrid x:Name="EditorsDataGrid" Margin="30,150,30,30" AutoGenerateColumns="False"
+                  VerticalAlignment="Top"
+                  HorizontalScrollBarVisibility="Auto"
+                  VerticalScrollBarVisibility="Auto"
+                  Height="Auto">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Username" Binding="{Binding Username}"/>
                 <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
                 <DataGridTextColumn Header="Surname" Binding="{Binding Surname}"/>
-                
+                <DataGridTextColumn Header="Gender" Binding="{Binding Gender}"/>
+                <DataGridTextColumn Header="Birthday" Binding="{Binding BirthDay}"/>
+                <DataGridTextColumn Header="Genres" Binding="{Binding Genres}"/>
             </DataGrid.Columns>
         </DataGrid>
-
     </Grid>
 </Window>
