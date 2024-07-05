@@ -28,7 +28,8 @@ namespace muzickiKatalog.GUI.MVVM.View.Admin
 
         public void ManageEditors(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("hii");
+            ManageEditorsWindow mew = new ManageEditorsWindow();
+            mew.Show();
         }
     }
 }

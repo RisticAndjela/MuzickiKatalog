@@ -13,6 +13,9 @@
     <Compile Update="GUI\MVVM\View\Admin\MakeEditor.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="GUI\MVVM\View\Admin\ManageEditorsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="GUI\MVVM\View\General\MessageWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -76,6 +79,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\Admin\MakeEditor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GUI\MVVM\View\Admin\ManageEditorsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GUI\MVVM\View\General\MessageWindow.xaml">
