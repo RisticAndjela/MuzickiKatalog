@@ -43,5 +43,11 @@ namespace muzickiKatalog.GUI.MVVM.View.Admin
             EditorTaskList el = new EditorTaskList();
             el.Show();
         }
+
+        public void ManageAds(object sender, RoutedEventArgs e)
+        {
+            ManageAds ma = new ManageAds();
+            ma.Show();
+        }
     }
 }

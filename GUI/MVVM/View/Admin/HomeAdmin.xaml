@@ -30,7 +30,7 @@
                 <Button Content="MANAGE EDITORS" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="ManageEditors" />
                 <Button Content="MANAGE MUSICIANS" Grid.Column="1" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" />
                 <Button Content="MANAGE BANDS"  Grid.Column="2" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}"/>
-                <Button Content="MANAGE ADS" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}"/>
+                <Button Content="MANAGE ADS" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="ManageAds"/>
                 <Button Content="TASKLISTS" Grid.Column="4" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="ManageTaskLists"/>
                 <Button Content="START VOTING" Grid.Row="1" Grid.Column="0" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="Voting" />
             </Grid>

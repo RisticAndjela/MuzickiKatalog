@@ -1,27 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Win32;
+using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace muzickiKatalog.GUI.MVVM.View.Admin
 {
-    /// <summary>
-    /// Interaction logic for ManageAds.xaml
-    /// </summary>
     public partial class ManageAds : Window
     {
         public ManageAds()
         {
             InitializeComponent();
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
+        }
+
+        private void BrowseImage_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image files (*.png;*.jpeg;*.jpg)|*.png;*.jpeg;*.jpg";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.UriSource = new Uri(openFileDialog.FileName);
+                bitmap.EndInit();
+                SelectedImage.Source = bitmap;
+            }
+        }
+
+        private void SaveAd_Click(object sender, RoutedEventArgs e)
+        {
+            string description = ImageDescription.Text;
+            MessageBox.Show("Ad saved with description: " + description);
         }
     }
 }
