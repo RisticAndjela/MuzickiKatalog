@@ -49,5 +49,6 @@ namespace muzickiKatalog.Layers.Service.contributors
         }
        
 
+       public static IEnumerable<Member> GetAll() => MemberRepository.getAll().Values;
     }
 }

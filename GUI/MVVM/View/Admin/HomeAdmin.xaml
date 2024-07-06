@@ -14,8 +14,8 @@
         <ContentControl Template="{StaticResource ResourceKey=pozadina}"/>
         <Label Content="ADMINS HOME VIEW" FontSize="40" Margin="30,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
 
-        <DockPanel x:Name="menu" Margin="20,80,10,450">
-            <Grid>
+        <DockPanel x:Name="menu">
+            <Grid Height="96" Width="987">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -30,8 +30,9 @@
                 <Button Content="MANAGE EDITORS" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="ManageEditors" />
                 <Button Content="MANAGE MUSICIANS" Grid.Column="1" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" />
                 <Button Content="MANAGE BANDS"  Grid.Column="2" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}"/>
-                <Button Content="MANAGE ADS" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="ManageAds"/>
-                <Button Content="TASKLISTS" Grid.Column="4" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="ManageTaskLists"/>
+                <Button Content="MANAGE MEMBERS" Grid.Column="3" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="BtnManageMembers_Click"/>
+                <Button Content="MANAGE ADS" Grid.Column="4" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="ManageAds"/>
+                <Button Content="TASKLISTS" Grid.Row="1" Grid.Column="1" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="ManageTaskLists"/>
                 <Button Content="START VOTING" Grid.Row="1" Grid.Column="0" FontSize="18" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="Voting" />
             </Grid>
         </DockPanel>
