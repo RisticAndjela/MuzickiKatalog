@@ -31,5 +31,10 @@ namespace muzickiKatalog.Layers.Repository.performatorium
 
             return final;
         }
+
+        public static IEnumerable<StarRating> GetAll()
+        {
+            return getAll(MaterialRepository.getAll(), AlbumRepository.getAll(), ArtistRepository.getAll(), GroupRepository.getAll());
+        }
     }
 }

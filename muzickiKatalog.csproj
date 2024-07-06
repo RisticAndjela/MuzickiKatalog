@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Layers\data\" />
     <Folder Include="Layers\media\" />
   </ItemGroup>
 

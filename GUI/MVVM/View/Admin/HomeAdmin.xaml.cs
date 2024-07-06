@@ -49,5 +49,8 @@ namespace muzickiKatalog.GUI.MVVM.View.Admin
             ManageAds ma = new ManageAds();
             ma.Show();
         }
+
+        protected void BtnManageMembers_Click(object sender, RoutedEventArgs e)
+            => new ManageMembersWindow().Show();
     }
 }

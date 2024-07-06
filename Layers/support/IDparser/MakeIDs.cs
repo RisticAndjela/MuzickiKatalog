@@ -11,7 +11,7 @@ namespace muzickiKatalog.Layers.support.IDparser
     {
         public static string makeArtistID(Artist artist)
         {
-            return $"{artist.Name}_{artist.LastName}_{artist.Birthday.ToString()}";
+            return $"{artist.Name}_{artist.LastName}_{artist.Birthday:M/d/yyyy}";
         }
         public static string makeGroupID(Group group)
         {

@@ -40,6 +40,10 @@ namespace muzickiKatalog.GUI.MVVM.View.Admin
         {
             
         }
+
+
+        private void BtnEditorReviewInsights_Click(object sender, RoutedEventArgs e) 
+            => new EditorInsightsWindow().ShowDialog();
     }
 
     public class Editor

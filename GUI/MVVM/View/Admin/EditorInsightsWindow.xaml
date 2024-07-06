@@ -1,0 +1,30 @@
+﻿<Window x:Class="muzickiKatalog.GUI.MVVM.View.Admin.EditorInsightsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:muzickiKatalog.GUI.MVVM.View.Admin"
+        mc:Ignorable="d"
+        Title="Manage Editors" Height="600" Width="1000"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Grid>
+        <ContentControl Template="{StaticResource ResourceKey=pozadina}"/>
+        <Label Content="EDITOR INSIGHTS" FontSize="40" Margin="30,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
+
+        <DataGrid ItemsSource="{Binding Insights}" x:Name="InsightsDataGrid" Margin="30,150,30,30" AutoGenerateColumns="False"
+                  VerticalAlignment="Top"
+                  HorizontalScrollBarVisibility="Auto"
+                  VerticalScrollBarVisibility="Auto"
+                  Height="Auto">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material title" Binding="{Binding MaterialTitle}"/>
+                <DataGridTextColumn Header="Average star rating" Binding="{Binding AverageRating}"/>
+                <DataGridTextColumn Header="Editor's star rating" Binding="{Binding EditorRating}"/>
+                <DataGridTextColumn Header="Editor reviewer" Binding="{Binding Editor}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

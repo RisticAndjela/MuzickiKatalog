@@ -13,6 +13,7 @@ namespace muzickiKatalog.Layers.Model.contributors
         public string username { get; set; }
         public string password { get; set; }
         public personType type { get; set; }
+        public bool isActive { get; set; } = true;
         
         public User() { }
         public User(string _username, string _password,personType _type)
