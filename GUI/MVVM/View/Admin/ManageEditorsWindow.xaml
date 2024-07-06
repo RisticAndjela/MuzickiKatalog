@@ -13,9 +13,26 @@
     <Grid>
         <ContentControl Template="{StaticResource ResourceKey=pozadina}"/>
         <Label Content="MANAGE EDITORS" FontSize="40" Margin="30,10,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
-        <Label Content="Add" FontSize="25" Margin="-700,90,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
-        <Label Content="Update" FontSize="25" Margin="-500,90,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
-        <Label Content="Delete" FontSize="25" Margin="-300,90,0,0" Style="{StaticResource ResourceKey=naslov}" Height="65"/>
+
+        <DockPanel x:Name="menu" VerticalAlignment="Top" Margin="30,88,30,30">
+            <Grid Height="96" Width="987">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="247*"/>
+                    <ColumnDefinition Width="247*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="243*"/>
+                    <ColumnDefinition Width="204*"/>
+                    <ColumnDefinition Width="43*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Content="Add" FontSize="25" Style="{StaticResource ResourceKey=LabelLikeButton}" Margin="30,10,30,10"/>
+                <Button Content="Update" Grid.Column="1" FontSize="25" Style="{StaticResource ResourceKey=LabelLikeButton}" Margin="30,10,30,10"/>
+                <Button Content="Delete"  Grid.Column="3" FontSize="25" Style="{StaticResource ResourceKey=LabelLikeButton}" Margin="27,10,30,10"/>
+                <Button Content="Editor insights" Grid.Column="4" FontSize="25" Style="{StaticResource ResourceKey=LabelLikeButton}" Click="BtnEditorReviewInsights_Click" Margin="30,10,30,10" Grid.ColumnSpan="2"/>
+            </Grid>
+        </DockPanel>
 
         <DataGrid x:Name="EditorsDataGrid" Margin="30,150,30,30" AutoGenerateColumns="False"
                   VerticalAlignment="Top"

@@ -1,5 +1,8 @@
 ﻿using muzickiKatalog.Layers.Model.contributors;
+using muzickiKatalog.Layers.Model.contributors.Interfaces;
 using muzickiKatalog.Layers.Model.performatorium;
+using muzickiKatalog.Layers.Model.performatorium.Interfaces;
+using muzickiKatalog.Layers.Repository.performatorium;
 using muzickiKatalog.Layers.Service.contributors;
 using muzickiKatalog.Layers.Service.performatorium.Interfaces;
 using muzickiKatalog.Layers.support.IDparser;
@@ -8,6 +11,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace muzickiKatalog.Layers.Service.performatorium
 {
@@ -57,6 +62,31 @@ namespace muzickiKatalog.Layers.Service.performatorium
                 ArtistService.LeaveRating(artist, star);
             }
 
+        }
+
+        public static IEnumerable<(string PlaceholderId, IEnumerable<StarRating> Ratings)> GetRatingsByPlaceholder()
+        {
+            var starRatingsSupplier = StarRatingRepository.GetAll;
+
+            return from starRating in starRatingsSupplier()
+                   group starRating by starRating.idOfPlaceholder into placeholderRatings
+                   select (placeholderRatings.Key, placeholderRatings.AsEnumerable());
+        }
+
+
+        
+        public static IEnumerable<(IMaterial Material, IEnumerable<StarRating> Ratings)> GetRatingsByMaterial()
+        {
+            var getMaterialById = (string id) => GetFromIDs<Material>.get(id, GlobalVariables.materialsFile).Item2;
+
+            foreach (var (placeholderId, ratings) in GetRatingsByPlaceholder())
+            {
+                // if it is a rating for a material
+                if (getMaterialById(placeholderId) is var material && material != null)
+                {
+                    yield return (material, ratings);
+                }
+            }
         }
     }
 }
