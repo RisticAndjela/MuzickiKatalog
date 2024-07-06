@@ -38,8 +38,8 @@ namespace muzickiKatalog.Layers.support
         {
             new Comment("John_Doe_7/15/1985", "Introduction to Music Theory:Martinez-", DateTime.Now, "This biography was very insightful!");
             new StarRating("John_Doe_7/15/1985", "Introduction to Music Theory:Martinez-", DateTime.Now, 3);
-            new Comment("Michael_Johnson_9/5/1982", "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-", DateTime.Now, "This biography was very insightful!");
-            new StarRating("Michael_Johnson_9/5/1982", "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-", DateTime.Now, 4);
+            // new Comment("Michael_Johnson_9/5/1982", "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-", DateTime.Now, "This biography was very insightful!");
+            // new StarRating("Michael_Johnson_9/5/1982", "Pink Floyd:Barrett-Wright-Mason-Gilmour-Waters-", DateTime.Now, 4);
             new Comment("Emily_Davis_12/10/1987", "The History of Classical Music:Brown-", DateTime.Now, "This biography was very insightful!");
             new StarRating("Emily_Davis_12/10/1987", "The History of Classical Music:Brown-", DateTime.Now, 5);
             new Comment("John_Doe_7/15/1985", "Jane_Smith_3/22/1990", DateTime.Now, "This biography was very insightful!");
